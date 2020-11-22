@@ -6,3 +6,7 @@
 3. 完善原料色谱数据库信息;
 4. 对香精香料精油的色谱质谱分析结果进行解剖, 以供调香师参考;
 5. 协作质检部做好产品检控分析。
+
+GC-MC
+
+https://www.equipnet.com/category/gas-chromatographs-(gc)-47432/
