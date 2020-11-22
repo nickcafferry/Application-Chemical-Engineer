@@ -16,3 +16,7 @@ Agilent GCMC
 英文：https://www.docin.com/p-1868722022.html
 
 中文：https://wenku.baidu.com/view/f3c2e67fa4e9856a561252d380eb6294dc882207.html
+
+https://wenku.baidu.com/view/53bb6c1a393567ec102de2bd960590c69fc3d869.html
+
+https://wenku.baidu.com/view/cc6139175f0e7cd184253675.html
