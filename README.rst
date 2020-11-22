@@ -10,3 +10,9 @@
 GC-MC
 
 https://www.equipnet.com/category/gas-chromatographs-(gc)-47432/
+
+Agilent GCMC
+
+英文：https://www.docin.com/p-1868722022.html
+
+中文：https://wenku.baidu.com/view/f3c2e67fa4e9856a561252d380eb6294dc882207.html
