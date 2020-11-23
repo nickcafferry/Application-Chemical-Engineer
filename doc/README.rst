@@ -4,7 +4,7 @@
 |Documentation Status| |Licence|
 
 .. |Licence| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
-   :target: http://choosealicense.com/licenses/mit/
+   :target: https://github.com/nickcafferry/Fechii-Application-Chemical-Engineer/blob/master/LICENSE
    
 .. |Documentation Status| image:: https://readthedocs.org/projects/fechii-application-chemical-engineer/badge/?version=latest
    :target: https://fechii-application-chemical-engineer.readthedocs.io/en/latest/?badge=latest
