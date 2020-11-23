@@ -1,3 +1,8 @@
+|Documentation Status|
+
+.. |Documentation Status| image:: https://readthedocs.org/projects/fechii-application-chemical-engineer/badge/?version=latest
+   :target: https://fechii-application-chemical-engineer.readthedocs.io/en/latest/?badge=latest
+   
 Fechii-Application-Chemical-Engineer
 ========
 
