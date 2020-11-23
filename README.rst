@@ -1,11 +1,11 @@
 Job Description
 ========
 
-1. 能独立进行日化香精成分分析;
-2. 能够操作气相色谱仪，可进行简单的故障排除和维修;
-3. 完善原料色谱数据库信息;
-4. 对香精香料精油的色谱质谱分析结果进行解剖, 以供调香师参考;
-5. 协作质检部做好产品检控分析。
+1. Can independently carry out daily chemical analysis of flavor components;
+2. Be able to operate the gas chromatograph and carry out simple troubleshooting and maintenance;
+3. Improve the information of raw material chromatography database
+4. The results of chromatography-mass spectrometry of essential oils were dissected for the reference of the perfumery.
+5. Cooperate with quality inspection department to do product inspection and control analysis
 
 GC-MC
 
@@ -13,9 +13,9 @@ https://www.equipnet.com/category/gas-chromatographs-(gc)-47432/
 
 Agilent GCMC
 
-英文：https://www.docin.com/p-1868722022.html
+English：https://www.docin.com/p-1868722022.html
 
-中文：https://wenku.baidu.com/view/f3c2e67fa4e9856a561252d380eb6294dc882207.html
+Chinese：https://wenku.baidu.com/view/f3c2e67fa4e9856a561252d380eb6294dc882207.html
 
 https://wenku.baidu.com/view/53bb6c1a393567ec102de2bd960590c69fc3d869.html
 
