@@ -25,7 +25,17 @@ Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
 Agilent 7890/5975C-GC/MSD
 -------------------------
 
-气相色谱仪: 7890A
+气相色谱仪类型: 7890A
 
-质谱仪: 5973C
+质谱仪类型: 5973C
+
+
+开机以及关机
+
+a. 仪器参数的设定;
+b. 分析方法的编辑;
+c. 谱库的检索;
+d. 报告的打印.
+
+
 
