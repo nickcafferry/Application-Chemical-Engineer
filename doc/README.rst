@@ -24,8 +24,9 @@
 .. |Circleci| image:: https://circleci.com/gh/nickcafferry/PSSpred.svg?style=svg
    :target: https://circleci.com/gh/nickcafferry/PSSpred
 
-.. |Documentation Status| image:: https://readthedocs.org/projects/psspred/badge/?version=latest
-   :target: https://psspred.readthedocs.io/en/latest/?badge=latest
+.. |Documentation Status| image:: https://readthedocs.org/projects/fechii-application-chemical-engineer/badge/?version=latest
+   :target: https://fechii-application-chemical-engineer.readthedocs.io/en/latest/?badge=latest
+
 
 Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
 """""""""""""""""""""""""
