@@ -1,4 +1,4 @@
-`PSSpred <https://github.com/nickcafferry/PSSpred>`_
+`Fechii-Gas Chromatography Mass Spectrometry <https://github.com/nickcafferry/PSSpred>`_
 ===============
 
 |Workflow| |Licence| |Travis| |Codecov| |Appveyor| |Documentation Status| |Gitter| |Circleci|
