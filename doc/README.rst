@@ -1,4 +1,4 @@
-`Fechii-Gas Chromatography Mass Spectrometry <https://github.com/nickcafferry/PSSpred>`_
+`Fechii-Gas Chromatography Mass Spectrometry <https://github.com/nickcafferry/Fechii-Application-Chemical-Engineer/tree/master>`_
 ===============
 
 |Workflow| |Licence| |Travis| |Codecov| |Appveyor| |Documentation Status| |Gitter| |Circleci|
@@ -38,4 +38,3 @@ Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
 
-A simple `neural network training algorithm <https://www.verypossible.com/insights/machine-learning-algorithms-what-is-a-neural-network>`_ for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction !
