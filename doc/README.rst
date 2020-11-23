@@ -21,3 +21,10 @@ Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
 
+
+Agilent 7890/5975C-GC/MSD
+-------------------------
+
+气相色谱仪: 7890A
+
+质谱仪: 5973C
