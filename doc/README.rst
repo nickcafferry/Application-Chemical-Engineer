@@ -112,3 +112,11 @@ d. 报告的打印.
    >>> m/z 104, 91 -------> Alkylbenzenes
    
    >>> m/z 104, 117 -------> Alkylbenzenes
+
+
+m/z-Chemical Compounds
+======================
+
+.. raw:: html
+   :file: masstochargeratio.html
+   
