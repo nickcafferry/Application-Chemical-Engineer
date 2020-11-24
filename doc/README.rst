@@ -53,7 +53,7 @@ d. 报告的打印.
       
 
 
-.. python:: 
+.. code:: python 
    
    >>> m/z 15, 29, 43, 57, 71, 85, 99 -------->  (Aliphatic hydrocarbons: 脂肪烃或链状烃) 代表物： `正庚烷 Heptane <https://pubchem.ncbi.nlm.nih.gov/compound/8900>`
    
