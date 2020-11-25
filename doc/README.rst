@@ -125,3 +125,15 @@ m/z-Chemical Compounds
 ==========
 
 二甲基庚醇-------麝香增效剂--------------松油醇
+
+
+仪器购买
+=======
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 仪器购买
+    
+    Apparatus
+    
+    
