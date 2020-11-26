@@ -11,4 +11,5 @@ SDE Apparatus
   
   4. Do open the heater to heat the flask with extraction agent;
   
-  5. 
+  5. Do not close the vaccum pump while the while system does not cool down;
+
