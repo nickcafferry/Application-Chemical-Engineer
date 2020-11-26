@@ -172,7 +172,7 @@ SDE Apparatus
 
 .. toctree::
    :maxdepth: 5
-   :caption: 
+   :caption: SDE
    
    SDE
    
