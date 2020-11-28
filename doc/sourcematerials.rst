@@ -1,6 +1,6 @@
 Source Materials
 =================
 
-.. raw:: htm
+.. raw:: html
    :file: fechiimaterials.htm
 
