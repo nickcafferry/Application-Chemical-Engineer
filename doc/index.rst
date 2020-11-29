@@ -196,4 +196,13 @@ Fechii Source Materials
    :caption: Source Materials
    
    sourcematerials
+
+
+Chemical Structures of Source Materials
+=======================================
+
+.. toctree:: 
+   :maxdepth: 5
+   :caption: Chemical Structures of Source Materials
    
+   structures
