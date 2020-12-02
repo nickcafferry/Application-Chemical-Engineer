@@ -39,7 +39,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
 html_static_path = ['assets']
-html_theme = 'haiku'
+html_theme = 'agogo'
 html_logo = 'GCC.svg'
 html_favicon = 'GCC.svg'
 html_theme_options = {
