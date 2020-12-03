@@ -9,6 +9,8 @@
 .. |Documentation Status| image:: https://readthedocs.org/projects/fechii-application-chemical-engineer/badge/?version=latest
    :target: https://fechii-application-chemical-engineer.readthedocs.io/en/latest/?badge=latest
 
+.. |Chinaperfumer| image:: https://img.shields.io/badge/link-Chinaperfumer-brightgreen.svg?style=flat
+   :target: http://www.chinaperfumer.com/
 
 Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
 """""""""""""""""""""""""
