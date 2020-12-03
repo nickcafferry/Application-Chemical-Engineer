@@ -1,7 +1,7 @@
 `Fechii-Gas Chromatography Mass Spectrometry <https://github.com/nickcafferry/Fechii-Application-Chemical-Engineer/tree/master>`_
 ===============
 
-|Documentation Status| |Licence| |Chinaperfumer| |Firmenich|
+|Documentation Status| |Licence| |Chinaperfumer| |Firmenich| |Givaudan|
 
 .. |Licence| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
    :target: https://github.com/nickcafferry/Fechii-Application-Chemical-Engineer/blob/master/LICENSE
@@ -15,6 +15,8 @@
 .. |Firmenich| image:: https://img.shields.io/badge/link-firmenich-blue.svg?style=flat
    :target: https://www.firmenich.com/
    
+.. |Givaudan| image:: https://img.shields.io/badge/link-givaudan-yellow.svg?style=flat
+   :target: http://www.givaudan.cn/givaudan-china
 
 Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
 """""""""""""""""""""""""
