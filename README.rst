@@ -1,10 +1,19 @@
-|Documentation Status| |License|
+|Documentation Status| |Licence| |Chinaperfumer| |Firmenich| |Givaudan|
 
-.. |License| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
-   :target: http://choosealicense.com/licenses/mit/
-
+.. |Licence| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
+   :target: https://github.com/nickcafferry/Fechii-Application-Chemical-Engineer/blob/master/LICENSE
+   
 .. |Documentation Status| image:: https://readthedocs.org/projects/fechii-application-chemical-engineer/badge/?version=latest
    :target: https://fechii-application-chemical-engineer.readthedocs.io/en/latest/?badge=latest
+
+.. |Chinaperfumer| image:: https://img.shields.io/badge/link-Chinaperfumer-brightgreen.svg?style=flat
+   :target: http://www.chinaperfumer.com/
+   
+.. |Firmenich| image:: https://img.shields.io/badge/link-firmenich-blue.svg?style=flat
+   :target: https://www.firmenich.com/
+   
+.. |Givaudan| image:: https://img.shields.io/badge/link-givaudan-yellow.svg?style=flat
+   :target: http://www.givaudan.cn/givaudan-china
    
 Fechii-Application-Chemical-Engineer
 ========
