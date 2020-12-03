@@ -1,7 +1,7 @@
 `Fechii-Gas Chromatography Mass Spectrometry <https://github.com/nickcafferry/Fechii-Application-Chemical-Engineer/tree/master>`_
 ===============
 
-|Documentation Status| |Licence|
+|Documentation Status| |Licence| |Chinaperfumer|
 
 .. |Licence| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
    :target: https://github.com/nickcafferry/Fechii-Application-Chemical-Engineer/blob/master/LICENSE
