@@ -61,7 +61,7 @@ VirtualBox can be downloaded `here <https://www.virtualbox.org/wiki/Downloads>`_
 
 `Windows XP iso <http://windows.sczmwj.com/xp.html>`_
 
-`How to install Windows XP on VirtualBox pages?<https://jingyan.baidu.com/article/574c52196787b06c8c9dc158.html>`_.
+`How to install Windows XP on VirtualBox pages? <https://jingyan.baidu.com/article/574c52196787b06c8c9dc158.html>`_.
 
 `Ubuntu <https://ubuntu.com/download/desktop>`_.
 
