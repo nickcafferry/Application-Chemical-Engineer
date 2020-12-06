@@ -34,7 +34,6 @@ jobs:
     - name: running .py file
       run: |
          echo "---------------------------------------------"
-         cd Fechii-Application-Chemical-Engineer/
          cd doc/
          export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/doc/"
          pip3 install --upgrade pip
