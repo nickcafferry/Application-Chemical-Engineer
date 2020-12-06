@@ -221,6 +221,35 @@ Fechii Source Materials
    
    sourcematerials
 
+.. toctree:: 
+   :maxdepth: 5
+   :caption: 中文名非中文开头
+   
+   namestartsunusually
+
+.. toctree:: 
+   :maxdepth: 5
+   :caption: 中文名以A开头
+   
+   namestartswitha
+
+.. toctree:: 
+   :maxdepth: 5
+   :caption: 中文名以B开头
+   
+   namestartswithb
+
+.. toctree:: 
+   :maxdepth: 5
+   :caption: 中文名以C开头
+   
+   namestartswithc
+
+.. toctree:: 
+   :maxdepth: 5
+   :caption: 中文名以D开头
+   
+   namestartswithd
 
 Chemical Structures of Source Materials
 =======================================
