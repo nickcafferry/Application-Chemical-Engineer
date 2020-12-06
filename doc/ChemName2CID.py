@@ -5,7 +5,7 @@ import time
 from urllib import request, parse
 
 # establish an file for recording information
-file = open(".\ChemName2CID\ChemNametoCID.txt", 'w', encoding='utf-8')
+file = open("ChemNametoCID.txt", 'w', encoding='utf-8')
 file.write("Chemical Name, PubChem CID\n")
 
 #Read the file "fechiimaterials.html" and acquire the Puhchem link for every substance.
