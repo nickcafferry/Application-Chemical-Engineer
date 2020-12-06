@@ -26,19 +26,26 @@ jobs:
          mkdir output
          echo "output file already created!"
          
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    
+    - name: running .py file
+      run:
          echo "---------------------------------------------"
          cd Fechii-Application-Chemical-Engineer/
          cd doc/
          export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/doc/"
          pip3 install --upgrade pip
          pip3 install wheel
-         python3.6 -m pip install -U pymupdf
-         python3.6 ChemName2CID.py
+         python3.8 -m pip install -U pymupdf
+         python3.8 ChemName2CID.py
          cd ChemName2CID/
          ls -lt
 
          echo "recording information already unpacked!"
-         echo "Show the path of this file: "
+         echo "Show the path of this file:"
          pwd
          echo "---------------------------------------------"
          
