@@ -32,7 +32,7 @@ jobs:
         python-version: 3.8
     
     - name: running .py file
-      run:
+      run: |
          echo "---------------------------------------------"
          cd Fechii-Application-Chemical-Engineer/
          cd doc/
