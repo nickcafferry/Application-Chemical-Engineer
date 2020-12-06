@@ -40,7 +40,6 @@ jobs:
          pip3 install wheel
          python3.8 -m pip install -U pymupdf
          python3.8 ChemName2CID.py
-         cd ChemName2CID/
          ls
 
          echo "recording information already unpacked!"
