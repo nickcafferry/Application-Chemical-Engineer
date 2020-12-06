@@ -1,0 +1,57 @@
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script> 
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+  <style>
+    article {
+      max-width: 960px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      padding: 40px;
+    }
+
+    script.show-script {
+      display: none;
+      max-width: 720px;
+      background-color: floralwhite;
+      font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+      font-size: 12px;
+      margin-left: -40px;
+      white-space: pre;
+    }
+
+    article div {
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      margin-top: 60px;
+    }
+  </style>
+
+     <div id="table-cont1" class="vega-embed"><div class="vega-bindings"></div></div>
+     <script class='show-script'>
+{
+  const headers = ['原料编号', '中文名', '英文名', 'CAS号', 'PubChemCID', '香味特征'];
+  const values = [['99022', '环十五内酯', 'Exaltolide/Cyclopentadecanolide', '106-02-5', '235414', '有细致麝香样的动物香气，甜而浓，又有力。有相当的扩散力，香气持久, 但不及环十五酮的甜美柔和的清爽气息'], 
+  ['99063', '	环十五内酯（香水级）', '14-pentadecanolide', '32539-85-8', '141710', '#'], 
+  ['99023', '环十五烯内酯', 'Habanolide', '34902-57-3', '12410118','环十五烯内酯属于一种大环内酯。大环内酯是香料成分化学中的重要结构基元(motif)。特别是大环内酯因其在精细Chemicalbook和技术香料中可以提供给各种形式消费品的理想麝香气味而受到重视。麝香的气味可能是香水中最普遍受到赞赏的嗅觉信号。'], 
+  ['99034', '麝香烯酮', 'MUSCENONE\Methylcyclopentadecenone', '82356-51-2', '57353762', '麝香酮具有甘甜的浓香，能与各种香料很好调和。香气阈值极低（0.001ppm-0.01ppm），留香持久，是极为有效的定香剂。'],
+  ['99026','异麝香酮', 'ISO MUSCONE\Cyclohexadecanone', '2550-52-9', '75695', '#'],
+  ['99031','异麝香烯酮', 'GLOBANONE', '3100-36-5', '534634', '#']]; // Render to visor
+
+  const surface = {
+    name: 'Table',
+    tab: 'Charts'
+  };
+  tfvis.visor().close();
+  tfvis.render.table(surface, {
+    headers,
+    values
+  }); // Render to page
+
+  const container = document.getElementById('table-cont1');
+  tfvis.render.table(container, {
+    headers,
+    values
+  });
+}
+</script>
