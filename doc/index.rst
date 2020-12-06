@@ -223,6 +223,12 @@ Fechii Source Materials
 
 .. toctree:: 
    :maxdepth: 5
+   :caption: 常见的香精原料
+   
+   commonfragancematerials
+
+.. toctree:: 
+   :maxdepth: 5
    :caption: 中文名非中文开头
    
    namestartsunusually
