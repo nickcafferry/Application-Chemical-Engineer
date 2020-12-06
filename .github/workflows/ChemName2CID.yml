@@ -29,6 +29,9 @@ jobs:
          echo "---------------------------------------------"
          cd Fechii-Application-Chemical-Engineer/
          cd doc/
+         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/doc/"
+         pip3 install --upgrade pip
+         pip3 install wheel
          python3.6 ChemName2CID.py
          cd ChemName2CID/
          ls -lt
