@@ -62,6 +62,7 @@ d. 报告的打印.
    
    保存柱子时注意将两端密封好，避免水和空气破环柱子内涂层。
 
+You can download :download:`A Quick Guide to Agilent 7890A Gas Chromatograhphy <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/Agilent-7890A-GC-A-Quick-Guide.pdf>` here.
 
 VirtualBox
 =============
