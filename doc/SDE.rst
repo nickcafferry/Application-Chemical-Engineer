@@ -13,3 +13,4 @@ SDE Apparatus
   
   5. Do not close the vaccum pump while the while system does not cool down;
 
+1. 注意加入沐浴露到烧杯之后，千万一定要搅拌均匀，因为有机和水不混溶;
