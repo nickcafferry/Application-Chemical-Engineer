@@ -6,3 +6,14 @@ GC-MS-Analysis
 3. Alt+S+S用于背景删除
 4. 生成百分比报告.
 
+.. raw:: html
+   :file: GC-MS-Analysis-1.html
+   
+.. raw:: html
+   :file: GC-MS-Analysis-2.html
+
+.. raw:: html
+   :file: GC-MS-Analysis-3.html
+
+.. raw:: html
+   :file: GC-MS-Analysis-4.html
