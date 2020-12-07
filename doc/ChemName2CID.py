@@ -6,7 +6,7 @@ from urllib import request, parse
 
 # establish an file for recording information
 file = open("ChemNametoCID.txt", 'w', encoding='utf-8')
-file.write("Chemical Name, PubChem CID\n")
+file.write("Chemical Name; PubChem CID\n")
 
 #Read the file "fechiimaterials.html" and acquire the Puhchem link for every substance.
 
@@ -42,7 +42,7 @@ with open("fechiimaterials.html", 'r', encoding="utf-8") as f:
 							print(targetcid)
 					
 						
-					file.write("%s, %s\n"%(chemname, targetcid))
+					file.write("%s; %s\n"%(chemname, targetcid))
 				time.sleep(20)
 			except:
 				file.write("%s, HTTP Error!\n"%everyline.split('>')[-1].strip('</td>\n'))
