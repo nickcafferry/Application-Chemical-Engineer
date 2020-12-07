@@ -224,6 +224,12 @@ Fechii Source Materials
 
 .. toctree:: 
    :maxdepth: 5
+   :caption: 比较全面的信息表
+   
+   allinformation
+
+.. toctree:: 
+   :maxdepth: 5
    :caption: 常见的香精原料
    
    commonfragancematerials
