@@ -7,8 +7,8 @@
 ---------------------------
 
 .. toctree::
-  :maxdepth: 5
-  :caption: 海弗麝香
-
-  HELVETOLIDE
+    :maxdepth: 2
+    :caption: 海弗麝香
+    
+    HELVETOLIDE
 
