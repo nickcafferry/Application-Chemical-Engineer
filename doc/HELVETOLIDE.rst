@@ -15,7 +15,7 @@ Helvetolide
       	<table border="0" width="741" id="table1" cellpadding="0" style="border-collapse: collapse">
       		<tr>
       			<td>
-      			<table border="0" width="741" id="table4" cellpadding="0" style="border-collapse: collapse">
+      			<table border="0" width="768" id="table4" cellpadding="0" style="border-collapse: collapse">
       				<tr>
       					<td width="39">　</td>
       					<td width="39">　</td>
@@ -389,13 +389,13 @@ Helvetolide
       		</tr>
       		<tr>
       			<td width="760" >
-      			<table border="0" width="100%" id="table3" cellpadding="0" style="border-collapse: collapse" height="53%">
+      			<table border="0" width="768" id="table3" cellpadding="0" style="border-collapse: collapse" height="53%">
       				<tr>
       					<td valign="top">
-      					<table border="0" width="100%" id="table23" cellpadding="0" style="border-collapse: collapse">
+      					<table border="0" width="768" id="table23" cellpadding="0" style="border-collapse: collapse">
       						<tr>
       							<td height="150" valign="top">
-      							<table border="0" width="80%" id="table24" cellpadding="0" style="border-collapse: collapse">
+      							<table border="0" width="768" id="table24" cellpadding="0" style="border-collapse: collapse">
       								<tr>
       									<td>
       									<img border="0" src="http://erp.zoteq.com:81/bdzy/images/fircom/mol/947650.gif" ></td>
@@ -484,7 +484,7 @@ Helvetolide
       					<td valign="top">
       					<img border="0" src="http://erp.zoteq.com:81/bdzy/images/gray_dot.gif" width="1" height="100%" align="right"></td>
       					<td valign="top">
-      					<table border="0" width="100%" id="table28" cellpadding="0" style="border-collapse: collapse" height="50%">
+      					<table border="0" width="768" id="table28" cellpadding="0" style="border-collapse: collapse" height="50%">
       						<tr>
       							<td height="170" valign="top">
       							<table border="0" width="100%" id="table29" cellpadding="0" style="border-collapse: collapse">
