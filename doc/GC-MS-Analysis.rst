@@ -22,3 +22,6 @@ GC-MS-Analysis
 
 .. raw:: html
    :file: GC-MS-Analysis-5.html
+
+进样选择方法: 25-1适用于浓度低的样品进样; 100-1适用于浓度高的进样; 还有6-1.
+
