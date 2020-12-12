@@ -19,7 +19,7 @@ SDE Apparatus
 
 .. raw:: html
 
-    <video poster="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/logo.jpg" width="690" height="402" controls="controls">
+    <video poster="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/logo.jpg" width="800" height="466" controls="controls">
         <source src="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/videos/foaming.mov">
     </video>
 
@@ -27,6 +27,6 @@ SDE Apparatus
 
 .. raw:: html
 
-    <video poster="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/logo.jpg" width="690" height="402" controls="controls">
-        <source src="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/videos/vacumn-not-foaming.mov.mov">
+    <video poster="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/logo.jpg" width="800" height="466" controls="controls">
+        <source src="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/videos/vacumn-not-foaming.mov">
     </video>
