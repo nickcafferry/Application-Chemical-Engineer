@@ -15,8 +15,18 @@ SDE Apparatus
 
 1. 注意加入沐浴露到烧杯之后，千万一定要搅拌均匀，因为有机和水不混溶;
 
+2. Please pay attention to the vaccum device when using rotating vaporisation machine. Because when the vaccumn device is off, there will be bubbles coming up from the bottom of the tank:
+
 .. raw:: html
 
     <video poster="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/logo.jpg" width="690" height="402" controls="controls">
         <source src="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/videos/foaming.mov">
+    </video>
+
+3. When the vaccumn device is on, see what happened:
+
+.. raw:: html
+
+    <video poster="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/logo.jpg" width="690" height="402" controls="controls">
+        <source src="https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/videos/vacumn-not-foaming.mov.mov">
     </video>
