@@ -44,7 +44,8 @@ Properties
 
 5. For pentane at 313 K, the latent heat of vaporisation is 180 kJ/kg;
 
-6. 
+6. Use the following chart for searching latent-of-heat;
 
 .. raw:: html
   :file: latent-of-heat.html
+
