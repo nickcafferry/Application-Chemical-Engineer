@@ -36,12 +36,15 @@ Properties
 
 1. The latent heat of condensation of pentane is 335 kJ/kg;
 
-2. Pentane(n-): Its thermal conductivity value is 0.135 W/m*K. And it is recoommended over the tempeerature limit-303 K.
+2. Pentane(n-): Its thermal conductivity value is 0.135 W/m*K. And it is recoommended over the tempeerature limit-303 K;
 
-3. Water: Its thermal conductivity value is 0.57 W/m*K. And it is recoomended over the temperature limit-273K.
+3. Water: Its thermal conductivity value is 0.57 W/m*K. And it is recoomended over the temperature limit-273K;
 
 4. For water at 373 K, the latent heat of vaporisation is 2257 kJ/kg;
 
 5. For pentane at 313 K, the latent heat of vaporisation is 180 kJ/kg;
 
 6. 
+
+.. raw:: html
+  :file: latent-of-heat.html
