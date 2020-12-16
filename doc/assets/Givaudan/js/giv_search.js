@@ -1,4 +1,4 @@
-﻿// JavaScript Document
+// JavaScript Document
 
 $(function () {
 
@@ -7,17 +7,17 @@ $(function () {
         $(this).animate({ 'width': '35px' }, 500)
         var txt = $(this).text();
 
-        if (txt == "璇�") {
-            $(this).text("璇︽儏");
+        if (txt == "详") {
+            $(this).text("详情");
         }
-        if (txt == "鏍�")
-        { $(this).text("鏍峰搧"); }
+        if (txt == "样")
+        { $(this).text("样品"); }
 
-        if (txt == "涔�")
-        { $(this).text("璐拱"); }
+        if (txt == "买")
+        { $(this).text("购买"); }
 
-        if (txt == "璇�")
-        { $(this).text("璇环"); }
+        if (txt == "询")
+        { $(this).text("询价"); }
     })
 
     $('div[class*=btn]').mouseleave(function () {
@@ -25,21 +25,21 @@ $(function () {
 
         var txt = $(this).text();
 
-        if (txt == "璇︽儏") {
-            $(this).text("璇�");
+        if (txt == "详情") {
+            $(this).text("详");
         }
-        if (txt == "鏍峰搧")
-        { $(this).text("鏍�"); }
+        if (txt == "样品")
+        { $(this).text("样"); }
 
-        if (txt == "璐拱")
-        { $(this).text("涔�"); }
+        if (txt == "购买")
+        { $(this).text("买"); }
 
-        if (txt == "璇环")
-        { $(this).text("璇�"); }
+        if (txt == "询价")
+        { $(this).text("询"); }
     })
     $('.searchstr').keydown(function () { if (event.keyCode == "13") $("#form1").trigger("submit"); })
 
-    //鐧惧害鎺ㄩ€�
+    //百度推送
     var bp = document.createElement('script');
     var curProtocol = window.location.protocol.split(':')[0];
     if (curProtocol === 'https') {
