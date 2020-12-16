@@ -10,7 +10,7 @@
    :target: https://fechii-application-chemical-engineer.readthedocs.io/en/latest/?badge=latest
 
 .. |Chinaperfumer| image:: https://img.shields.io/badge/link-Chinaperfumer-brightgreen.svg?style=flat
-   :target: http://www.chinaperfumer.com/
+   :target: http://www.zoteq.com/
    
 .. |Firmenich| image:: https://img.shields.io/badge/link-firmenich-blue.svg?style=flat
    :target: https://www.firmenich.com/
