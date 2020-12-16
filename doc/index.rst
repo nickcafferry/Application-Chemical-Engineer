@@ -242,6 +242,9 @@ GC-MS Mass Spectrometry Analysis
 Fechii Source Materials
 =========================
 
+`Givaudan <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/Givaudan/givaudan.html>`_  
+
+
 
 .. toctree:: 
    :maxdepth: 5
