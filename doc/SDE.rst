@@ -49,3 +49,4 @@ Properties
 .. raw:: html
   :file: latent-of-heat.html
 
+If the volume of extractant is smaller than 1 ml or 0.5 ml, you can use the pentane or dichlormethane to increase the volume of the extractant and then concentrate it either by air dry or by rotating vapourisation techiques. 
