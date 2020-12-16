@@ -1,0 +1,1092 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, "微软雅黑";
+}
+body {
+	background-color: #dfdfdf;
+}
+
+.btn-primary{
+background-color:#649B1C!important; 
+	border-color:#649B1C!important;
+}
+
+.btn-default{
+background-color:white!important; 
+	border-color:#649B1C!important;
+	color:#649B1C!important;	
+}
+
+.head_frame {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0px;
+}
+.header {
+	width: 100%;
+	height: 100px;
+	background: #333333;
+}
+.header_sub {
+	width: 1220px;
+	height: 100px;
+	margin: 0 auto;
+/*	background: url("../img/logo_zoteq_white.png") no-repeat;
+	background-size: 214px 60px;
+	background-position: center left;*/
+	position: relative;
+}
+
+.zoteq_logo{
+	position:absolute;
+	width:214px;
+	height:60px;
+	left:0px;
+	
+	top:50%;
+	margin-top:-30px;
+}
+
+.zoteq_logo img{
+	width:214px;
+	height:60px;
+}
+
+header .container {
+	
+	background: url("../img/logo_zoteq_white.png") no-repeat;
+	background-size: 214px 60px;
+	background-position: center left;	
+}
+.header_sub a {
+	float: right;
+	width: 72px;
+	line-height: 100px;
+	font-size: 14px;
+	color: #AAA;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: right;
+}
+.header_sub .lang {
+	width: 30px;
+}
+.header_sub a:hover {
+	color: #fff;
+}
+
+.cnfm a:link, .cnfm a:visited {
+    color:#fff;
+}
+/*网店链接，公众号链接*/
+.nav_frame {
+	width:100%;
+	height:80px;
+}
+.nav {
+	width: 1220px;
+	height: 80px;
+	/*border: 1px lime solid;*/
+	margin: 0px auto;
+	background: #dfdfdf;
+	position: relative;
+}
+.nav a {
+	width: 100px;
+	line-height: 80px;
+	float: left;
+	font-size: 14px;
+	color: #656565;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: #649B1C;
+}
+
+.search {
+			border:1px #656565 solid;
+			width:150px;
+			height:30px;
+			font-size:12px;
+			line-height: 30px;
+			background-color:#dbdbdb;
+			color:#454545;
+			border-radius:15px;
+			outline: none;
+			padding-left:35px;
+			padding-right:20px;	
+			position:absolute;
+			right:5px;
+			top:25px;
+			display: inline-block;
+			z-index: 1;
+			background:url(../img/search.png) no-repeat 10px center;
+			background-size: 18px 18px;
+		}
+.srch_img {
+	width:20px; height:20px;
+	position: absolute;
+	top:30px;
+	right:0px;
+		
+}
+/*标题文字公共设置区 TITLE*/
+.brand .title, .zoteqplant .title, .collection .title, .photo .title, .quotation .title, .search_result .title, .lactones .title, .iso .title, .photo_plant .title, .links .title, .map_plant .title, .prod_link .title
+{	width: 100%;
+	height: 60px;
+	border-bottom: 1px #dbdbdb solid;
+	background:#fff;
+}
+
+.brand .title p, .zoteqplant .title p, .collection .title P, .photo .title p, .quotation .title p, .links .title p, .search_result .title p, .lactones .title p, .iso .title p, .photo_plant .title p, .map_plant .title p, .prod_info .title p
+
+{
+	margin-left: 30px;
+	font-size: 16px;
+	line-height: 60px;
+	color: #454545;
+}
+
+/*三联按钮公共设置区*/
+/*设定三联按钮大小颜色*/
+.cqproduct1 div, .cqproduct2 div, .cqproduct3 div, .later1 div, .later2 div, .later3 div, .later4 div, .later5 div, .later6 div, .recomm1 div, .recomm2 div, .recomm3 div, .recomm4 div {
+	margin: 5px 3px;
+	display: inline-block;
+	font-size: 12px;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px #649B1C solid;
+	text-align: center;
+	color: #454545;
+	border-radius: 3px;
+}
+
+/*三联菜单容器居中设置*/
+.cq_menu, .clt_menu, .recomm_menu {
+	display: block;
+	width: 160px;
+	height: 30px;
+	margin: 10px auto;
+}
+
+.cq_menu a, .clt_menu a, .recomm_menu a {
+	text-decoration: none;
+	color:#333;
+	
+}
+
+/*详情按钮补充设定, 绿底白字*/
+.cq_details, .clt_details, .recomm_details {
+	color: #fff;
+	background-color: #649B1C;
+}
+
+.cq_details span, .clt_details span, .recomm_details span {
+	color: #fff;
+}
+/*点击按钮后的效果，灰底白*/
+.cqproduct1 div:hover, .cqproduct2 div:hover, .cqproduct3 div:hover, .recomm1 div:hover, .recomm2 div:hover, .recomm3 div:hover, .recomm4 div:hover, .later1 div:hover, .later2 div:hover, .later3 div:hover, .later4 div:hover, .later5 div:hover, .later6 div:hover {
+	background-color: #454545;
+	color: #fff;
+	border:none;
+}
+/*产品标题图片公共设置区*/
+/*产品名 格式设定*/
+.collection .later1 p, .collection .later2 p, .collection .later3 p, .collection .later4 p, .collection .later5 p, .collection .later6 p, .recomm .recomm1 p, .recomm .recomm2 p, .recomm .recomm3 p, .recomm .recomm4 p {
+	font-size: 14px;
+	color: #454545;
+	margin: 275px auto 0px auto;
+	text-align: center;
+}
+/*产品英文名格式设定*/
+.collection .name, .recomm .name {
+	font-size: 12px;
+	color: #656565;
+}
+/*单产品右上角LOGO设定*/
+.recomm1 .logo, .recomm2 .logo, .recomm3 .logo, .recomm4 .logo, .later1 .logo, .later2 .logo, .later3 .logo, .later4 .logo, .later5 .logo, .later6 .logo {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+}
+/*产品价格格式设定*/
+.recomm .prix, .collection .prix {
+	font-weight: bold;
+	font-size: 12px;
+	color: #9B1C55;
+}
+/*鼠标浮过的阴影效果*/
+.hovershadow:hover {
+	box-shadow: inset 0 0 40px rgba(0,0,0,.2);
+	transition: all 0.15s ease-out;
+}
+/*大图广告页轮播*/
+.banner {
+	background-color: #fff;
+	width: 1220px;
+	height: 500px;
+	border: 1px #dbdbdb solid;
+	margin: 0px auto;
+	border-radius: 7px;
+	background: url("../img/Demo_slide_lactones.jpg") no-repeat;
+	background-position: -8px -1px;
+	background-size: 1230px 503px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.back {
+	width: 100px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 50px;
+	right: 60px;
+	z-index: 1;
+}
+.r1, .r2, .r3, .r4 {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 2;
+	bottom: 55px;
+	right: 135px;
+	cursor: pointer;
+}
+.r2 {
+	right: 115px;
+}
+.r3 {
+	right: 95px;
+}
+.r4 {
+	right: 75px;
+}
+.r1 {
+	background: #fff;
+}
+
+/*	四个热门产品;图片文件 - TOP4-X.JPG*/
+.recomm {
+	background-color: #fff;
+	width: 1220px;
+	height: 400px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+}
+.recomm li {
+	list-style-type: none;
+	width: 304px;
+	height: 100%;
+	float: left;
+	position: relative;
+/*	background-position: center center;
+	background-size: 300px 200px;*/
+}
+li.recomm1 {
+	background: url("../img/200KGS-FIR.jpg") no-repeat;
+	border-right: 1px #dbdbdb solid;
+	background-position: top center;
+	background-size: 200px 267px;
+}
+li.recomm2 {
+	background: url("../img/25KGS-GIV.jpg") no-repeat;
+	border-right: 1px #dbdbdb solid;
+	background-position: top center;
+	background-size: 200px 267px;
+}
+li.recomm3 {
+	background: url("../img/200KGS-KLM.jpg") no-repeat;
+	border-right: 1px #dbdbdb solid;
+	background-position: top center;
+	background-size: 200px 267px;
+}
+li.recomm4 {
+	background: url("../img/200KGS-DSM.jpg") no-repeat;
+	background-position: top center;
+	background-size: 200px 267px;
+	width: 304px;
+	border: none;
+}
+/*四个顶级品牌*/
+
+.brand {
+	background-color: #fff;
+	width: 1220px;
+	height: 500px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+	list-style-type: none;
+}
+.brand li {
+	list-style-type: none;
+	width: 304px;
+	height: 440px;
+	float: left;
+	background-size: 285px 285px;
+	position:relative;
+}
+li.brand1 {
+	background: url("../img/Squre_dsm.jpg") no-repeat;
+	border-right: 1px #dbdbdb solid;
+	background-size: 285px 285px;
+	background-position: center 15px;
+}
+li.brand2 {
+	background: url("../img/Squre_fir.jpg") no-repeat;
+	border-right: 1px #dbdbdb solid;
+	background-size: 285px 285px;
+	background-position: center 15px;
+}
+li.brand3 {
+	background: url("../img/Squre_giv.jpg") no-repeat;
+	border-right: 1px #dbdbdb solid;
+	background-size: 285px 285px;
+	background-position: center 15px;
+}
+li.brand4 {
+	background: url("../img/Squre_klm.jpg") no-repeat;
+	background-size: 285px 285px;
+	background-position: center 15px;
+	width: 304px;
+}
+.brand1 p, .brand2 p, .brand3 p, .brand4 p {
+	width: 100%;
+	height: 15px;
+	text-align: center;
+	margin-top: 345px;
+	font-size: 14px;
+	color: #656565;
+	display: inline-block;
+}
+
+.brand1 div, .brand2 div, .brand3 div, .brand4 div {
+	width: 80px;
+	height: 25px;
+	margin: 15px auto;
+	font-size: 12px;
+	color: #fff;
+	background-color: #649B1C;
+	border-radius: 3px;
+	text-align: center;
+	padding: auto;
+	line-height: 25px;
+	position:absolute;
+	left:50%;
+	margin-left:-40px;
+}
+.brand1 div:hover, .brand2 div:hover, .brand3 div:hover, .brand4 div:hover {
+	background-color: #454545;
+	color: #fff;
+}
+/*重庆正元工厂*/
+
+.zoteqplant {
+	background-color: #fff;
+	width: 1220px;
+	height: 361px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+	list-style-type: none;
+	overflow: hidden;
+}
+.plant {
+	width: 610px;
+	height: 300px;
+	background: url(../img/zoteqplant_drum.jpg) no-repeat;
+	background-position: left center;
+	background-size: 610px 300px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+}
+.cqproduct1 {
+	background: url(../img/zoteqbottle1.jpg) no-repeat;
+	position: relative;
+}
+.cqproduct2 {
+	background: url(../img/zoteqbottle2.jpg) no-repeat;
+	position: relative;
+}
+.cqproduct3 {
+	background: url(../img/zoteqbottle3.jpg) no-repeat;
+	position: relative;
+}
+.cqproduct1, .cqproduct2, .cqproduct3 {
+	width: 202px;
+	height: 300px;
+	background-size: 160px 160px;
+	background-position: center 20px;
+}
+.cqproduct1, .cqproduct2 {
+	border-right: 1px #dbdbdb solid;
+	float: left;
+}
+.cqproduct3 {
+	float: left;
+}
+.cqproduct1 p, .cqproduct2 p, .cqproduct3 p {
+	margin-top: 200px;
+	text-align: center;
+	font-size: 14px;
+	color: #454545;
+}
+.cqproduct1 p span, .cqproduct2 p span, .cqproduct3 p span {
+	font-size: 12px;
+	color: #656565;
+}
+
+/*自产标签设定*/
+.zoteqplant .logo {
+	position:absolute;
+	width:30px; height:30px;
+	top:30px; right:30px;
+}
+/*重庆正元照片*/
+
+.cqphoto {
+	background-color: #fff;
+	width: 1220px;
+	height: 201px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+	list-style-type: none;
+/*	overflow: hidden;*/
+}
+.cqphoto1 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/cq_office.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;
+	border-radius: 6px;
+/*	overflow: hidden;*/
+}
+.cqphoto2 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/cq_workshop.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;	
+	border-radius: 6px;	
+}
+.cqphoto3 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/cq_equipment.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;	
+	border-radius: 6px;	
+}
+.cqphoto4 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/cq_equipment2.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	float: left;
+	position: relative;	
+	border-radius: 6px;	
+}
+
+.foto_note{
+	display:none;
+	position: absolute;	
+	width: 274px;
+	height: 30px;
+	background-color: black;
+	opacity: 0.7;
+	z-index: 1;
+	left:50%;
+	margin-left:-137px;
+	bottom: 20px;
+	font-size: 10px;
+	color:#fff;
+	text-align: center;
+	line-height: 30px;
+}
+
+/*正元精选*/
+.collection {
+	background-color: #fff;
+	width: 1220px;
+	height: 860px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+	list-style-type: none;
+	overflow: hidden;
+}
+.collection .first {
+	width: 608px;
+	height: 400px;
+	background: url(../img/collection.jpg) no-repeat;
+	background-position: center center;
+	background-size: 610px 350px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	float: left;
+}
+.collection .later1 {
+	width: 304px;
+	height: 400px;
+	background: url(../img/5KGS.jpg) no-repeat;
+	background-position: top center;
+	background-size: 200px 267px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	float: left;
+	position:relative;
+}
+.collection .later2 {
+	width: 304px;
+	height: 400px;
+	background: url(../img/5KGS_FIR.jpg) no-repeat;
+	background-position: top center;
+	background-size: 200px 267px;
+	border-bottom: 1px #dbdbdb solid;
+	float: left;
+position:relative;	
+}
+.collection .later3 {
+	width: 303px;
+	height: 400px;
+	background: url(../img/1KGS-GIV.jpg) no-repeat;
+	background-position: top center;
+	background-size: 200px 267px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+position:relative;	
+}
+.collection .later4 {
+	width: 304px;
+	height: 400px;
+	background: url(../img/bergamot-capua.jpg) no-repeat;
+	background-position: top center;
+	background-size: 200px 267px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+position:relative;	
+}
+.collection .later5 {
+	width: 304px;
+	height: 400px;
+	background: url(../img/5KGS-FIR2.jpg) no-repeat;
+	background-position: top center;
+	background-size: 200px 267px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+position:relative;	
+}
+.collection .later6 {
+	width: 304px;
+	height: 400px;
+	background: url(../img/1KGS-FIR.jpg) no-repeat;
+	background-position: top center;
+	background-size: 200px 267px;
+	float: left;
+position:relative;	
+}
+/*上海正元照片*/
+.photo {
+	background-color: #fff;
+	width: 1220px;
+	height: 201px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+	list-style-type: none;
+/*	overflow: hidden;*/
+}
+.photo .photo1 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/sh_gate.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;	
+	border-radius: 6px;
+}
+
+.photo .photo2 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/sh_lab.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+		position: relative;	
+	border-radius: 6px;
+}
+.photo .photo3 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/sh_rack.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;	
+	border-radius: 6px;
+}
+.photo .photo4 {
+	width: 303px;
+	height: 200px;
+	background: url(../img/zoteq/sh_veranda.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: none;
+	float: left;
+	position: relative;	
+	border-radius: 6px;
+}
+/*实时报价*/
+.quotation {
+	background-color: #fff;
+	width: 1220px;
+	height: 600px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+    margin-top: -1px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;	
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;		
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.quotation2 {
+	background-color: #fff;
+	width: 1220px;
+	height: 60px;
+	border: 1px #dbdbdb solid;
+	margin: 0px auto;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;	
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	list-style-type: none;
+	overflow: hidden;    
+	font-size: 16px;
+	line-height: 60px;
+	color: #454545;
+}
+
+.quotation2 .title{
+	position:relative;
+	padding-left:30px;
+}
+.quotation2 .title .changing{
+	position:absolute;
+	width:100px;
+	height:30px;
+	top:0px;	
+	text-align: right;
+	right:25px;
+	
+/*	border:1px solid violet;*/
+}
+
+.quote1, .quote2, .quote3, .quote4 {	
+	background: url(../img/border_quotation.jpg) no-repeat;
+	background-position: left top;
+	background-size: 304px 200px;		
+	position:relative;
+}
+.quotation .quote1 {
+	width: 304px;
+	height: 200px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	float: left;
+}
+.quotation .quote2 {
+	width: 304px;
+	height: 200px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	float: left;
+}
+.quotation .quote3 {
+	width: 304px;
+	height: 200px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	float: left;
+}
+.quotation .quote4 {
+	width: 304px;
+	height: 200px;
+	border-bottom: 1px #dbdbdb solid;
+	float: left;
+}
+.quotation .logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	top:18px;
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+}
+/*产品名设置*/
+.quote1 .cname, .quote2 .cname, .quote3 .cname, .quote4 .cname {
+	font-size: 14px;
+	color: #454545;
+	text-align: center;
+	margin-top:60px;
+	line-height: 25px;
+
+/*	border-bottom: 1px rgba(100,155,28,0.5) solid;*/
+}
+
+/*设定英文名称*/
+.quote1 .name, .quote2 .name, .quote3 .name, .quote4 .name {
+	font-size: 12px;
+	color: #656565;
+	margin-top:10px;
+	inline-height: 25px;
+	text-align: center;
+}
+/*设定价格*/
+.quote1 .prix, .quote2 .prix, .quote3 .prix, .quote4 .prix {
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 25px;
+	color: #9B1C55;
+	inline-height: 25px;
+	text-align:center;
+}
+/*国别格式*/
+.nation {
+	font-weight: normal;
+}
+
+/*设定点击详情*/
+.btn_box {
+	height:35px;width:100%;
+	margin:50px auto;
+	/*border:1px blue solid;*/
+	position:absolute;
+	top:90px;
+	text-align: center;
+	display:none;
+
+	
+}
+
+.quote1 .more, .quote2 .more, .quote3 .more, .quote4 .more,
+.quote1 .sample, .quote2 .sample, .quote3 .sample, .quote4 .sample,
+.quote1 .buy, .quote2 .buy, .quote3 .buy, .quote4 .buy
+{
+	text-align: center;
+	border: 1px #649B1C solid;
+	background-color: #649B1C;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 2px;
+	font-size: 10px;
+	color: #fff;
+	display:inline-block;
+}
+
+.quote1 .sample, .quote2 .sample, .quote3 .sample, .quote4 .sample, 
+.quote1 .buy,.quote2 .buy,.quote3 .buy,.quote4 .buy {
+	border: 1px #649B1C solid;	
+	background-color: #fff;	
+	color:#649B1C;	
+	top:70px;	
+}
+
+.quote1 .buy, .quote2 .buy, .quote3 .buy, .quote4 .buy {
+	top:90px;		
+}
+
+
+.quote1 a, .quote2 a, .quote3 a, .quote4 a {
+	text-decoration: none;
+	
+}
+.quote1 .more:hover, .quote2 .more:hover, .quote3 .more:hover, .quote4 .more:hover,
+.quote1 .sample:hover, .quote2 .sample:hover, .quote3 .sample:hover, .quote4 .sample:hover,
+.quote1 .buy:hover, .quote2 .buy:hover, .quote3 .buy:hover, .quote4 .buy:hover
+{
+	background-color: #454545;
+	color:#fff;
+}
+/*友商链接设定*/
+.links {
+	background-color: #fff;
+	width: 1220px;
+	height: 461px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto 0px auto;
+	border-radius: 6px;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.links .link1 {
+	width: 304px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	background: url(../img/card/card_capua.jpg) no-repeat;
+
+}
+.links .link2 {
+	width: 304px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	background: url(../img/card/card_charabot.jpg) no-repeat;}
+	
+.links .link3 {
+	width: 304px;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	background: url(../img/card/card_drt.jpg) no-repeat;
+}
+
+.links .link4 {
+	width: 304px;
+	border-bottom: 1px #dbdbdb solid;
+	background: url(../img/card/card_frutarom.jpg) no-repeat;
+}
+
+.links .link5 {
+	width: 304px;
+	border-right: 1px #dbdbdb solid;
+	background: url(../img/card/card_indesso.jpg) no-repeat;
+}
+
+.links .link6 {
+	width: 304px;
+	border-right: 1px #dbdbdb solid;
+	background: url(../img/card/card_kao.jpg) no-repeat;
+}
+
+.links .link7 {
+	width: 304px;
+	border-right: 1px #dbdbdb solid;
+	background: url(../img/card/card_xinrui.jpg) no-repeat;
+}
+
+.links .link8 {
+	width: 304px;
+	background: url(../img/card/card_zeon.jpg) no-repeat;
+}
+
+.links .link1, .links .link2, .links .link3, .links .link4, .links .link5, .links .link6, .links .link7, .links .link8 {
+	
+	height: 200px;
+	background-position: top center;
+	background-size: 304px 200px;
+	float: left;	
+	position:relative;
+	box-sizing: border-box;
+	
+}
+
+
+.links .inner {
+	width: 284px;
+	height: 100px;
+	margin: 100px 10px 0px 10px;
+/*	border-top: 1px rgba(100,155,28,0.5) solid;*/
+}
+.links .cname {
+	font-size: 14px;
+	color: #454545;
+	text-align: center;
+}
+.links .name {
+	font-size: 12px;
+	color: #656565;
+	text-align: center;
+}
+.links .comment {
+	font-size: 12px;
+	color: #656565;
+	text-align: center;
+
+}
+
+.links .card_color {
+	width:100%; height:100%;
+	position: absolute;
+	left:0px; top:0px;
+	display:none;	
+	overflow: hidden;
+	z-index: 1;
+}
+/*其它照片区*/
+.otherphoto {
+	background-color: #fff;
+	width: 1220px;
+	height: 201px;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+	list-style-type: none;
+/*	overflow: hidden;*/
+}
+.otherphoto .otherphoto1 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/photo_120a.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;		
+		border-radius: 6px;
+}
+.otherphoto .otherphoto2 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/photo_firb.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;		
+		border-radius: 6px;
+}
+.otherphoto .otherphoto3 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/photo_givb.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right: 1px #dbdbdb solid;
+	float: left;
+	position: relative;
+		border-radius: 6px;
+}
+.otherphoto .otherphoto4 {
+	width: 304px;
+	height: 200px;
+	background: url(../img/zoteq/photo_forklift.jpg) no-repeat;
+	background-position: center center;
+	background-size: 304px 200px;
+	border-right:none;
+	float: left;
+	position: relative;	
+		border-radius: 6px;
+}
+/*尾部*/
+
+
+
+.foot_frame {
+	
+	width:100%;
+		height:350px;
+		margin-top: 35px;
+/*	border: 1px blue solid;*/
+}
+
+.footer {
+	width: 100%;
+	height: 100%;
+
+}
+
+.foot_back {
+    margin-top:35px;
+    width:100%;
+    height:100%;
+    background-color:#fafafa;
+}
+.foot_inner {
+	width: 1220px;
+	height: 100%;
+	margin: 0px auto;
+	list-style-type: none;
+}
+.foot_header {
+	width: 100%;
+	height: 80px;
+	float: left;
+}
+.foot .foot_bottom {
+	width: 100%;
+	height: 70px;
+	float: left;
+	padding-top: 10px;
+	border-top: 1px #dbdbdb solid;
+}
+.foot_bottom p {
+	font-size: 12px;
+	color: #454545;
+}
+.foot1, .foot2, .foot3, .foot4 {
+	width: 304px;
+	height: 200px;
+	float: left;
+}
+.foot1 div, .foot2 div, .foot3 div {
+	display: inline-block;
+	width: 120px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #656565;
+	float: left;
+	padding-left: 30px;
+}
+.foot1 p, .foot2 p, .foot3 p {
+	font-size: 14px;
+	color: #454545;
+	margin-bottom: 15px;
+	padding-left: 30px;
+}
+.foot3 div {
+	width: 300px;
+}
+.foot4 {
+	border: none;
+}
+.foot4 .qr {
+	width: 152px;
+	height: 152px;
+	margin: 0px auto;
+	border: 1px #dbdbdb solid;
+	background: url(../img/QR_code.png) no-repeat;
+	background-position: center center;
+	background-size: 150px 150px;
+}
+.foot4 p {
+	padding-top: 10px;
+	font-size: 12px;
+	color: #454545;
+	text-align: center;
+}

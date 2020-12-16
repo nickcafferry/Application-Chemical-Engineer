@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{marin:0px; padding:0px;	font-family: Verdana, Arial, "Î¢ÈíÑÅºÚ";}
+body {background-color: #fafafa;}
+
+.header_subw {
+	
+	height: 50px;
+/*	border: 1px blue solid;*/
+	margin: 0 auto;
+	position: relative;
+	
+}
+.header_subw a {
+	/*float: center;*/
+	text-align: center;
+	width: 80px;
+	line-height: 50px;
+	font-size: 12px;
+	color: #656565;
+	font-weight: normal;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.header_subw a:hover {
+	color: #649B1C;
+}
