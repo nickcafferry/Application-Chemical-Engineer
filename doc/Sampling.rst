@@ -36,3 +36,16 @@ SPME(Solid-Phase MicroExtraction)
 3. 定时拆分帮助文档；
 4. 手段积分：Alt+T+T+M；
 5. 修正面积误差 1%-2%。
+
+Direct Extraction
+--------------------
+
+If time is limited, you can use the direct extraction. Simply use 10g a mixture of pentane and dichloromethane with ratio of 1:1 as solvent to dissolve the product, and then use
+a glass flask as a container (do not use a plastic one since dichloromethane is a strong solvent and it might dissolve the polymer part of a plastic flask).
+
+Manual Sampling
+-----------------
+
+Carefully take off the metal needle from the injector and then absorb 2ul detergents to wash up the needle about 10 times (try not to bend down the needle). Then absorb 1ul detergents and pull out the needle of the vesper, absorb some air and inject the needle into the vesper again and absorb 1ul detergents and push out the liquid immediately. 
+Next, moist the needle with the extractant. 
+
