@@ -49,3 +49,7 @@ Manual Sampling
 Carefully take off the metal needle from the injector and then absorb 2ul detergents to wash up the needle about 10 times (try not to bend down the needle). Then absorb 1ul detergents and pull out the needle of the vesper, absorb some air and inject the needle into the vesper again and absorb 1ul detergents and push out the liquid immediately. 
 Next, moist the needle with the extractant. 
 
+Tne Quantity of Rejection
+--------------------------
+
+For highly concentrated solution, you only need to drop down 0.5 ul liquid into the little container and select the method 602280 for rejection. For solutions with low concentration, you need to drop down 1 ul liquid into the little container and select the method 6022801 for rejection, in which 1 stands for 1 ul. As to split ration, just choose the right one.
