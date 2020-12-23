@@ -5,7 +5,7 @@ Sampling
 定容样品(自动液体进样)
 ------------
 
-0.1g正己醇+4g酒+1g样品，并标好标签(标签可于 :download:`Chemical Analytic Project <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/ChemAnalysisProject.xlsx>` 中找到), 原样品和分析样品都要写上项目编码。
+0.1g正己醇+4g酒精+1g样品，并标好标签(标签可于 :download:`Chemical Analytic Project <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/ChemAnalysisProject.xlsx>` 中找到), 原样品和分析样品都要写上项目编码。
 
 .. code:: python
    
