@@ -3,6 +3,7 @@
 import urllib.request as ur
 import os
 import time
+from urllib import request, parse
 
 f = open("FA13008.csv", encoding="utf-8")
 lenofcont = len(f.readlines())
@@ -32,7 +33,7 @@ CAS_List = []
 for item in FAList:
 	CAS_List.append(item[0]['CAS编号'])
 print(CAS_List)	
-header = {
+headers = {
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
 }
 
@@ -42,28 +43,13 @@ for item in CAS_List:
 	html_list.append(html)
 
 opfile = open("output.csv",'w',encoding='utf-8')
-req = ur.Request(url=html_list[0], headers=header, method='POST')
+req = ur.Request(url=html_list[0], headers=headers, method='POST')
 leaders = ur.urlopen(req).readline().decode('utf-8')
 opfile.write(leaders)
 print("Initialing", end='')
 time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='')
-time.sleep(1)
-print('.',end='\n')
+print('.........',end='\n')
+
 
 
 #leaders = leaders.split(',')
@@ -73,7 +59,7 @@ print('.',end='\n')
 i=0
 for everyhtml in html_list:
 	try:
-		req = ur.Request(url=everyhtml, headers=header, method='POST')
+		req = ur.Request(url=everyhtml, headers=headers, method='POST')
 		response = ur.urlopen(req)
 		if response.getcode() == "404":
 			opfile.write('html page does not exist!\n')
@@ -81,7 +67,7 @@ for everyhtml in html_list:
 			response.readline().decode('utf-8')
 			content=response.readline().decode('utf-8')
 			opfile.write(content)
-		time.sleep(10)
+			time.sleep(10)
 	except:
 		opfile.write("HTTP Error!\n")
 	i += 1
