@@ -1,0 +1,64 @@
+name: FA13008
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: running FA13008
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: running chemname2cid
+      run: |
+         git config --global user.email "ucecwme@ucl.ac.uk"
+         git config --global user.name "nickcafferry"
+         git init
+         echo "Initializing the program....................."
+         
+         echo "---------------------------------------------"
+         cd ../
+         mkdir output
+         echo "output file already created!"
+         
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    
+    - name: running .py file
+      run: |
+         echo "---------------------------------------------"
+         cd doc/
+         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/doc/"
+         pip3 install --upgrade pip
+         pip3 install wheel
+         python3.8 -m pip install -U pymupdf
+         python3.8 FA13008.py
+         ls
+
+         echo "recording information already unpacked!"
+         echo "Show the path of this file:"
+         pwd
+         echo "---------------------------------------------"
+         
+         echo "transporting new outputs to artifacts..."
+         cp output.csv /home/runner/work/Fechii-Application-Chemical-Engineer/output/
+                
+         cd /home/runner/work/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/
+         git push origin master
+        
+         echo "checking the artifacts..."
+         cd /home/runner/work/Fechii-Application-Chemical-Engineer/output/
+         ls
+         pwd
+         
+    - uses: actions/upload-artifact@v2
+      with:
+        name: output results
+        path: /home/runner/work/Fechii-Application-Chemical-Engineer/output/ 
