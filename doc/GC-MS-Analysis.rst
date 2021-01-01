@@ -32,3 +32,6 @@ GCMS 原料分析
 ---------------
 
 要单独用表格记录原料分析， 将待测原料用酒精进行稀释5%，然后使用602280方法(浓度较高)，取0.5ml进行进样，注意用PC编号和中文名字进行命名进样。
+
+`GCMS FA13008 <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_
+------------------
