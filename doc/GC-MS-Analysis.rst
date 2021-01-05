@@ -35,3 +35,9 @@ GCMS 原料分析
 
 `GCMS FA13008 <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_
 ------------------
+
+
+`GCMS FA13008 Pure vs SDE <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA1300PurevsSDE.html>`_
+------------------
+
+You can download the source code :download:`FA13008PurevsSDE <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA1300PurevsSDE.html>`
