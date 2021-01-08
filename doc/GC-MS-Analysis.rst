@@ -17,8 +17,6 @@ GC-MS-Analysis
 .. raw:: html
    :file: GC-MS-Analysis-3.html
 
-.. raw:: html
-   :file: GC-MS-Analysis-4.html
 
 .. raw:: html
    :file: GC-MS-Analysis-5.html
