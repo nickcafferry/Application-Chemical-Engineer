@@ -44,7 +44,7 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/manim"
         make html
         cd build/html
-        echo "www.fechii.com" > CNAME
+        echo "www.fechii-app.com" > CNAME
         
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@master
