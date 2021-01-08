@@ -39,14 +39,14 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
 html_static_path = ['assets']
-html_theme = 'haiku'
-html_logo = 'GCC.svg'
+html_theme = 'agogo'
+html_thhtml_logo = 'GCC.svg'
 html_favicon = 'GCC.svg'
 html_theme_options = {
-    'logo_only': False,
-    'style_nav_header_background': '#343131',
+    'footerbg ': '#FFFF93',
+    'headerbg': '#FF2D2D',
 }
 html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
-   'using/windows': ['windowssidebar.html', 'searchbox.html'],
+   'using/windows': ['windowssidebar.html', 'searchbox.html','playground.html'],
 }
