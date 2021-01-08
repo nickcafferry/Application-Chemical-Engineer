@@ -43,7 +43,7 @@ html_theme = 'agogo'
 html_logo = 'GCC.svg'
 html_favicon = 'GCC.svg'
 html_theme_options = {
-    'footerbg ': '#FFFF93',
+    'footerbg': '#FFFF93',
    'headerbg': '#FF2D2D',
 }
 html_sidebars = {
