@@ -39,12 +39,16 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
 html_static_path = ['assets']
-html_theme = 'agogo'
-html_thhtml_logo = 'GCC.svg'
+html_theme = 'haiku'
+html_logo = 'GCC.svg'
 html_favicon = 'GCC.svg'
 html_theme_options = {
-    'footerbg ': '#FFFF93',
-    'headerbg': '#FF2D2D',
+    'linkcolor': "red",
+    "external_links": [
+        {"url": "https://psspred.readthedocs.io/en/latest/README.html?badge=latest", "name": "PSSpred"}
+    ],
+    "github_url": "https://github.com/nickcafferry/PSSpred",
+
 }
 html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
