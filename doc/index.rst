@@ -99,7 +99,9 @@ VirtualBox can be downloaded `here <https://www.virtualbox.org/wiki/Downloads>`_
    
    >>> m/z 30, 44, 58 ----------> (Amines: 胺类) 代表物：`尸胺 Cadaverine <https://pubchem.ncbi.nlm.nih.gov/compound/273>`
    
-   >>> m/z 31,45, 59 -----------> (Alcohols or ethers) 代表物：`alpha 松油醇 alpha-TERPINEOL <https://pubchem.ncbi.nlm.nih.gov/compound/17100>`; 代表物：`甲基叔戊基醚 Tert-Amyl methyl ether <https://pubchem.ncbi.nlm.nih.gov/compound/61247>`
+   >>> m/z 31,45, 59 -----------> (Alcohols or ethers) 代表物：`alpha 松油醇 alpha-TERPINEOL <https://pubchem.ncbi.nlm.nih.gov/compound/17100>`;
+   
+   代表物：`甲基叔戊基醚 Tert-Amyl methyl ether <https://pubchem.ncbi.nlm.nih.gov/compound/61247>`
    
    >>> m/z 39, 50, 51, 52, 63, 65, 76, 77, 91 --------------> (Aromatic hydrocarbons) 代表物：`六甲基苯 Hexamethylbenzene <https://pubchem.ncbi.nlm.nih.gov/compound/6908>`
    
