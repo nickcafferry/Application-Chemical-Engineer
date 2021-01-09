@@ -71,6 +71,8 @@ d. 报告的打印.
    
    4. 新柱子安装时无方向性，但一旦使用过，再不要改变方向。
    
+   5. Pay attention to the helium tank when the pointer gets to the last one. Alarm the manager so that the helium gas can arrive on time and replace it.
+   
    保存柱子时注意将两端密封好，避免水和空气破环柱子内涂层。
 
 You can download :download:`A Quick Guide to Agilent 7890A Gas Chromatograhphy <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/Agilent-7890A-GC-A-Quick-Guide.pdf>` here.
