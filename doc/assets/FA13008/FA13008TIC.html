@@ -111,7 +111,7 @@ option = {
         },
         {
             gridIndex: 1,
-            name: '沐浴露18006SPME',
+            name: '沐浴露SPME',
 			min: 0,
             max: 12000000,
             type: 'value',
@@ -182,13 +182,13 @@ option = {
                     {name: 'Vanillin', value: -2.00, xAxis: 39.044, yAxis: 5995, label: {show: true, formatter: 'Vanillin'},itemStyle:{normal:{color:colors[0]}}},
 					{name: 'Heliotropin', value: -0.01, xAxis: 34.834, yAxis: 136136, label: {show: true, formatter: 'Heliotropin'},itemStyle:{normal:{color:colors[0]}}},
 					{name: 'Ethyl Maltol', value: -0.68, xAxis: 26.683, yAxis: 13587, label: {show: true, formatter: 'Ethyl\nMaltol'},itemStyle:{normal:{color:colors[0]}}},
-					{name: 'Methyl Laurate', xAxis: 48.704, yAxis: 1700462, label: {show: true, formatter: 'Methyl\nLaurate'},itemStyle:{normal:{color:colors[1]}}},
-					{name: 'Ethylene Glycol Monododecyl Ether', xAxis: 59.425, yAxis: 820343, label: {show: true, formatter: 'Ethylene\nGlycol\nMonododecyl\nEther'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Methyl Dodelate', xAxis: 48.704, yAxis: 1700462, label: {show: true, formatter: 'Methyl\noctanoate'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Dodecyloxy-ethanol', xAxis: 59.425, yAxis: 820343, label: {show: true, formatter: 'Dodecyloxy\nethanol'},itemStyle:{normal:{color:colors[1]}}},
 					{name: 'Lyral', xAxis: 55.427, yAxis: 51515, label: {show: true, formatter: 'Lyral'},itemStyle:{normal:{color:colors[0]}}},
-					{name: 'Methyl Octanoate', xAxis: 23.016, yAxis: 423802, label: {show: true, formatter: 'Methyl\nOctanoate'},itemStyle:{normal:{color:colors[1]}}},
-					{name: 'Cinnamyl alcohol', xAxis: 33.818, yAxis: 63988, label: {show: true, formatter: 'Cinnamyl\nAlcohol'},itemStyle:{normal:{color:colors[0]}}},
-					{name: 'Methyl Caprate', xAxis: 36.236, yAxis: 264486, label: {show: true, formatter: 'Methyl\nCaprate'},itemStyle:{normal:{color:colors[1]}}},
-					{name: '3-Dodecanol', xAxis: 41.382, yAxis: 507676, label: {show: true, formatter: '3-Dodecanol'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Methyl Laurate', xAxis: 23.016, yAxis: 423802, label: {show: true, formatter: 'Methyl\nlaurate'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Cinnamyl alcohol', xAxis: 33.818, yAxis: 63988, label: {show: true, formatter: 'Cinnamyl\nalcohol'},itemStyle:{normal:{color:colors[0]}}},
+					{name: 'Methyl decanoate', xAxis: 36.236, yAxis: 264486, label: {show: true, formatter: 'Methyl\ncaprate'},itemStyle:{normal:{color:colors[1]}}},
+					{name: '2-Dodecanol', xAxis: 41.382, yAxis: 507676, label: {show: true, formatter: '2-Dodecanol'},itemStyle:{normal:{color:colors[1]}}},
 					{name: 'Ethyl Vanillin', xAxis: 42.648, yAxis: 5878, label: {show: true, formatter: 'Ethyl\nVanillin'},itemStyle:{normal:{color:colors[0]}}},
 					{name: 'alpha-Terpineol', xAxis: 27.264, yAxis: 1230030, label: {show: true, formatter: 'alpha-Terpineol'},itemStyle:{normal:{color:colors[1]}}}
                 ]
@@ -227,12 +227,19 @@ option = {
             ],
 			markPoint: {
                 data: [
-					{name: 'Methyl Laurate', xAxis: 48.704, yAxis: 1700462, label: {show: true, formatter: 'Methyl\nLaurate'},itemStyle:{normal:{color:colors[1]}}},
-					{name: 'Methyl Octanoate', xAxis: 23.09, yAxis: 1522666, label: {show: true, formatter: 'Methyl\nOctanoate'},itemStyle:{normal:{color:colors[1]}}},
-					{name: 'Methyl Caprate', xAxis: 36.269, yAxis: 1580021, label: {show: true, formatter: 'Methyl\nCaprate'},itemStyle:{normal:{color:colors[1]}}},
-					{name: '3-Dodecanol', xAxis: 41.387, yAxis: 1024872, label: {show: true, formatter: '3-Dodecanol'},itemStyle:{normal:{color:colors[1]}}}
-                ],
-				symbolRotate: 180,
+                    {name: 'Vanillin', value: -2.00, xAxis: 39.044, yAxis: 5995, label: {show: true, formatter: 'Vanillin'},itemStyle:{normal:{color:colors[0]}}},
+					{name: 'Heliotropin', value: -0.01, xAxis: 34.834, yAxis: 136136, label: {show: true, formatter: 'Heliotropin'},itemStyle:{normal:{color:colors[0]}}},
+					{name: 'Ethyl Maltol', value: -0.68, xAxis: 26.683, yAxis: 13587, label: {show: true, formatter: 'Ethyl\nMaltol'},itemStyle:{normal:{color:colors[0]}}},
+					{name: 'Methyl Dodelate', xAxis: 48.704, yAxis: 1700462, label: {show: true, formatter: 'Methyl\noctanoate'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Dodecyloxy-ethanol', xAxis: 59.425, yAxis: 820343, label: {show: true, formatter: 'Dodecyloxy\nethanol'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Lyral', xAxis: 55.427, yAxis: 51515, label: {show: true, formatter: 'Lyral'},itemStyle:{normal:{color:colors[0]}}},
+					{name: 'Methyl Laurate', xAxis: 23.016, yAxis: 423802, label: {show: true, formatter: 'Methyl\nlaurate'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Cinnamyl alcohol', xAxis: 33.818, yAxis: 63988, label: {show: true, formatter: 'Cinnamyl\nalcohol'},itemStyle:{normal:{color:colors[0]}}},
+					{name: 'Methyl decanoate', xAxis: 36.236, yAxis: 264486, label: {show: true, formatter: 'Methyl\ncaprate'},itemStyle:{normal:{color:colors[1]}}},
+					{name: '2-Dodecanol', xAxis: 41.382, yAxis: 507676, label: {show: true, formatter: '2-Dodecanol'},itemStyle:{normal:{color:colors[1]}}},
+					{name: 'Ethyl Vanillin', xAxis: 42.648, yAxis: 5878, label: {show: true, formatter: 'Ethyl\nVanillin'},itemStyle:{normal:{color:colors[0]}}},
+					{name: 'alpha-Terpineol', xAxis: 27.264, yAxis: 1230030, label: {show: true, formatter: 'alpha-Terpineol'},itemStyle:{normal:{color:colors[1]}}}
+                ]
             },
 			itemStyle: {
                     normal: {
