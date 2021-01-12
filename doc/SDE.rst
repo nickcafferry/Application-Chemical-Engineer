@@ -50,3 +50,12 @@ Properties
   :file: latent-of-heat.html
 
 If the volume of extractant is smaller than 1 ml or 0.5 ml, you can use the pentane or dichlormethane to increase the volume of the extractant and then concentrate it either by air dry or by rotating vapourisation techiques. 
+
+
+SDE vs SPME
+------------
+
+1. SPME was more efficient in extracting low molecular weight and high volatility compounds;
+2. SDE was able to extract compounds with low volatilities that were not extracted using SPME;
+3. the ratio between some compounds from lipid oxidation and those from degradation of amino acids was much lower in SDE extracts than with SPME, which could be a consequence of the development of Strecker degradation of amino acids during distillation in SDE owing to the high temperatures used;
+4. Similarly, diunsaturated aldehydes detected in SDE extracts were absent using SPME, probably owing to oxidation of polyunsaturated fatty acids in SDE as a consequence of the temperature during extraction;
