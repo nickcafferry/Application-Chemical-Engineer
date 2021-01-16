@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/echarts.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@1/dist/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@1/dist/ecStat.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/map/js/china.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/map/js/world.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/extension/bmap.min.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom, 'dark');
+var app = {};
+option = null;
+var posList = [
+    'left', 'right', 'top', 'bottom',
+    'inside',
+    'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+    'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+];
+
+app.configParameters = {
+    rotate: {
+        min: -90,
+        max: 90
+    },
+    align: {
+        options: {
+            left: 'left',
+            center: 'center',
+            right: 'right'
+        }
+    },
+    verticalAlign: {
+        options: {
+            top: 'top',
+            middle: 'middle',
+            bottom: 'bottom'
+        }
+    },
+    position: {
+        options: echarts.util.reduce(posList, function (map, pos) {
+            map[pos] = pos;
+            return map;
+        }, {})
+    },
+    distance: {
+        min: 0,
+        max: 100
+    }
+};
+
+app.config = {
+    rotate: 90,
+    align: 'left',
+    verticalAlign: 'middle',
+    position: 'insideBottom',
+    distance: 15,
+    onChange: function () {
+        var labelOption = {
+            normal: {
+                rotate: app.config.rotate,
+                align: app.config.align,
+                verticalAlign: app.config.verticalAlign,
+                position: app.config.position,
+                distance: app.config.distance
+            }
+        };
+        myChart.setOption({
+            series: [{
+                label: labelOption
+            }, {
+                label: labelOption
+            }, {
+                label: labelOption
+            }, {
+                label: labelOption
+            }]
+        });
+    }
+};
+
+
+var labelOption = {
+    show: false,
+    position: app.config.position,
+    distance: app.config.distance,
+    align: app.config.align,
+    verticalAlign: app.config.verticalAlign,
+    rotate: app.config.rotate,
+    formatter: '{name|{a}}: {c}',
+    fontSize: 10,
+    rich: {
+        name: {
+<!--            textBorderColor: '#ffff00' -->
+        }
+    }
+};
+
+option = {
+    color: ['#00FF00', '#FFFF00', '#4cabce', '#e5323e'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['蒸气压', '摩尔分数', '理论占压', '理论摩尔占比']
+    },
+    toolbox: {
+        show: true,
+        orient: 'vertical',
+        left: 'right',
+        top: 'center',
+        feature: {
+            mark: {show: true},
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+            restore: {show: true},
+            saveAsImage: {show: true},
+            dataZoom: {
+                yAxisIndex: 'none'
+            },
+        }
+    },
+    dataZoom: [
+        {
+            type: 'slider',
+            show: true,
+            xAxisIndex: [0],
+            start: 20,
+            end: 40
+        },
+        {
+            type: 'slider',
+            show: true,
+            yAxisIndex: [0],
+            left: '93%',
+            start: 0,
+            end: 5
+        },
+        {
+            type: 'inside',
+            xAxisIndex: [0],
+            start: 1,
+            end: 62
+        },
+        {
+            type: 'inside',
+			show: true,
+            yAxisIndex: [3],
+            start: 0,
+            end: 0.5
+        }
+    ],
+    xAxis: [
+        {
+            type: 'category',
+            axisTick: {show: true},
+            data: [
+'乙基香兰素（粉末）','卡拉花醛','新铃兰醛','柳酸苄酯/2-羟基苯甲酸苯甲基酯','帝王龙涎 (10%)','乙酸柏木酯','黄葵内酯','大马烯酮','乙基麦芽酚','丙位十一内酯 C14(桃醛)','香兰素（粉末）','乙酸苯乙酯/2-苯基乙酸乙酯','檀香210','王朝酮原液','开司米酮（固体）','异甲基紫罗兰酮','丁香酚/4-烯丙基愈疮木酚','洋茉莉醛香基(50%BB)','丙位癸内酯（食品级）','丁酸二甲基苄基原酯/二甲基苄基原醇丁酯','柳酸己酯/水杨酸己酯','丁酸二甲基苄基原酯/二甲基苄基原醇丁酯','龙涎木香','甲位己基桂醛','吲哚(进口)（粉末）','花青醛','龙涎醚 DL（固体）','柳酸叶醇酯/(Z)-2-羟基苯甲酸-3-己烯酯','凡路酮','龙涎酮','乙酸香叶酯/2-6-二甲基2-6-辛二烯-8醇醋酸酯','左旋香芹酮','羟基香草醛/羟醛（进口）','新洋茉莉醛','异丁酸苯氧乙酯/2-甲基丙酸苯氧乙酯 ','乙酸邻叔丁基环己酯','乙酸苏合香酯','波洁红醛','佳乐麝香原液（稠液）','甲基柏木醚','抗氧化剂','桂醇','叶醇','玫瑰醚','白花醇','乙酸二甲基苄基原酯/α-α-二甲基苯乙醇乙酸酯 ','二氢茉莉酮酸甲酯（进口）','乙基芳樟醇','麝香烯酮','广藿香油（浅）','香叶醇600','梨醇酯/3-甲基-2-丁烯-1-醇乙酸酯','乙酸苄酯 /醋酸苯甲酯','艾薇醛','苯乙醇','合成芳樟醇','乙酸芳樟酯/3-7-二甲基-1-6辛二烯-3-醇乙酸酯','二丙二醇(DPG)','苯乙二甲缩醛','阿根廷柠檬油','麝香T','甜橙油萜(无色)'			
+			]
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '蒸气压',
+            min: 0,
+            max: 4,
+            position: 'right',
+            axisLine: {
+                lineStyle: {
+                    color: '#00FF00'
+                }
+            },
+            axisLabel: {
+                formatter: '{value} mmHg',
+				color: '#00FF00'
+            },
+			nameTextStyle: {color: '#00FF00'} 
+        },
+        {
+            type: 'value',
+            name: '摩尔分数',
+            min: 0,
+            max: 0.3,
+            position: 'left',
+            axisLine: {
+                lineStyle: {
+                    color: '#FFFF00'
+                }
+            },
+            axisLabel: {
+                formatter: '{value} ',
+				color: '#FFFF00'
+            },
+			nameTextStyle: {color: '#FFFF00'} 
+        },
+        {
+            type: 'value',
+            name: '理论占压',
+            min: 0,
+            max: 0.01,
+            position: 'right',
+            offset: 80,
+            axisLine: {
+                lineStyle: {
+                    color: '#4cabce'
+                }
+            },
+            axisLabel: {
+                formatter: '{value}',
+				color: '#4cabce'
+            },
+			nameTextStyle: {color: '#4cabce'} 
+        },
+        {
+            type: 'value',
+            name: '理论摩尔占比',
+            min: 0,
+            max: 0.4,
+            position: 'left',
+            offset: 80,
+            axisLine: {
+                lineStyle: {
+                    color: '#e5323e'
+                }
+            },
+            axisLabel: {
+                formatter: '{value}',
+				color: '#e5323e'
+            },
+			nameTextStyle: {color: '#e5323e'}
+        }
+    ],
+    series: [
+        {
+            name: '蒸气压',
+            type: 'bar',
+            barGap: 0,
+            label: labelOption,
+            data: [
+0.0000104,0.00033,0.000029,0.000078,0.002,0.002,0.000158,0.02,0.00022,0.003,0.000118,0.03,0.001,0.008,0.003,0.003,0.01,0.003,0.00512,0.002,0.004,0.002,0.001,0.001,0.0122,0.021,0.009,0.001,0.026,0.000491,0.0221,0.1,0.003,0.003,0.006,0.103,0.203,0.009,0.000545,0.013,0.00516,0.012,0.94,0.551,0.006,0.05,0.001,0.005,0.1,0.018,0.03,3.987,0.177,0.578,0.0868,0.159,0.111,0.00628,0.556,1.98,0.2,1.98]},
+			{
+            name: '摩尔分数',
+            type: 'bar',
+            label: labelOption,
+            yAxisIndex: 1,
+            data: [
+0.000361076,0.000112613,0.002139699,0.004381353,0.000359195,0.000378215,0.005943183,5.26E-05,0.007135721,0.000542682,0.013802169,6.09E-05,0.001901502,0.00026001,0.000727026,0.000969368,0.000304507,0.001040529,0.000704846,0.001815623,0.001031353,0.002269529,0.004622781,0.004622781,0.000426803,0.000315325,0.000846059,0.007679836,0.000356543,0.022494152,0.00050945,0.000133138,0.004644143,0.004682379,0.00240096,0.000151286,9.14E-05,0.002102165,0.03869984,0.001692119,0.004992058,0.002235969,4.99E-05,9.72E-05,0.009288285,0.001144343,0.05744333,0.011884954,0.000846059,0.005119672,0.003241491,3.90E-05,0.001331824,0.000434122,0.007367387,0.004538088,0.010189006,0.262875457,0.006617736,0.002202158,0.029590176,0.004404316
+			]        },
+        {
+            name: '理论占压',
+            type: 'bar',
+            label: labelOption,
+            yAxisIndex: 2,
+            data: [
+3.76E-09,3.72E-08,6.21E-08,3.42E-07,7.18E-07,7.56E-07,9.39E-07,0.000001052,1.57E-06,1.63E-06,1.63E-06,0.000001827,1.90E-06,2.08E-06,2.18E-06,2.91E-06,3.05E-06,3.12E-06,3.61E-06,3.63E-06,4.13E-06,4.54E-06,4.62E-06,4.62E-06,5.21E-06,6.62E-06,7.61E-06,7.68E-06,9.27E-06,1.10E-05,1.13E-05,1.33E-05,1.39E-05,1.40E-05,1.44E-05,1.56E-05,1.86E-05,1.89E-05,2.11E-05,2.20E-05,2.58E-05,2.68E-05,0.000046906,5.36E-05,5.57E-05,5.72E-05,5.74E-05,5.94E-05,8.46E-05,9.22E-05,9.72E-05,0.000155493,0.000235733,0.000250923,0.000639489,0.000721556,0.00113098,0.001650858,0.003679461,0.004360273,0.005918035,0.008720546
+			]        },
+        {
+            name: '理论摩尔占比',
+            type: 'bar',
+            label: labelOption,
+            yAxisIndex: 3,
+            data: [
+1.32E-07,1.31E-06,2.19E-06,1.20E-05,2.53E-05,2.67E-05,3.31E-05,3.71E-05,5.53E-05,5.74E-05,5.74E-05,6.44E-05,6.70E-05,7.33E-05,7.68E-05,1.02E-04,1.07E-04,1.10E-04,1.27E-04,1.28E-04,1.45E-04,1.60E-04,1.63E-04,1.63E-04,1.83E-04,2.33E-04,2.68E-04,2.71E-04,3.27E-04,3.89E-04,3.97E-04,4.69E-04,4.91E-04,4.95E-04,5.08E-04,5.49E-04,6.54E-04,6.67E-04,7.43E-04,7.75E-04,9.08E-04,9.45E-04,1.65E-03,1.89E-03,1.96E-03,2.02E-03,2.02E-03,2.09E-03,2.98E-03,3.25E-03,3.43E-03,5.48E-03,8.31E-03,8.84E-03,2.25E-02,2.54E-02,3.98E-02,5.82E-02,1.30E-01,1.54E-01,2.09E-01,3.07E-01
+			]        }
+    ]
+};;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>
