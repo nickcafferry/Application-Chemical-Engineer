@@ -35,11 +35,16 @@ GCMS 原料分析
 
 要单独用表格记录原料分析， 将待测原料用酒精进行稀释5%，然后使用602280方法(浓度较高)，取0.5ml进行进样，注意用PC编号和中文名字进行命名进样。
 
-`FA13008 methane TIC <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_
+`FA13008 The First Experiment<https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TheFirstSDE.html>`
+------------------------------
+
+The first experiment of SDE was done and analysed by Tongjia. You can download the source code by clicking this link :download:`The First Experiment <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TheFirstSDE.html>`.
+
+`FA13008 TIC <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_
 ----------------
 
 
-`FA13008 Pentane vs methane  t-butyl methyl mester <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008PentanevsT-butyl-methyl-mester.html>`_
+`FA13008 Pentane vs t-butyl methyl mester <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008PentanevsT-butyl-methyl-mester.html>`_
 --------------------------
 
 `FA13008 t-butyl methyl mester <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008T-butyl-methyl-mesterAirvsRotatingVapor.html>`_
