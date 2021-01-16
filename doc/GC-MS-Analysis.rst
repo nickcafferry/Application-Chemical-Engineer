@@ -38,7 +38,7 @@ GCMS 原料分析
 `FA13008 The First Experiment<https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TheFirstSDE.html>`
 ------------------------------
 
-The first experiment of SDE was done and analysed by Tongjia. You can download the source code by clicking this link :download:`The First Experiment <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TheFirstSDE.html>`.
+The first experiment of SDE was done and analysed by Tongjia. You can download the source code by clicking this link  :download:`The First Experiment <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TheFirstSDE.html>`
 
 `FA13008 TIC <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_
 ----------------
