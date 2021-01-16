@@ -61,7 +61,7 @@ You can download the source code by clicking this link  :download:`FA13008 t-but
 
 You can download the source code by clicking this link  :download:`FA13008 Pure vs SDE <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008PurevsSDE.html>`
 
-`The impact of vapor pressure and mole fraction on the recovery of different components using SDE <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/The_impact_of_vapor_pressure_and_mole_fraction_on_SDE_efficiency.html>`
+`The impact of vapor pressure and mole fraction on the recovery of different components using SDE <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/The_impact_of_vapor_pressure_and_mole_fraction_on_SDE_efficiency.html>`_
 --------------------------------------------------
 
 You can download the source code by clicking this link  :download:`The impact of vapor pressure and mole fraction <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/The_impact_of_vapor_pressure_and_mole_fraction_on_SDE_efficiency.html>`
