@@ -59,4 +59,6 @@ SDE vs SPME
 2. SDE was able to extract compounds with low volatilities that were not extracted using SPME;
 3. the ratio between some compounds from lipid oxidation and those from degradation of amino acids was much lower in SDE extracts than with SPME, which could be a consequence of the development of Strecker degradation of amino acids during distillation in SDE owing to the high temperatures used;
 4. Similarly, diunsaturated aldehydes detected in SDE extracts were absent using SPME, probably owing to oxidation of polyunsaturated fatty acids in SDE as a consequence of the temperature during extraction;
-5. SDE和SPME均无法提取低挥发性的化学组份, 例如FA13008的乙基麦芽酚，香兰素和乙基香兰素均无法用SDE和SPME提取出来，可参见 `FA13008 SDE vs SPME <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_
+5. SDE和SPME均无法提取低挥发性的化学组份, 例如FA13008的乙基麦芽酚，香兰素和乙基香兰素均无法用SDE和SPME提取出来，可参见 `FA13008 SDE vs SPME <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_;
+6. "SDE method is preferred to the analysis of compounds with low volatility including fatty acids and esters. HS-SPME was a useful technique for the analysis of readily voltatile components for the characteristics of R. serra aroma." ---- :strong:`GC/MS analysis of volatiles obtained by headspace solid-phase microextraction and simultaneous–distillation extraction from Rabdosia serra (MAXIM.) HARA leaf and stem`.
+
