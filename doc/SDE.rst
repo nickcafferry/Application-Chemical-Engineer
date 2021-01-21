@@ -62,3 +62,18 @@ SDE vs SPME
 5. SDE和SPME均无法提取低挥发性的化学组份, 例如FA13008的乙基麦芽酚，香兰素和乙基香兰素均无法用SDE和SPME提取出来，可参见 `FA13008 SDE vs SPME <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC.html>`_;
 6. "SDE method is preferred to the analysis of compounds with low volatility including fatty acids and esters. HS-SPME was a useful technique for the analysis of readily voltatile components for the characteristics of R. serra aroma." ---- :strong:`GC/MS analysis of volatiles obtained by headspace solid-phase microextraction and simultaneous–distillation extraction from Rabdosia serra (MAXIM.) HARA leaf and stem`.
 
+
+SDE
+========
+
+This theoretical model allowed the investigation of the influence of the different SDE parameters on recovery. Simulation curves are shown in Figure 12. In agreement with the experiemental optimization of Careri et al., :strong:`the sample and solvent temperatures (i.e., flows of their respective vapours)`, :strong:`the solubility of analytes in the solvent` and :strong:`their volatilities` were important factors. This provides a theoretical justification for some observations made at the beginning of this article:
+
+- The solvent polarity should be a compromise, taking into account the polarity range of solutes: a polar compound will not be satisfactorily extracted, e.g., by pentane.
+
+- Extremely water-soluble compounds (e.g., vanillin, 4-hydroxy-2,5-dimethyl-3(2H)-furanone) have low volatilities and are poorly SDE-isolated.
+
+- As air-to-water partition coefficients are lower under vacuum than at atmospheric pressure, V-SDE may require a longer isolation duration than A-SDE.
+
+The belief that 'mixing of the vapours before condensation should give a more intimate contact of the substances' and could be the key of an efficent extraction is not confirmed by Equation(5). Experimental verification using coumarin rather suggests taht extraction occurs between liquid phases, as its efficency markedly increased by stirring.
+
+                                                                               :strong:`Simultaneous distillation-extraction: from birth to maturity--review`
