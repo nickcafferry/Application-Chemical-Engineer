@@ -70,3 +70,8 @@ You can download the source code by clicking this link  :download:`The impact of
 ----------------------------------------------
 
 由正戊烷萃取出来的FA13008样品，头香保留比较好；而由二氯甲烷萃取出来的FA13008整体性保留比较好，尤其是中段及后段的香味。
+
+`The Four important factors on SDE Efficiency <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/The_Four_Important_Factors.html>`_
+------------------------------------
+
+You can download the source code from here :download:`source code <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/The_Four_Important_Factors.html>`.
