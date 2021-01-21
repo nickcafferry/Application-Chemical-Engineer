@@ -64,7 +64,7 @@ SDE vs SPME
 
 
 SDE
-========
+-----------------------
 
 This theoretical model allowed the investigation of the influence of the different SDE parameters on recovery. Simulation curves are shown in Figure 12. In agreement with the experiemental optimization of Careri et al., :strong:`the sample and solvent temperatures (i.e., flows of their respective vapours)`, :strong:`the solubility of analytes in the solvent` and :strong:`their volatilities` were important factors. This provides a theoretical justification for some observations made at the beginning of this article:
 
@@ -76,4 +76,10 @@ This theoretical model allowed the investigation of the influence of the differe
 
 The belief that 'mixing of the vapours before condensation should give a more intimate contact of the substances' and could be the key of an efficent extraction is not confirmed by Equation(5). Experimental verification using coumarin rather suggests taht extraction occurs between liquid phases, as its efficency markedly increased by stirring.
 
-                                                                              ---- :strong:`Simultaneous distillation-extraction: from birth to maturity--review`
+                                                                                             ---- :strong:`Simultaneous distillation-extraction: from birth to maturity--review`
+
+.. toctree::
+    :maxdepth: 5
+    :caption: SDE CH2Cl2 FA13008
+    
+    SDE_CH2Cl2_FA13008
