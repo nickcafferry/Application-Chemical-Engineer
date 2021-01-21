@@ -76,4 +76,4 @@ This theoretical model allowed the investigation of the influence of the differe
 
 The belief that 'mixing of the vapours before condensation should give a more intimate contact of the substances' and could be the key of an efficent extraction is not confirmed by Equation(5). Experimental verification using coumarin rather suggests taht extraction occurs between liquid phases, as its efficency markedly increased by stirring.
 
-                                                                               :strong:`Simultaneous distillation-extraction: from birth to maturity--review`
+                                                                              ---- :strong:`Simultaneous distillation-extraction: from birth to maturity--review`
