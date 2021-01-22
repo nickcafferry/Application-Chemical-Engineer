@@ -83,3 +83,12 @@ The belief that 'mixing of the vapours before condensation should give a more in
     :caption: SDE CH2Cl2 FA13008
     
     SDE_CH2Cl2_FA13008
+
+Salting-out
+-----------
+
+To decrease the water solubility of volatiles, the addition of salt to the sample flask has been proposed. This seems especially to increase the recovery of polar compounds, such as coumarin or 2-phenylethyl alcohol; however, yields of vanillin and ethyl vanillin remain negligible.
+
+                                                     ----- :strong:`Simultaneous distillation-extraction: from birth to maturity--review`
+                                                     
+
