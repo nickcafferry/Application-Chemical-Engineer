@@ -270,6 +270,8 @@ Fechii Source Materials
    :maxdepth: 5
    :caption: fragance_english
    
+   fragance_english
+   
 .. toctree:: 
    :maxdepth: 5
    :caption: 常见的香精原料
