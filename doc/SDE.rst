@@ -97,3 +97,8 @@ SDE样品
 The sample can be an aqueous solution or a slurry of a solid material in water.
 
 
+样品前处理主要的几种方法
+----------------------
+
+.. raw:: html
+  :file: mainsamplepreparationmethods.html
