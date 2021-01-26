@@ -91,4 +91,9 @@ To decrease the water solubility of volatiles, the addition of salt to the sampl
 
                                                      ----- :strong:`Simultaneous distillation-extraction: from birth to maturity--review`
                                                      
+SDE样品
+-------
+
+The sample can be an aqueous solution or a slurry of a solid material in water.
+
 
