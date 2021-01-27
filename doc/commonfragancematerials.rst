@@ -14,3 +14,4 @@
     
     HELVETOLIDE
 
+`琥珀类 <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FragranceType/AmberType.html>`_
