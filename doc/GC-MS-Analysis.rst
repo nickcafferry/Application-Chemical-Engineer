@@ -75,3 +75,10 @@ You can download the source code by clicking this link  :download:`The impact of
 ------------------------------------
 
 You can download the source code from here :download:`source code <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/The_Four_Important_Factors.html>`.
+
+
+GC-LC Concordance Software
+--------------------------
+
+GC-LC concordance software dramatically enhances the possibilities of chromatography on complex products and chromatographic fingerpringts by solving retention time shifting in complex chromatograms comparison.
+
