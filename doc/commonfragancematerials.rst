@@ -16,4 +16,4 @@
 
 `琥珀类 <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FragranceType/AmberType.html>`_
 
-`药草类 <>`
+`药草类 <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FragranceType/HerbalType.html>`_
