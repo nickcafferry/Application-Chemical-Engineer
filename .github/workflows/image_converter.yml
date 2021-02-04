@@ -33,7 +33,7 @@ jobs:
         ls -lt
         echo "--------------------------------------------"
         
-        python3.6 test.py
+        python3 test.py
         git add -A
         git commit -m "transforming a book into pngs"
         echo "Transform pdf into pics"
