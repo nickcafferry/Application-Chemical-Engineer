@@ -25,7 +25,7 @@ jobs:
         
         ls
         echo '============================================'
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/Python-videos-for-beginners/Python-videos-for-beginners/source/assets/images/pymupdf"
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/data/GC_LC/Images"
         pip3 install pillow
         pip3 install --upgrade pip
         pip3 install wheel
