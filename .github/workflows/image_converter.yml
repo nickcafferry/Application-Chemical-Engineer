@@ -21,11 +21,11 @@ jobs:
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd ./data/GC_LC/Images/
+        cd ./doc/assets/GC_LC/images/GC_LC_Demo/
         
         ls
         echo '============================================'
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/data/GC_LC/Images"
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/doc/assets/GC_LC/images/GC_LC_Demo"
         pip3 install pillow
         pip3 install --upgrade pip
         pip3 install wheel
@@ -39,6 +39,6 @@ jobs:
         echo "Transform pdf into pics"
         ls -lt
         
-        cd ../../../
+        cd ../../../../../
         ls
         git push origin master 
