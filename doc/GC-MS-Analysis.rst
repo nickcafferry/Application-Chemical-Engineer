@@ -82,3 +82,9 @@ GC-LC Concordance Software
 
 GC-LC concordance software dramatically enhances the possibilities of chromatography on complex products and chromatographic fingerpringts by solving retention time shifting in complex chromatograms comparison.
 
+Optimization of Working Parameters
+------------------------------------
+
+The best compromise between the above-mentioned parameters(:strong:`Solvent`, :strong:`Salting-out`, :strong:`Distillation-Extraction Time`, :strong:`Oxygen Effect`) can be determined empirically. 
+
+:strong:`Method`: 
