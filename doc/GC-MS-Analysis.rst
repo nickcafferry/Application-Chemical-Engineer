@@ -87,4 +87,17 @@ Optimization of Working Parameters
 
 The best compromise between the above-mentioned parameters(:strong:`Solvent`, :strong:`Salting-out`, :strong:`Distillation-Extraction Time`, :strong:`Oxygen Effect`) can be determined empirically. 
 
-:strong:`Method`: 
+:strong:`Method 1`:  `Optimization acheived by varying four variables: 1. temperature of the sample; 2. temperature of the solvent baths; 3. the coolant temperature; 4. the isolation time <https://www.sci-hub.ren/10.1016/0021-9673(93)80009-w>`_ 
+
+:strong:`Method 2`: `A face centred cube experimental design <https://www.sci-hub.ren/10.1016/s0003-2670(98)00861-7>`_
+
+:strong:`Conclusions`:
+
+- Recoveries differ, depending on the volatilities and solubilities of the analytes in the solvent.
+
+- Too high a solvent temperature leads to decreasing extraction efficiencies.
+
+- The isolation time decreases as the sample temperature increases.
+
+:strong:`Method 3`: Another alternative to optimize SDE working conditions lies in the use of a mathematical model.
+
