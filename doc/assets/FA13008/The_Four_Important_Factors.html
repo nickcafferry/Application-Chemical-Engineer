@@ -24,7 +24,7 @@ var W=250;
 var ks=0.0001;
 var Fs=5;
 var Fw=5;
-function func(kw,S, K, W, ks, Fs, Fw, t){
+function func(kw, S, K, W, ks, Fs, Fw, t){
     return (kw*S*K/(kw*S*K+ks*W)*(1-Math.exp(-(kw*S*K+ks*W)*Fs*Fw*t/(W*S*(Fw+K*Fs))))).toFixed(3);
 }
 
@@ -256,7 +256,30 @@ option = {
 			type: 'cross'
         },
     },
-   
+    title: [{
+        text: '油水分配系数对待萃取物回收率的影响',
+        left: '25%',
+        subtext: 'LogP',
+        textAlign: 'center'
+    }, {
+        text: '挥发度对待萃取物回收率的影响',
+        subtext: '饱和蒸汽压Vapour Pressure',
+        left: '75%',
+        textAlign: 'center'
+    }, {
+        text: '溶剂气流量在空气-水分配系数对萃取物回收率的影响',
+        left: '25%',
+        subtext: '溶剂气流量Fs',
+        top: '50%',
+        textAlign: 'center'
+    },
+    {
+        text: '水蒸气流量在空气-溶剂分配系数对萃取物回收率的影响',
+        left: '75%',
+        subtext: '水蒸气流量Fw',
+        top: '50%',
+        textAlign: 'center'
+    }],   
     xAxis: [
             {type: 'value', gridIndex: 0, name: '时间 (min)', axisLabel: {rotate: 50, interval: 0}},
             {type: 'value', gridIndex: 1, name: '时间 (min)',axisLabel: {rotate: 50, interval: 0}},
@@ -338,8 +361,6 @@ option = {
             data: generateData4(),
             name: '油水分配系数 0.1'
         },
-
-
         {
             type: 'line',
             showSymbol: false,
