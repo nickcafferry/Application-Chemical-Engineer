@@ -25,7 +25,7 @@ var ks=0.0001;
 var Fs=5;
 var Fw=5;
 function func(kw,S, K, W, ks, Fs, Fw, t){
-    return kw*S*K/(kw*S*K+ks*W)*(1-Math.exp(-(kw*S*K+ks*W)*Fs*Fw*t/(W*S*(Fw+K*Fs))));
+    return (kw*S*K/(kw*S*K+ks*W)*(1-Math.exp(-(kw*S*K+ks*W)*Fs*Fw*t/(W*S*(Fw+K*Fs))))).toFixed(3);
 }
 
 
