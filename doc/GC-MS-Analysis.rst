@@ -101,3 +101,11 @@ The best compromise between the above-mentioned parameters(:strong:`Solvent`, :s
 
 :strong:`Method 3`: Another alternative to optimize SDE working conditions lies in the use of a mathematical model.
 
+SDE工作条件影响汇总
+--------------------
+
+- 溶剂的影响::
+   
+   许多比水的密度高或者低的溶剂用于SDE实验, 并做了相应的比较: 二氯甲烷, 正戊烷, 异戊烷, 正己烷, 氯仿, 乙酸乙酯, 乙醚, 叔丁基甲醚, 三氯氟甲烷, 1,1,2-三氯三氟乙烷以及溶剂混合物比如正戊烷/乙醚. 通常得出来的结论是, 二氯甲烷一般来说是萃取的最好溶剂. 对于特定的化合物来说, 其他的溶剂可能表现出更高的效率, 但是实用性最广的仍然是二氯甲烷, 如图5展示出来的半挥发性化合物. 
+   
+   
