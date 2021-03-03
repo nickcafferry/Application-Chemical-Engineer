@@ -112,7 +112,7 @@ SDE工作条件影响汇总
    但是实用性最广的仍然是二氯甲烷, 如图5展示出来的半挥发性化合物. 
    
 
-`Comparison of solvent efficiency. Average recoveries are 47%, 59%, 53%, 58% and 36% <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/solvent_choice.html>`
+`Comparison of solvent efficiency. Average recoveries are 47%, 59%, 53%, 58% and 36% <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/solvent_choice.html>`_
 
 
    
