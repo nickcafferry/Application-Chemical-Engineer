@@ -115,5 +115,15 @@ SDE工作条件影响汇总
 `Comparison of solvent efficiency. Average recoveries are 47%, 59%, 53%, 58% and 36% <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/solvent_choice.html>`_
 
 
+- 盐析效应::
+   
+   为降低挥发组分在水中的溶解度, 向样品烧瓶中加入盐溶液被提出来了. 这看起来只是特别适合提取极性物质的回收率, 
+   例如香豆素或者2-苯乙醇; 但是, 香兰素和乙基香兰素提取量仍然可以忽略.
+   
+ - 蒸馏-萃取时间::
+ 
+   最优化的蒸馏-萃取时间从实验上已经被求证过: 达到48h的蒸馏萃取时间已经被验证可以从肥皂中提取挥发度比较
+   低的化合物(比如: 肉桂醇, 2-苯乙醇). 值得注意的是, 含有油脂类的基质会急剧增加获取可接受的回收率的时间 Lipid Matrix `Lipid Matrix <https://www.sci-hub.ren/10.1271/bbb1961.47.2933>`_ .
+   
    
    
