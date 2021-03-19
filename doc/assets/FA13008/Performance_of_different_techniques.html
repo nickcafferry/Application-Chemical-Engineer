@@ -1,0 +1,333 @@
+<!--
+    THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=bar-label-rotation
+-->
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body style="height: 100%; margin: 0">
+        <div id="container" style="height: 100%"></div>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+        <!-- Uncomment this line if you want to dataTool extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+        -->
+        <!-- Uncomment this line if you want to use gl extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+        -->
+        <!-- Uncomment this line if you want to echarts-stat extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+        -->
+        <!-- Uncomment this line if you want to use map
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/map/js/china.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/map/js/world.js"></script>
+        -->
+        <!-- Uncomment these two lines if you want to use bmap extension
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=<Your Key Here>"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+        -->
+
+        <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom, 'dark');
+var app = {};
+
+var option;
+
+
+
+var posList = [
+    'left', 'right', 'top', 'bottom',
+    'inside',
+    'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+    'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+];
+
+app.configParameters = {
+    rotate: {
+        min: -90,
+        max: 90
+    },
+    align: {
+        options: {
+            left: 'left',
+            center: 'center',
+            right: 'right'
+        }
+    },
+    verticalAlign: {
+        options: {
+            top: 'top',
+            middle: 'middle',
+            bottom: 'bottom'
+        }
+    },
+    position: {
+        options: posList.reduce(function (map, pos) {
+            map[pos] = pos;
+            return map;
+        }, {})
+    },
+    distance: {
+        min: 0,
+        max: 100
+    }
+};
+
+app.config = {
+    rotate: 90,
+    align: 'left',
+    verticalAlign: 'middle',
+    position: 'insideBottom',
+    distance: 15,
+    onChange: function () {
+        var labelOption = {
+            normal: {
+                rotate: app.config.rotate,
+                align: app.config.align,
+                verticalAlign: app.config.verticalAlign,
+                position: app.config.position,
+                distance: app.config.distance
+            }
+        };
+        myChart.setOption({
+            series: [{
+                label: labelOption
+            }, {
+                label: labelOption
+            }, {
+                label: labelOption
+            }, {
+                label: labelOption
+            }]
+        });
+    }
+};
+
+
+var labelOption = {
+    show: true,
+    position: app.config.position,
+    distance: app.config.distance,
+    align: app.config.align,
+    verticalAlign: app.config.verticalAlign,
+    rotate: app.config.rotate,
+    formatter: '{c} {name|{a}}',
+    fontSize: 16,
+    rich: {
+        name: {
+        }
+    }
+};
+
+option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['肉桂醛', '丙醇', '正丁醇', '辛烷', '癸烷', '丙酸乙酯','丁酸乙酯', '戊酸乙酯', '甲基正戊基酮', '苯乙酮', '乙酸苯甲酯', '水杨酸甲酯', 'L-香芹酮', '乙位紫罗兰酮', '邻氨基苯甲酸甲酯', '甲基苯基环氧丙酸乙酯', '异丁香酚']
+    },
+    toolbox: {
+        show: true,
+        orient: 'vertical',
+        left: 'right',
+        top: 'center',
+        feature: {
+            mark: {show: true},
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    xAxis: [
+        {
+            type: 'category',
+            axisTick: {show: false},
+            data: ['无分流顶空(Splitless Headspace)', '吹扫捕集(Purge & Trap)', '二氯甲烷萃取(CH2Cl2 extraction)', '常压SDE', '减压SDE']
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    title: [{
+        text: '不同分离技术的性能(Performances of various isolation techniques) from Reineccius,1993',
+        link: 'https://www.sci-hub.ren/10.1016/0003-2670(94)00445-r',
+        target: 'https://www.sci-hub.ren/10.1016/0003-2670(94)00445-r',
+        textalign: 'center',
+        subtext: 'LogP',
+        left: '30%',
+        top: 'bottom'}], 
+    series: [
+        {
+            name: '乙醇',
+            type: 'bar',
+            barGap: 0,
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [18, 31, 0, 5, 0]
+        },
+        {
+            name: '丙醇',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [2, 3, 0, 30, 31]
+        },
+        {
+            name: '正丁醇',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [5, 6, 30, 61, 58]
+        },
+        {
+            name: '辛烷',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [19, 0, 0, 1, 12]
+        },
+        {
+            name: '癸烷',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [58, 0, 0, 0, 0]
+        },
+        {
+            name: '丙酸乙酯',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [50, 90, 0, 50, 40]
+        },
+
+        {
+            name: '丁酸乙酯',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [71, 110, 62, 50, 40]
+        },
+        {
+            name: '戊酸乙酯',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [85, 82, 65, 50, 42]
+        },
+        {
+            name: '甲基正戊基酮',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [55, 50, 75, 58, 50]
+        },
+        {
+            name: '苯乙酮',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [5, 8, 100, 78, 59]
+        },
+        {
+            name: '乙酸苯甲酯',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [9, 30, 80, 61, 50]
+        },
+        {
+            name: '水杨酸甲酯',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [5, 15, 85, 50, 49]
+        },
+        {
+            name: 'L-香芹酮',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [5, 9, 95, 60, 59]
+        },
+        {
+            name: '乙位紫罗兰酮',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [8, 2, 80, 30, 50]
+        },
+        {
+            name: '邻氨基苯甲酸甲酯',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [2, 0, 90, 32, 40]
+        },
+        {
+            name: '甲基苯基环氧丙酸乙酯',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [0, 0, 100, 18, 30]
+        },
+        {
+            name: '异丁香酚',
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+            data: [0, 0, 80, 4, 15]
+        }
+    ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+        </script>
+    </body>
+</html>
+    
