@@ -24,7 +24,7 @@
 .. |Zeno| image:: https://img.shields.io/badge/link-Zeno-yellow.svg?style=flat
    :target: http://www.zeon.co.jp/index_e.html
    
-Fechii-Application-Chemical-Engineer
+Application-Chemical-Engineer
 ========
 
 1. Can independently carry out daily chemical analysis of flavor components;
