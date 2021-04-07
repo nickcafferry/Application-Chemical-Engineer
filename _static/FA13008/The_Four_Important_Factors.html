@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/echarts.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@1/dist/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@1/dist/ecStat.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/map/js/china.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/map/js/world.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/extension/bmap.min.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+var kw=0.5;
+var S=100;
+var K=5;
+var W=250;
+var ks=0.0001;
+var Fs=5;
+var Fw=5;
+function func(kw, S, K, W, ks, Fs, Fw, t){
+    return (kw*S*K/(kw*S*K+ks*W)*(1-Math.exp(-(kw*S*K+ks*W)*Fs*Fw*t/(W*S*(Fw+K*Fs))))).toFixed(3);
+}
+
+
+
+
+function generateData(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(2, 100, 10, 500, 0.0001, 5, 5, t)]);
+    }
+    return data;
+}
+
+function generateData0(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(2, 100, 8, 500, 0.0001, 5, 5, t)]);
+    }
+    return data0;
+}
+
+function generateData1(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(2, 100, 6, 500, 0.0001, 5, 5, t)]);
+    }
+    return data1;
+}
+
+function generateData2(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(2, 100, 2, 500, 0.0001, 5, 5, t)]);
+    }
+    return data;
+}
+
+function generateData3(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(2, 100, 1, 500, 0.0001, 5, 5, t)]);
+    }
+    return data0;
+}
+
+function generateData4(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(2, 100, 0.1, 500, 0.0001, 5, 5, t)]);
+    }
+    return data1;
+}
+
+
+
+
+
+
+function generateData5(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(10, 100, 2, 500, 0.0001, 5, 5, t)]);
+    }
+    return data;
+}
+
+function generateData6(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(8, 100, 2, 500, 0.0001, 5, 5, t)]);
+    }
+    return data0;
+}
+
+function generateData7(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(6, 100, 2, 500, 0.0001, 5, 5, t)]);
+    }
+    return data1;
+}
+
+function generateData8(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(2, 100, 2, 500, 0.0001, 5, 5, t)]);
+    }
+    return data;
+}
+
+function generateData9(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(1, 100, 2, 500, 0.0001, 5, 5, t)]);
+    }
+    return data0;
+}
+
+function generateData10(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(0.1, 100, 2, 500, 0.0001, 5, 5, t)]);
+    }
+    return data1;
+}
+
+
+
+
+
+
+
+function generateData11(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(2, 100, 2, 500, 0.0001, 10, 5, t)]);
+    }
+    return data;
+}
+
+function generateData12(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(2, 100, 2, 500, 0.0001, 8, 5, t)]);
+    }
+    return data0;
+}
+
+function generateData13(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(2, 100, 2, 500, 0.0001, 6, 5, t)]);
+    }
+    return data1;
+}
+
+function generateData14(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(2, 100, 2, 500, 0.0001, 2, 5, t)]);
+    }
+    return data;
+}
+
+function generateData15(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(2, 100, 2, 500, 0.0001, 1, 5, t)]);
+    }
+    return data0;
+}
+
+function generateData16(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(2, 100, 2, 500, 0.0001, 0.1, 5, t)]);
+    }
+    return data1;
+}
+
+
+
+
+
+
+function generateData17(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(2, 100, 2, 500, 0.0001, 5, 10, t)]);
+    }
+    return data;
+}
+
+function generateData18(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(2, 100, 2, 500, 0.0001, 5, 8, t)]);
+    }
+    return data0;
+}
+
+function generateData19(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(2, 100, 2, 500, 0.0001, 5, 6, t)]);
+    }
+    return data1;
+}
+
+function generateData20(){
+    let data = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data.push([t, func(2, 100, 2, 500, 0.0001, 5, 2, t)]);
+    }
+    return data;
+}
+
+function generateData21(){
+    let data0 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data0.push([t, func(2, 100, 2, 500, 0.0001, 5, 1, t)]);
+    }
+    return data0;
+}
+
+function generateData22(){
+    let data1 = [];
+    for (let t = 0.1; t < 1000; t += 1) {
+        data1.push([t, func(2, 100, 2, 500, 0.0001, 5, 0.1, t)]);
+    }
+    return data1;
+}
+var sizeValue = '57%';
+var symbolSize = 2.5;
+
+option = {
+    animation: false,
+    grid: [
+            {right: sizeValue, bottom: sizeValue},
+            {left: sizeValue, bottom: sizeValue},
+            {right: sizeValue, top: sizeValue},
+            {left: sizeValue, top: sizeValue}
+    ],
+	tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            animation: true,
+			type: 'cross'
+        },
+    },
+    title: [{
+        text: '油水分配系数对待萃取物回收率的影响',
+        left: '25%',
+        subtext: 'LogP',
+        textAlign: 'center'
+    }, {
+        text: '挥发度对待萃取物回收率的影响',
+        subtext: '饱和蒸汽压Vapour Pressure',
+        left: '75%',
+        textAlign: 'center'
+    }, {
+        text: '溶剂气流量在空气-水分配系数对萃取物回收率的影响',
+        left: '25%',
+        subtext: '溶剂气流量Fs',
+        top: '50%',
+        textAlign: 'center'
+    },
+    {
+        text: '水蒸气流量在空气-溶剂分配系数对萃取物回收率的影响',
+        left: '75%',
+        subtext: '水蒸气流量Fw',
+        top: '50%',
+        textAlign: 'center'
+    }],   
+    xAxis: [
+            {type: 'value', gridIndex: 0, name: '时间 (min)', axisLabel: {rotate: 50, interval: 0}},
+            {type: 'value', gridIndex: 1, name: '时间 (min)',axisLabel: {rotate: 50, interval: 0}},
+            {type: 'value', gridIndex: 2, name: '时间 (min)', axisLabel: {rotate: 50, interval: 0}},
+            {type: 'value', gridIndex: 3, name: '时间 (min)', axisLabel: {rotate: 50, interval: 0}}
+        ],
+    yAxis: [
+            {type: 'value', gridIndex: 0, name: '萃取物回收率(100%)'},
+            {type: 'value', gridIndex: 1, name: '萃取物回收率(100%)'},
+            {type: 'value', gridIndex: 2, name: '萃取物回收率(100%)'},
+            {type: 'value', gridIndex: 3, name: '萃取物回收率(100%)'}
+        ],
+        toolbox: {
+            left: 'center',
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                restore: {},
+                saveAsImage: {}
+            }
+        },
+    dataZoom: [{
+        show: true,
+        type: 'inside',
+        filterMode: 'none',
+        xAxisIndex: [0],
+        startValue: 0,
+        endValue: 2000
+    }, {
+        show: true,
+        type: 'inside',
+        filterMode: 'none',
+        yAxisIndex: [0],
+        startValue: 0,
+        endValue: 1
+    }],
+    series: [
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData(),
+            name: '油水分配系数 10',
+    formatter: '{a}:  {c}'
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData0(),
+            name: '油水分配系数 8'
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData1(),
+            name: '油水分配系数 6'
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData2(),
+            name: '油水分配系数 2'
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData3(),
+            name: '油水分配系数 1'
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData4(),
+            name: '油水分配系数 0.1'
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData5(),
+            name: '挥发度 10',
+            xAxisIndex: 1,
+            yAxisIndex: 1
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData6(),
+            name: '挥发度 8',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData7(),
+            name: '挥发度 6',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData8(),
+            name: '挥发度 2',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData9(),
+            name: '挥发度 1',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData10(),
+            name: '挥发度 0.1',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+        },
+    
+    
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData11(),
+            name: '溶剂气流量 10',
+            xAxisIndex: 2,
+            yAxisIndex: 2
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData12(),
+            name: '溶剂气流量 8',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData13(),
+            name: '溶剂气流量 6',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData14(),
+            name: '溶剂气流量 2',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData15(),
+            name: '溶剂气流量 1',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData16(),
+            name: '溶剂气流量 0.1',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+        },
+
+
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData17(),
+            name: '水蒸气流量 10',
+            xAxisIndex: 3,
+            yAxisIndex: 3
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData18(),
+            name: '水蒸气流量 8',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData19(),
+            name: '水蒸气流量 6',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData20(),
+            name: '水蒸气流量 2',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData21(),
+            name: '水蒸气流量 1',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+        },
+        {
+            type: 'line',
+            showSymbol: false,
+            clip: true,
+            data: generateData22(),
+            name: '水蒸气流量 0.1',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+        }
+    ]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>

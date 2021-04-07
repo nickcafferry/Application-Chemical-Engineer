@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	
+	background:#fafafa;
+}
+
+a {
+	text-decoration: none;
+}
+.head_frame {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0px;
+}
+.header_img {
+	min-width: 1280px;
+	min-height: 444px;
+	width:100%;
+	height:auto;
+	margin:0px auto 35px auto;
+	background: url(../img/search_banner.jpg) no-repeat center center;
+	background-size: cover;
+/*	border:1px blue solid;	*/
+}
+
+.search_bar {
+	width:1220px;
+	height:30px;
+	margin:0px auto ;
+	position:relative;
+}
+
+.btn-primary{
+background-color:#649B1C!important; 
+	border-color:#649B1C!important;
+}
+
+.btn-default{
+background-color:white!important; 
+	border-color:#649B1C!important;
+	color:#649B1C!important;	
+}
+
+.search_input {
+			border:1px #dbdbdb solid;
+			width:500px;
+			height:30px;
+			font-size:12px;
+			line-height: 16px;
+			background-color:#dbdbdb;
+			color:#454545;
+			border-radius:15px;
+			outline: none;
+			position:absolute;
+			top:0px;left:50%;
+			margin-left:-250px;
+			display: inline-block;
+			z-index: 1;
+			padding-left:30px;
+			background:url(../img/search.png) 5px center no-repeat;
+		}
+
+.search_result {
+	background-color: #fff;
+	width: 1220px;
+	height: auto;
+	border: 1px #dbdbdb solid;
+	margin: 35px auto;
+	border-radius: 6px;
+	list-style-type: none;
+/*	border:1px blue solid;
+*/
+}
+
+.title {
+	
+	border-bottom:1px #dbdbdb solid;
+}
+
+
+.search_item10, .search_item11, .search_item20, .search_item21 {	
+	width: 304px;
+	height: 200px;	
+	background: url(../img/border_quotation.jpg) no-repeat;
+	background-position: left top;
+	background-size: 304px 200px;		
+	position:relative;
+	border-right: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	list-style-type: none;	
+	float: left;	
+}
+
+
+.search_item11, .search_item21  {
+	border-right: none;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	top:18px;
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+}
+
+/*产品名设置*/
+.cname {
+	font-size: 14px;
+	color: #454545;
+	text-align: center;
+	margin-top:60px;
+	line-height: 25px;
+
+}
+
+/*设定英文名称*/
+.name {
+	font-size: 12px;
+	color: #656565;
+	margin-top:10px;
+	inline-height: 25px;
+	text-align: center;
+}
+/*设定价格*/
+.prix {
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 25px;
+	color: #9B1C55;
+	inline-height: 25px;
+	text-align:center;}
+
+
+
+/*设定点击详情*/
+.btn_box {
+	height:35px;width:100%;
+	margin:50px auto;
+/*	border:1px blue solid;*/
+	position:absolute;
+	top:95px;
+	text-align: center;
+	display:none;
+
+	
+}
+
+.more, .buy, .sample
+{
+	text-align: center;
+	border: 1px #649B1C solid;
+	background-color: #649B1C;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 2px;
+	font-size: 10px;
+	color: #fff;
+	display:inline-block;
+}
+
+.sample, .buy {
+	border: 1px #649B1C solid;	
+	background-color: #fff;	
+	color:#649B1C;	
+	top:70px;	
+}
+
+.buy {
+	top:90px;		
+}
+
+
+.search_item10 a, .search_item11 a {
+	text-decoration: none;
+	
+}
+.more:hover, .sample:hover, .buy:hover
+{
+	background-color: #454545;
+	color:#fff;
+}
+
+.search_page {
+	width:1220px;
+	height:30px;
+	margin:35px auto;
+	border-top:1px #dbdbdb solid;
+border-bottom: 1px #dbdbdb solid;	
+	position: relative;
+	text-align: center;
+
+}
+
+.search_page a {
+	text-align: center;
+	width: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #656565;
+	font-weight: normal;
+	text-decoration: none;
+	display: inline-block;
+	
+}
+
+a.s2 {background:#649B1C;
+color:#fff;}

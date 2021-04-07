@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{
+	
+	width:1220px;
+	color:#454545;
+	font-size:12px;
+}
+
+.giv_header{
+	width:100%;
+	height:100px;
+	background: #000;
+	margin-bottom: 35px;
+}
+
+.header_inner1{
+	height:100px;
+	position:relative;
+/* border:1px solid white;*/		
+}
+
+
+.style-img{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-37px;
+	margin-top:-37px;
+}
+
+
+.header_inner2{
+	height:100px;	
+ position:relative;
+/* border:1px solid white;	*/	
+}
+
+.header_inner3{
+	height:100px;	
+	position:relative;
+	color:white;
+/*	border:1px solid white;*/
+}
+
+.logobox{
+	width:142px;
+	height:auto;
+	position:absolute;
+	bottom:15px;
+	right:0px;
+/*	border:1px solid white;*/
+	
+}
+
+
+.header_inner3 img{
+	width:140px;
+	height:44px;
+	
+}
+
+
+.searchstr{
+	width:200px;
+	height:24px;
+	outline: none;
+	background-color: #454545;
+	border-radius: 12px;
+	border:none;
+	color:white;
+	font-size: 12px;
+	line-height: 18px;
+	padding-left:20px;
+	position: absolute;
+	right:10px;
+	bottom:18px;
+}
+
+.olfractive{
+	width:100%;
+	border:2px solid white;
+	
+}
+
+.olfractive tr{
+border:2px solid white;	
+/*background-color:#e8e8e8;	*/
+}
+
+.olf_header{
+	height:30px;
+	background-color:#000;
+	color:white;
+	padding-left:10px;
+
+}
+
+.odorname, .checkbox1{
+	
+	height:10px;
+	color:#454545;
+	padding-left:18px;
+	background-color: #e8e8e8;
+}
+
+.odorname{
+	width:80%;
+	background-color: #e8e8e8;	
+}
+
+.checkbox1{
+	width:20%;
+	background-color: #e8e8e8;	
+	
+}
+
+
+.chk_1 {
+    display: none;
+}
+
+.chk_1 + label {
+	background-color: #FFF;
+	border: 1px solid #C1CACA;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+	padding: 9px;
+	border-radius: 5px;
+	display: inline-block;
+	position: relative;
+	margin-right: 30px;
+	margin-top:10px;
+}
+.chk_1 + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.chk_1:checked + label {
+	background-color: #ECF2F7;
+	border: 1px solid #92A1AC;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+	color: #243441;
+}
+
+.chk_1:checked + label:after {
+	content: '\2714'; /*//¹´Ñ¡·ûºÅ*/
+	position: absolute;
+	top: -2px;
+	left: 0px;
+	color: #454545; /*#758794;*/
+	width: 100%;
+	text-align: center;
+	font-size: 1.4em;
+	padding: 1px 0 0 0;
+	vertical-align: text-top;
+}
+
+
+
+.selection{
+	padding-left:35px;
+	min-height: 200px;
+/*	border:1px solid violet;*/
+	
+}
+
+.selection h4{
+	
+	color:#380086;
+}
+
+.tbl_selection{
+	
+/*	border:1px solid violeet;*/
+	width:100%;
+}
+
+.tbl_selection thead th
+{height:30px;
+border-bottom:2px solid black;
+}
+
+
+.tbl_selection tbody tr
+{
+border-bottom:1px solid #dbdbdb;	
+}
+
+.tbl_selection tbody td
+{
+height:28px;	
+
+}
+
+
+.giv_dot{width:3%;}
+.odor_type{width:7%}
+.c_name{width:35%}
+.e_name{width:30%}
+
+.giv_code{width:10%}
+.operation{width:18%}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover
+{
+	background-color:#454545;
+	border:1px solid #454545;
+}
+
+.pagination>li>a, .pagination>li>span {
+	color:#454545;
+	
+}
+
+
+.btn0, .btn1, .btn2, .btn3 {
+	width:20px;
+	height:20px;
+	color:white;
+	border:1px solid #454545;
+	background-color: #454545;
+	padding-left: 4px;
+    padding-top: 2px;
+    float: left;
+    margin-right: 3px;
+	border-radius: 2px;
+}
+
+
+.btn3{
+	border:1px solid #dbdbdb;
+	background-color: #fff;
+	color: #dbdbdb;
+	
+}
+
+a{
+    color: #454545;
+}

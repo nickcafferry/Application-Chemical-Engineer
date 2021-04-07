@@ -1,0 +1,590 @@
+load \Mustang\build\Mustang
+load \Mustang\build\tools
+
+load \Mustang\parts\aboutlm
+load \Mustang\parts\activecalibplot
+load \Mustang\parts\activeplot
+load \Mustang\parts\AgtDDE
+load \Mustang\parts\AgtNLSUtils
+load \Mustang\parts\aia_lib
+load \Mustang\parts\biffxtnd
+load \Mustang\parts\bitfunc
+load \Mustang\parts\cfr11
+load \Mustang\parts\corecp
+load \Mustang\parts\coreda
+load \Mustang\parts\cpctx32
+load \Mustang\parts\cp\filesig.h
+load \Mustang\parts\cp\resource.h
+load \Mustang\parts\cpres32
+load \Mustang\parts\cputl32
+load \Mustang\parts\createms
+load \Mustang\parts\custrpt
+load \Mustang\parts\ddecmdslm
+load \Mustang\parts\dwin
+load \Mustang\parts\dwinlib
+load \Mustang\parts\d_exe
+load \Mustang\parts\d_lib
+load \Mustang\parts\ECM
+load \Mustang\parts\eda_vals
+load \Mustang\parts\eddqda
+load \Mustang\parts\envfrm97
+load \Mustang\parts\esui
+load \Mustang\parts\exe
+load \Mustang\parts\ezquant
+load \Mustang\parts\gcf6890
+load \Mustang\parts\gcf7890
+load \Mustang\parts\gcfpaws
+load \Mustang\parts\gcf_aia
+load \Mustang\parts\HiaCpCom
+load \Mustang\parts\include
+load \Mustang\parts\lcmsauto
+load \Mustang\parts\lib
+load \Mustang\parts\libsrch
+load \Mustang\parts\mat2ms
+load \Mustang\parts\md
+load \Mustang\parts\mfglm
+load \Mustang\parts\mixms
+load \Mustang\parts\msaia_lib
+load \Mustang\parts\msda
+load \Mustang\parts\msdlglm
+load \Mustang\parts\msfilter
+load \Mustang\parts\msf_aia
+load \Mustang\parts\msinfo
+load \Mustang\parts\mspkpur
+load \Mustang\parts\mstopcmd
+load \Mustang\parts\mto
+load \Mustang\parts\paramret
+load \Mustang\parts\pbmdbport
+load \Mustang\parts\pbmdbsort
+load \Mustang\parts\request
+load \Mustang\parts\reusable
+load \Mustang\parts\rrsum
+load \Mustang\parts\rtecmds
+load \Mustang\parts\sctools
+load \Mustang\parts\secureda
+load \Mustang\parts\servlan
+load \Mustang\parts\setsig
+load \Mustang\parts\shdutil
+load \Mustang\parts\struct
+load \Mustang\parts\tbarlm
+load \Mustang\parts\topcommands
+load \Mustang\parts\verlm
+
+load \Mustang\pool\core\mt.exe
+load \Mustang\pool\CustRpt\custrpt.exe
+
+# Archer Core ---------------------------------------------------------------- 1
+
+##LS\Archer\core\Pool\Debug\Assembly\Bin\CoreEventManipulator.dll
+##LS\Archer\core\Pool\Debug\Assembly\Bin\CoreEventManipulator.pdb
+##LS\Archer\core\Pool\Debug\Assembly\Bin\CorePlotControl.dll
+##LS\Archer\core\Pool\Debug\Assembly\Bin\CorePlotControl.pdb
+
+##LS\Archer\core\Pool\Release\Assembly\Bin\CoreEventManipulator.dll
+##LS\Archer\core\Pool\Release\Assembly\Bin\CoreEventManipulator.pdb
+##LS\Archer\core\Pool\Release\Assembly\Bin\CorePlotControl.dll
+##LS\Archer\core\Pool\Release\Assembly\Bin\CorePlotControl.pdb
+
+##LS\Archer\core\Pool\Release\Assembly\Bin\ja\CoreEventManipulator.resources.dll
+##LS\Archer\core\Pool\Release\Assembly\Bin\ja\CorePlotControl.resources.dll
+
+##LS\Archer\core\Pool\Release\Assembly\Bin\zh-CN\CoreEventManipulator.resources.dll
+##LS\Archer\core\Pool\Release\Assembly\Bin\zh-CN\CorePlotControl.resources.dll
+
+# Rapid Control -------------------------------------------------------------- 2
+load \SCPool\SCInst\RapidControl\RapidControlIF
+load \SCPool\SCInst\RapidControl\RCNetCOMInterop
+##LS \SCPool\SCInst\RapidControl\RCNetSampleDriver
+
+# Method Translation (68x0 -> 78x0) and eMethod ------------------------------ 3
+
+# Method Translation (6890 -> 7890) ------------------------------------------ 4
+
+# eMethod -------------------------------------------------------------------- 5
+
+# eMethod & GC 68xx RC ------------------------------------------------------- 6
+
+# GC 689032 - Driver --------------------------------------------------------- 7
+load \Chemport32Pool\AstxDrivers\6850acq\include
+load \Chemport32Pool\AstxDrivers\7673idd\include
+load \Chemport32Pool\AstxDrivers\acq\include
+##LS \Chemport32Pool\Lego\include                                                           ... see config_specLS (ENU)
+##LS \Chemport32Pool\Lego\serverinclude                                                     ... see config_specLS (ENU)
+
+##LS \Chemport32Pool\AstxDrivers\6850acq
+##LS \Chemport32Pool\AstxDrivers\6850ui
+##LS \Chemport32Pool\AstxDrivers\7673idd
+##LS \Chemport32Pool\AstxDrivers\acq
+##LS \Chemport32Pool\AstxDrivers\astcbk
+##LS \Chemport32Pool\AstxDrivers\ColumnDb
+##LS \Chemport32Pool\AstxDrivers\GCColumnCatalog
+##LS \Chemport32Pool\AstxDrivers\hpiqmr00
+##LS \Chemport32Pool\AstxDrivers\support
+##LS \Chemport32Pool\AstxDrivers\ui
+
+##LS \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850acq\hb685a01
+##LS \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850ui\hb685u01
+##LS \Chemport32Pool\CS32_ja_JP\AstxDrivers\7673idd\hb767300
+##LS \Chemport32Pool\CS32_ja_JP\AstxDrivers\acq\hb68gc01
+##LS \Chemport32Pool\CS32_ja_JP\AstxDrivers\ColumnDb
+##LS \Chemport32Pool\CS32_ja_JP\AstxDrivers\ui\hbiqui01
+
+##LS \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850acq\hb685a01
+##LS \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850ui\hb685u01
+##LS \Chemport32Pool\CS32_zh_CN\AstxDrivers\7673idd\hb767300
+##LS \Chemport32Pool\CS32_zh_CN\AstxDrivers\acq\hb68gc01
+##LS \Chemport32Pool\CS32_zh_CN\AstxDrivers\ColumnDb
+##LS \Chemport32Pool\CS32_zh_CN\AstxDrivers\ui\hbiqui01
+
+# GC 689032 - Support -------------------------------------------------------- 8
+##LS \Chemport32Pool\Lego\_fabsent
+##LS \Chemport32Pool\Lego\apg_top
+##LS \Chemport32Pool\Lego\ggl
+##LS \Chemport32Pool\Lego\iapg
+##LS \Chemport32Pool\Lego\larpalan
+##LS \Chemport32Pool\Lego\lhpbsicl
+load \Chemport32Pool\Lego\nls
+##LS \Chemport32Pool\Lego\papg
+load \Chemport32Pool\Lego\res_mgr
+##LS \Chemport32Pool\Lego\server
+##LS \Chemport32Pool\Lego\utildll
+##LS \Chemport32Pool\Lego\hputil
+##LS \Chemport32Pool\Lego\socktask
+##LS \Chemport32Pool\Lego\hsicltsk
+
+##LS \Chemport32Pool\CS32_ja_JP\Lego\_fabsent\hbfabs00
+##LS \Chemport32Pool\CS32_ja_JP\Lego\ggl\hbggl00
+##LS \Chemport32Pool\CS32_ja_JP\Lego\hputil\hbutil02
+##LS \Chemport32Pool\CS32_ja_JP\Lego\utildll\util
+##LS \Chemport32Pool\CS32_ja_JP\PortAddon\chemsm
+
+##LS \Chemport32Pool\CS32_zh_CN\Lego\_fabsent\hbfabs00
+##LS \Chemport32Pool\CS32_zh_CN\Lego\ggl\hbggl00
+##LS \Chemport32Pool\CS32_zh_CN\Lego\hputil\hbutil02
+##LS \Chemport32Pool\CS32_zh_CN\Lego\utildll\util
+##LS \Chemport32Pool\CS32_zh_CN\PortAddon\chemsm
+
+load \Chemport32Pool\PortAddon\chemport32
+##LS \Chemport32Pool\PortAddon\chemsm
+##LS \Chemport32Pool\PortAddon\FileConverterUtility
+
+##LS \MuskComponentPool\MuskDop\dop
+
+# GC-RC ---------------------------------------------------------------------- 9
+
+# GC-RC 68xx (Rhea Common Files) --------------------------------------------- 10
+
+# GC-RC 68xx (Common Files) -------------------------------------------------- 11
+
+# GC-RC 6850 ----------------------------------------------------------------- 12
+
+# GC-RC 6890 ----------------------------------------------------------------- 13
+
+# GC-RC 7890 ----------------------------------------------------------------- 14
+
+# Tools ---------------------------------------------------------------------- 15
+
+element * CHECKEDOUT
+
+# Archer Core ---------------------------------------------------------------- 1
+##      \Archer\core\Pool\Debug\Assembly\Bin\...               ARCHER_CORE_Bxxx.x
+##      \Archer\core\Pool\Release\Assembly\Bin\...             ARCHER_CORE_Bxxx.x
+
+# Rapid Control -------------------------------------------------------------- 2
+element \SCPool\SCInst\RapidControl\RapidControlIF\...         READY_RAPIDCONTROLIF_2.8.007
+element \SCPool\SCInst\RapidControl\RCNetCOMInterop\...        READY_RCNETCOMNTEROP_2.2.027
+##      \SCPool\SCInst\RapidControl\RCNetSampleDriver\...      READY_RCNETSAMPLEDRIVER_x.x.xxx
+
+# Method Translation (68x0 -> 78x0) and eMethod ------------------------------ 3
+
+# Method Translation (6890 -> 7890) ------------------------------------------ 4
+
+# eMethod -------------------------------------------------------------------- 5
+
+# eMethod & GC 68xx RC ------------------------------------------------------- 6
+
+# GC 689032 - Driver --------------------------------------------------------- 7 (based on MTCS B.04.03.063)
+element \Chemport32Pool\AstxDrivers\6850acq\include\...                          READY_GC6850ACQ_4.12
+element \Chemport32Pool\AstxDrivers\7673idd\include\...                          READY_7673IDD_4.5
+element \Chemport32Pool\AstxDrivers\acq\include\...                              READY_HP68GC01_4.13
+##      \Chemport32Pool\Lego\include\...                                         READY_LEGOINCLUDE_x.x   ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\serverinclude\...                                   READY_SERVERINCLUDE_x.x ... see config_specLS (ENU)
+
+##      \Chemport32Pool\AstxDrivers\6850acq\...                                  READY_GC6850ACQ_x.xx    ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\6850ui\...                                   READY_GC6850UI_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\7673idd\...                                  READY_7673IDD_x.x       ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\acq\...                                      READY_HP68GC01_x.xx     ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\astcbk\...                                   READY_ASTCBK_x.x        ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\ColumnDb\...                                 READY_COLUMNDB_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\GCColumnCatalog\...                          READY_GCCOLUMNCATLOG_x.xx   ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\hpiqmr00\...                                 READY_HPIQMR00_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\support\...                                  READY_SUPPORT_x.xx      ... see config_specLS (ENU)
+##      \Chemport32Pool\AstxDrivers\ui\...                                       READY_HPIQUI01_x.xx     ... see config_specLS (ENU)
+
+##      \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850acq\...                       READYJAJP_HB685A01_x.xx ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850ui\...                        READYJAJP_HB685U01_x.xx ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\AstxDrivers\7673idd\...                       READYJAJP_HB767300_x.x  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\AstxDrivers\acq\...                           READYJAJP_HB68GC01_x.xx ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\AstxDrivers\ColumnDb\...                      READYJAJP_COLUMNDB_x.x  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\AstxDrivers\ui\...                            READYJAJP_HBIQUI01_x.xx ... see config_specLS (ENU)
+
+##      \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850acq\...                       READYZHCN_HB685A01_x.xx ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850ui\...                        READYZHCN_HB685U01_x.xx ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\AstxDrivers\7673idd\...                       READYZHCN_HB767300_x.x  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\AstxDrivers\acq\...                           READYZHCN_HB68GC01_x.xx ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\AstxDrivers\ColumnDb\...                      READYZHCN_COLUMNDB_x.x  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\AstxDrivers\ui\...                            READYZHCN_HBIQUI01_x.x  ... see config_specLS (ENU)
+
+# GC 689032 - Support -------------------------------------------------------- 8 (based on MTCS B.04.03.063)
+##      \Chemport32Pool\Lego\_fabsent\...                                        READY_FABSENT_x.x       ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\apg_top\...                                         READY_APGTOP_x.x        ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\ggl\...                                             READY_GGL_x.xx          ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\hputil\...                                          READY_HPUTIL_x.xx       ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\hsicltsk\...                                        READY_HSICLTSK_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\iapg\...                                            READY_IAPG_x.x          ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\larpalan\...                                        READY_LARPALAN_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\lhpbsicl\...                                        READY_LHPBSICL_x.x      ... see config_specLS (ENU)
+element \Chemport32Pool\Lego\nls\...                                             READY_NLS_4.10
+##      \Chemport32Pool\Lego\papg\...                                            READY_PAPG_x.x          ... see config_specLS (ENU)
+element \Chemport32Pool\Lego\res_mgr\...                                         READY_RESMGR_3.10
+##      \Chemport32Pool\Lego\server\...                                          READY_SERVER_x.x        ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\socktask\...                                        READY_SOCKTASK_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\Lego\utildll\...                                         READY_UTIL_x.xx         ... see config_specLS (ENU)
+
+##      \Chemport32Pool\CS32_ja_JP\Lego\_fabsent\...                             READYJAJP_HBFABS00_x.x  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\Lego\ggl\...                                  READYJAJP_HBGGL00_x.xx  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\Lego\hputil\hbutil02\...                      READYJAJP_HBUTIL02_x.xx ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\Lego\utildll\util\...                         READYJAJP_UTIL_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_ja_JP\PortAddon\chemsm\...                          READYJAJP_CHEMSM_x.x    ... see config_specLS (ENU)
+
+##      \Chemport32Pool\CS32_zh_CN\Lego\_fabsent\...                             READYZHCN_HBFABS00_x.x  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\Lego\ggl\...                                  READYZHCN_HBGGL00_x.x   ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\Lego\hputil\hbutil02\...                      READYZHCN_HBUTIL02_x.x  ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\Lego\utildll\util\...                         READYZHCN_UTIL_x.x      ... see config_specLS (ENU)
+##      \Chemport32Pool\CS32_zh_CN\PortAddon\chemsm\...                          READYZHCN_CHEMSM_x.x    ... see config_specLS (ENU)
+
+element \Chemport32Pool\PortAddon\chemport32\...                                 READY_CHEMPORT32_4.7
+##      \Chemport32Pool\PortAddon\chemsm\...                                     READY_CHEMSM_x.x        ... see config_specLS (ENU)
+
+##      \MuskComponentPool\MuskDop\dop\...                                       READY_DOP_x.xx.x        ... see config_specLS (ENU)
+
+# File Converter Utility
+##      \Chemport32Pool\PortAddon                              /main/FileConverterUtility/LATEST ... see config_specLS (ENU)
+##      \Chemport32Pool\PortAddon\FileConverterUtility\...     READY_FILECONVERTERUTILITY_x.x    ... see config_specLS (ENU)
+
+# GC-RC ---------------------------------------------------------------------- 9
+
+# GC-RC 68xx (Rhea Common Files) --------------------------------------------- 10
+
+# GC-RC 68xx (Common Files) -------------------------------------------------- 11
+
+# GC-RC 6850 ----------------------------------------------------------------- 12
+
+# GC-RC 6890 ----------------------------------------------------------------- 13
+
+# GC-RC 7890 ----------------------------------------------------------------- 14
+
+# Tools ---------------------------------------------------------------------- 15
+########################################
+#
+#       config_spec2LS - ENU
+#
+########################################
+
+# All these directories from Mustang VOB are used *ONLY* in English.
+#
+load \Mustang\CD\Mustang
+load \Mustang\CD\MustangDA
+
+load \Mustang\examples
+
+load \Mustang\help\Common
+load \Mustang\help\Mustang
+
+load \Mustang\install
+
+load \Mustang\localization\Common
+load \Mustang\localization\Mustang
+
+# msinsctl.exe (fully Passolized) 
+#
+load \Mustang\parts\about32
+load \Mustang\parts\corecptrad
+load \Mustang\parts\cp
+load \Mustang\parts\cpdll
+load \Mustang\parts\cperr32
+load \Mustang\parts\cpsecu32
+load \Mustang\parts\eddqtop
+load \Mustang\parts\gcdll
+load \Mustang\parts\ild\AgtHS
+load \Mustang\parts\ild\ctc
+load \Mustang\parts\ild\gc685032
+load \Mustang\parts\ild\gc6890
+load \Mustang\parts\ild\gc689032
+load \Mustang\parts\ild\gc7890
+load \Mustang\parts\ild\msd597x
+load \Mustang\parts\instctlui
+load \Mustang\parts\mfg32
+load \Mustang\parts\mscfg
+load \Mustang\parts\msdlg32
+load \Mustang\parts\msfile
+load \Mustang\parts\msinsctl
+load \Mustang\parts\mslogbk
+load \Mustang\parts\mssccmds
+load \Mustang\parts\msscdata
+load \Mustang\parts\msscil
+load \Mustang\parts\rs232
+load \Mustang\parts\runctl
+load \Mustang\parts\server32
+load \Mustang\parts\tbar32
+load \Mustang\parts\traces
+load \Mustang\parts\vela
+
+# English only
+#
+load \Mustang\parts\httpd5973
+load \Mustang\parts\rpcinfo
+load \Mustang\parts\tuneprint
+
+# Fully Passoloized (.NET)
+#
+load \Mustang\parts\cfr11.net
+load \Mustang\parts\cp.net
+load \Mustang\parts\FWUtil.net
+load \Mustang\parts\msconfig.net
+load \Mustang\parts\msinsctl.net\About
+load \Mustang\parts\msinsctl.net\MSDChemCmd
+load \Mustang\parts\msinsctl.net\MSDChemCPUtil
+load \Mustang\parts\msinsctl.net\MSDChemDataFile
+load \Mustang\parts\msinsctl.net\MSDChemUtil
+load \Mustang\parts\msmisc.net
+load \Mustang\parts\mstop.net
+
+load \Mustang\parts\damacros
+load \Mustang\parts\firmware\5973N
+load \Mustang\parts\firmware\5977
+load \Mustang\parts\icmacros
+load \Mustang\parts\kits
+load \Mustang\parts\tunefiles\5973N
+load \Mustang\parts\tunefiles\5975
+load \Mustang\parts\tunefiles\5977
+
+load \Mustang\pool
+
+# Archer Core ---------------------------------------------------------------- 1
+
+load \Archer\core\Pool\Debug\Assembly\Bin\CoreEventManipulator.dll
+load \Archer\core\Pool\Debug\Assembly\Bin\CoreEventManipulator.pdb
+load \Archer\core\Pool\Debug\Assembly\Bin\CorePlotControl.dll
+load \Archer\core\Pool\Debug\Assembly\Bin\CorePlotControl.pdb
+
+load \Archer\core\Pool\Release\Assembly\Bin\CoreEventManipulator.dll
+load \Archer\core\Pool\Release\Assembly\Bin\CoreEventManipulator.pdb
+load \Archer\core\Pool\Release\Assembly\Bin\CorePlotControl.dll
+load \Archer\core\Pool\Release\Assembly\Bin\CorePlotControl.pdb
+
+load \Archer\core\Pool\Release\Assembly\Bin\ja\CoreEventManipulator.resources.dll
+load \Archer\core\Pool\Release\Assembly\Bin\ja\CorePlotControl.resources.dll
+
+load \Archer\core\Pool\Release\Assembly\Bin\zh-CN\CoreEventManipulator.resources.dll
+load \Archer\core\Pool\Release\Assembly\Bin\zh-CN\CorePlotControl.resources.dll
+
+# Rapid Control -------------------------------------------------------------- 2
+load \SCPool\SCInst\RapidControl\RCNetSampleDriver
+
+# Method Translation (68x0 -> 78x0) and eMethod ------------------------------ 3
+
+# Method Translation (68x0 -> 78x0) ------------------------------------------ 4
+
+# eMethod -------------------------------------------------------------------- 5
+
+# eMethod & GC 68xx RC ------------------------------------------------------- 6
+
+# GC 689032 - Driver --------------------------------------------------------- 7
+#### \Chemport32Pool\AstxDrivers\6850acq\include
+#### \Chemport32Pool\AstxDrivers\7673idd\include
+#### \Chemport32Pool\AstxDrivers\acq\include
+load \Chemport32Pool\Lego\include
+load \Chemport32Pool\Lego\serverinclude
+
+load \Chemport32Pool\AstxDrivers\6850acq
+load \Chemport32Pool\AstxDrivers\6850ui
+load \Chemport32Pool\AstxDrivers\7673idd
+load \Chemport32Pool\AstxDrivers\acq
+load \Chemport32Pool\AstxDrivers\astcbk
+load \Chemport32Pool\AstxDrivers\ColumnDb
+load \Chemport32Pool\AstxDrivers\GCColumnCatalog
+load \Chemport32Pool\AstxDrivers\hpiqmr00
+load \Chemport32Pool\AstxDrivers\support
+load \Chemport32Pool\AstxDrivers\ui
+
+load \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850acq\hb685a01
+load \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850ui\hb685u01
+load \Chemport32Pool\CS32_ja_JP\AstxDrivers\7673idd\hb767300
+load \Chemport32Pool\CS32_ja_JP\AstxDrivers\acq\hb68gc01
+load \Chemport32Pool\CS32_ja_JP\AstxDrivers\ColumnDb
+load \Chemport32Pool\CS32_ja_JP\AstxDrivers\ui\hbiqui01
+
+load \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850acq\hb685a01
+load \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850ui\hb685u01
+load \Chemport32Pool\CS32_zh_CN\AstxDrivers\7673idd\hb767300
+load \Chemport32Pool\CS32_zh_CN\AstxDrivers\acq\hb68gc01
+load \Chemport32Pool\CS32_zh_CN\AstxDrivers\ColumnDb
+load \Chemport32Pool\CS32_zh_CN\AstxDrivers\ui\hbiqui01
+
+# GC 689032 - Support -------------------------------------------------------- 8
+load \Chemport32Pool\Lego\_fabsent
+load \Chemport32Pool\Lego\apg_top
+load \Chemport32Pool\Lego\ggl
+load \Chemport32Pool\Lego\iapg
+load \Chemport32Pool\Lego\larpalan
+load \Chemport32Pool\Lego\lhpbsicl
+#### \Chemport32Pool\Lego\nls
+load \Chemport32Pool\Lego\papg
+#### \Chemport32Pool\Lego\res_mgr
+load \Chemport32Pool\Lego\server
+load \Chemport32Pool\Lego\utildll
+load \Chemport32Pool\Lego\hputil
+load \Chemport32Pool\Lego\socktask
+load \Chemport32Pool\Lego\hsicltsk
+
+load \Chemport32Pool\CS32_ja_JP\Lego\_fabsent\hbfabs00
+load \Chemport32Pool\CS32_ja_JP\Lego\ggl\hbggl00
+load \Chemport32Pool\CS32_ja_JP\Lego\hputil\hbutil02
+load \Chemport32Pool\CS32_ja_JP\Lego\utildll\util
+load \Chemport32Pool\CS32_ja_JP\PortAddon\chemsm
+
+load \Chemport32Pool\CS32_zh_CN\Lego\_fabsent\hbfabs00
+load \Chemport32Pool\CS32_zh_CN\Lego\ggl\hbggl00
+load \Chemport32Pool\CS32_zh_CN\Lego\hputil\hbutil02
+load \Chemport32Pool\CS32_zh_CN\Lego\utildll\util
+load \Chemport32Pool\CS32_zh_CN\PortAddon\chemsm
+
+#### \Chemport32Pool\PortAddon\chemport32
+load \Chemport32Pool\PortAddon\chemsm
+load \Chemport32Pool\PortAddon\FileConverterUtility
+
+load \MuskComponentPool\MuskDop\dop
+
+# GC-RC ---------------------------------------------------------------------- 9
+
+# GC-RC Sample Prep
+
+# GC-RC 68xx (Rhea Common Files) --------------------------------------------- 10
+
+# GC-RC 68xx (Common Files) -------------------------------------------------- 11
+
+# GC-RC 6850 ----------------------------------------------------------------- 12
+
+# GC-RC 6890 ----------------------------------------------------------------- 13
+
+# GC-RC 7890 ----------------------------------------------------------------- 14
+
+# Tools ---------------------------------------------------------------------- 15
+load \Compliance\pool\ComponentBinaries\BuildTools\IQTRefFileGeneratorGCMS
+load \Compliance\pool\ComponentBinaries\IQTHelper
+load \Compliance\pool\Packages\Installer\IQTSetup.msi
+
+#################################################################################
+#################################################################################
+
+# Archer Core ---------------------------------------------------------------- 1
+element \Archer\core\Pool\Debug\Assembly\Bin\...               ARCHER_CORE_B479.5
+element \Archer\core\Pool\Release\Assembly\Bin\...             ARCHER_CORE_B479.5
+
+# Rapid Control -------------------------------------------------------------- 2
+element \SCPool\SCInst\RapidControl\RCNetSampleDriver\...      READY_RCNETSAMPLEDRIVER_2.2.002
+
+# Method Translation (6890 -> 7890) ------------------------------------------ 4
+
+# eMethod -------------------------------------------------------------------- 5
+
+# GC 689032 - Driver --------------------------------------------------------- 7 (based on MTCS B.04.03.064)
+##      \Chemport32Pool\AstxDrivers\6850acq\include\...                          READY_GC6850ACQ_x.xx
+##      \Chemport32Pool\AstxDrivers\7673idd\include\...                          READY_7673IDD_x.x
+##      \Chemport32Pool\AstxDrivers\acq\include\...                              READY_HP68GC01_x.xx
+element \Chemport32Pool\Lego\include\...                                         READY_LEGOINCLUDE_1.9
+element \Chemport32Pool\Lego\serverinclude\...                                   READY_SERVERINCLUDE_1.3
+
+element \Chemport32Pool\AstxDrivers\6850acq\...                                  READY_GC6850ACQ_4.12
+element \Chemport32Pool\AstxDrivers\6850ui\...                                   READY_GC6850UI_4.15
+element \Chemport32Pool\AstxDrivers\7673idd\...                                  READY_7673IDD_4.5
+element \Chemport32Pool\AstxDrivers\acq\...                                      READY_HP68GC01_4.13
+element \Chemport32Pool\AstxDrivers\astcbk\...                                   READY_ASTCBK_3.3
+element \Chemport32Pool\AstxDrivers\ColumnDb\...                                 READY_COLUMNDB_4.3
+element \Chemport32Pool\AstxDrivers\GCColumnCatalog\...                          READY_GCCOLUMNCATLOG_1.08
+element \Chemport32Pool\AstxDrivers\hpiqmr00\...                                 READY_HPIQMR00.COMPDEFC_1.7
+element \Chemport32Pool\AstxDrivers\support\...                                  READY_SUPPORT_3.7
+element \Chemport32Pool\AstxDrivers\ui\...                                       READY_HPIQUI01_4.13
+
+element \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850acq\hb685a01\...              READYJAJP_HB685A01_3.11
+element \Chemport32Pool\CS32_ja_JP\AstxDrivers\6850ui\hb685u01\...               READYJAJP_HB685U01_3.19
+element \Chemport32Pool\CS32_ja_JP\AstxDrivers\7673idd\hb767300\...              READYJAJP_HB767300_3.5
+element \Chemport32Pool\CS32_ja_JP\AstxDrivers\acq\hb68gc01\...                  READYJAJP_HB68GC01_3.11
+element \Chemport32Pool\CS32_ja_JP\AstxDrivers\ColumnDb\...                      READYJAJP_COLUMNDB_3.7
+element \Chemport32Pool\CS32_ja_JP\AstxDrivers\ui\hbiqui01\...                   READYJAJP_HBIQUI01_3.11
+ 
+element \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850acq\hb685a01\...              READYZHCN_HB685A01_3.11
+element \Chemport32Pool\CS32_zh_CN\AstxDrivers\6850ui\hb685u01\...               READYZHCN_HB685U01_3.16
+element \Chemport32Pool\CS32_zh_CN\AstxDrivers\7673idd\hb767300\...              READYZHCN_HB767300_3.5
+element \Chemport32Pool\CS32_zh_CN\AstxDrivers\acq\hb68gc01\...                  READYZHCN_HB68GC01_3.14
+element \Chemport32Pool\CS32_zh_CN\AstxDrivers\ColumnDb\...                      READYZHCN_COLUMNDB_3.5
+element \Chemport32Pool\CS32_zh_CN\AstxDrivers\ui\hbiqui01\...                   READYZHCN_HBIQUI01_3.9
+
+# GC 689032 - Support -------------------------------------------------------- 8 (based on MTCS B.04.03.064)
+element \Chemport32Pool\Lego\_fabsent\...                                        READY_FABSENT_4.9
+element \Chemport32Pool\Lego\apg_top\...                                         READY_APGTOP_3.12.2
+element \Chemport32Pool\Lego\ggl\...                                             READY_GGL_4.21
+element \Chemport32Pool\Lego\hputil\...                                          READY_HPUTIL_4.22
+element \Chemport32Pool\Lego\hsicltsk\...                                        READY_HSICLTSK.COMPDEFC_4.1
+element \Chemport32Pool\Lego\iapg\...                                            READY_IAPG_3.4
+element \Chemport32Pool\Lego\larpalan\...                                        READY_LARPALAN_3.3
+element \Chemport32Pool\Lego\lhpbsicl\...                                        READY_LHPBSICL.COMPDEFC_3.1
+##      \Chemport32Pool\Lego\nls\...                                             READY_NLS_x.xx
+element \Chemport32Pool\Lego\papg\...                                            READY_PAPG_3.5
+##      \Chemport32Pool\Lego\res_mgr\...                                         READY_RESMGR_x.x
+element \Chemport32Pool\Lego\server\...                                          READY_SERVER_3.5
+element \Chemport32Pool\Lego\socktask\...                                        READY_SOCKTASK.COMPDEFC_3.2
+element \Chemport32Pool\Lego\utildll\...                                         READY_UTIL_4.19
+
+element \Chemport32Pool\CS32_ja_JP\Lego\_fabsent\hbfabs00\...                    READYJAJP_HBFABS00_3.5
+element \Chemport32Pool\CS32_ja_JP\Lego\ggl\hbggl00\...                          READYJAJP_HBGGL00_3.11
+element \Chemport32Pool\CS32_ja_JP\Lego\hputil\hbutil02\...                      READYJAJP_HBUTIL02_3.14
+element \Chemport32Pool\CS32_ja_JP\Lego\utildll\util\...                         READYJAJP_UTIL_3.9
+element \Chemport32Pool\CS32_ja_JP\PortAddon\chemsm\...                          READYJAJP_CHEMSM_3.5
+
+element \Chemport32Pool\CS32_zh_CN\Lego\_fabsent\hbfabs00\...                    READYZHCN_HBFABS00_3.5
+element \Chemport32Pool\CS32_zh_CN\Lego\ggl\hbggl00\...                          READYZHCN_HBGGL00_3.9
+element \Chemport32Pool\CS32_zh_CN\Lego\hputil\hbutil02\...                      READYZHCN_HBUTIL02_3.8
+element \Chemport32Pool\CS32_zh_CN\Lego\utildll\util\...                         READYZHCN_UTIL_3.7
+element \Chemport32Pool\CS32_zh_CN\PortAddon\chemsm\...                          READYZHCN_CHEMSM_3.6
+
+##      \Chemport32Pool\PortAddon\chemport32\...                                 READY_CHEMPORT32_x.x
+element \Chemport32Pool\PortAddon\chemsm\...                                     READY_CHEMSM_5.5
+
+element \MuskComponentPool\MuskDop\dop\...                                       READY_DOP_7.52.1
+
+# File Converter Utility
+element \Chemport32Pool\PortAddon                              /main/FileConverterUtility/LATEST
+element \Chemport32Pool\PortAddon\FileConverterUtility\...     READY_FILECONVERTERUTILITY_1.4
+
+# GC-RC ---------------------------------------------------------------------- 9
+
+# GC-RC Sample Prep
+
+# GC-RC 68xx (Rhea Common Files) --------------------------------------------- 10
+
+# GC-RC 68xx (Common Files) -------------------------------------------------- 11
+
+# GC-RC 7890 ----------------------------------------------------------------- 14
+
+# Tools ---------------------------------------------------------------------- 15
+element \Compliance\pool\ComponentBinaries\BuildTools\IQTRefFileGeneratorGCMS\... IQT_PRODUCT_04.01.002
+element \Compliance\pool\ComponentBinaries\IQTHelper\...                          IQT_PRODUCT_04.01.002
+element \Compliance\pool\Packages\Installer\...                                   IQT_PRODUCT_04.01.002
+
+
+###     \Mustang\...                                               ...\CHS\LATEST
+###     \Mustang\...                                               ...\JPN\LATEST
+
+element * /main/LATEST
