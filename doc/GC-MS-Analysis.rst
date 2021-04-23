@@ -81,6 +81,11 @@ You can download the source code from here :download:`source code <https://fechi
 
 You can download the source code from here :download:`source code <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008TIC_SPME_Dichlromethane.html>`.
 
+`FA13008_Comparison_of_Solvent.html <https://fechii-application-chemical-engineer.readthedocs.io/en/latest/_static/FA13008/FA13008_Comparison_of_Solvent.html>`_
+-----------------------------
+
+FA13008_Comparison_of_Solvent
+
 GC-LC Concordance Software
 --------------------------
 
