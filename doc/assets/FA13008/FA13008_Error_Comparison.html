@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/echarts.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@1/dist/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@1/dist/ecStat.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/map/js/china.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/map/js/world.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/extension/bmap.min.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom, 'dark');
+var app = {};
+option = null;
+var posList = [
+    'left', 'right', 'top', 'bottom',
+    'inside',
+    'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+    'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+];
+
+app.configParameters = {
+    rotate: {
+        min: -90,
+        max: 90
+    },
+    align: {
+        options: {
+            left: 'left',
+            center: 'center',
+            right: 'right'
+        }
+    },
+    verticalAlign: {
+        options: {
+            top: 'top',
+            middle: 'middle',
+            bottom: 'bottom'
+        }
+    },
+    position: {
+        options: echarts.util.reduce(posList, function (map, pos) {
+            map[pos] = pos;
+            return map;
+        }, {})
+    },
+    distance: {
+        min: 0,
+        max: 100
+    }
+};
+
+app.config = {
+    rotate: 90,
+    align: 'left',
+    verticalAlign: 'middle',
+    position: 'insideBottom',
+    distance: 15,
+    onChange: function () {
+        var labelOption = {
+            normal: {
+                rotate: app.config.rotate,
+                align: app.config.align,
+                verticalAlign: app.config.verticalAlign,
+                position: app.config.position,
+                distance: app.config.distance
+            }
+        };
+        myChart.setOption({
+            series: [{
+                label: labelOption
+            }, {
+                label: labelOption
+            }, {
+                label: labelOption
+            }, {
+                label: labelOption
+            }]
+        });
+    }
+};
+
+
+var labelOption = {
+    show: false,
+    position: app.config.position,
+    distance: app.config.distance,
+    align: app.config.align,
+    verticalAlign: app.config.verticalAlign,
+    rotate: app.config.rotate,
+    formatter: '{name|{a}}: {c}',
+    fontSize: 10,
+    rich: {
+        name: {
+<!--            textBorderColor: '#ffff00' -->
+        }
+    }
+};
+
+option = {
+    color: ['#00FF00', '#FFFF00', '#4cabce', '#e5323e'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['原配方', 'CH2Cl2饱和食盐水', 'C5H12饱和食盐水', '正戊烷萃取', 'CH2Cl2偏差', 'C5H12偏差']
+    },
+    toolbox: {
+        show: true,
+        orient: 'vertical',
+        left: 'right',
+        top: 'center',
+        feature: {
+            mark: {show: true},
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+            restore: {show: true},
+            saveAsImage: {show: true},
+            dataZoom: {
+                yAxisIndex: 'none'
+            },
+        }
+    },
+    dataZoom: [
+        {
+            type: 'slider',
+            show: true,
+            xAxisIndex: [0],
+            start: 20,
+            end: 40
+        },
+        {
+            type: 'slider',
+            show: true,
+            yAxisIndex: [0],
+            left: '93%',
+            start: 0,
+            end: 5
+        },
+        {
+            type: 'inside',
+            xAxisIndex: [0],
+            start: 1,
+            end: 62
+        },
+        {
+            type: 'inside',
+			show: true,
+            yAxisIndex: [3],
+            start: 0,
+            end: 0.5
+        }
+    ],
+    xAxis: [
+        {
+            type: 'category',
+            axisTick: {show: true},
+            data: ['叶醇','梨醇酯','甜橙油萜','阿根廷柠檬油','DPG','艾薇醛','苯乙醇', '合成芳樟醇', '玫瑰醚', '丁酸二甲基苄基原酯','乙酸苄酯', '乙基麦芽酚', '乙酸苏合香酯', '乙基芳樟醇', '白花醇', '苯乙二甲缩醛', '左旋香芹酮', '乙酸苯乙酯', '香叶醇',
+			'乙酸芳樟酯', '吲哚', '羟醛', '桂醇', '乙酸邻叔丁基环己酯', '洋茉莉醛', '乙酸二甲基苄基原酯', '凡路酮', '丁香酚', '乙酸香叶酯',
+			'香兰素', '花青醛', '大马烯酮', '乙基香兰素', '丙位癸内酯', '王朝酮原液', '波洁红醛', '异甲基紫罗兰酮', '丁酸二甲基苄基原酯',
+			'开司米酮', '异丁酸苯氧乙酯', '抗氧化剂', '新铃兰醛', '新洋茉莉醛', '桃醛', '甲基柏木醚', '二氢茉莉酮酸甲酯', '广藿香油', '柳酸叶醇酯',
+			'龙涎酮', '柳酸己酯', '龙涎木香', '甲位己基桂醛', '乙酸柏木酯', '檀香210', '龙涎醚 DL', '帝王龙涎', '佳乐麝香原液', '柳酸苄酯', '卡拉花醛',
+			'黄葵内酯', '麝香T', '麝香烯酮']
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '原配方',
+            min: 0,
+            max: 40,
+            position: 'right',
+            axisLine: {
+                lineStyle: {
+                    color: '#00FF00'
+                }
+            },
+            axisLabel: {
+                formatter: '{value} mmHg',
+				color: '#00FF00'
+            },
+			nameTextStyle: {color: '#00FF00'} 
+        },
+        {
+            type: 'value',
+            name: 'CH2Cl2饱和食盐水',
+            min: 0,
+            max: 40,
+            position: 'left',
+            axisLine: {
+                lineStyle: {
+                    color: '#FFFF00'
+                }
+            },
+            axisLabel: {
+                formatter: '{value} ',
+				color: '#FFFF00'
+            },
+			nameTextStyle: {color: '#FFFF00'} 
+        },
+        {
+            type: 'value',
+            name: 'C5H12饱和食盐水',
+            min: 0,
+            max: 40,
+            position: 'right',
+            offset: 80,
+            axisLine: {
+                lineStyle: {
+                    color: '#4cabce'
+                }
+            },
+            axisLabel: {
+                formatter: '{value}',
+				color: '#4cabce'
+            },
+			nameTextStyle: {color: '#4cabce'} 
+        },
+        {
+            type: 'value',
+            name: '正戊烷萃取',
+            min: 0,
+            max: 40,
+            position: 'left',
+            offset: 80,
+            axisLine: {
+                lineStyle: {
+                    color: '#e5323e'
+                }
+            },
+            axisLabel: {
+                formatter: '{value}',
+				color: '#e5323e'
+            },
+			nameTextStyle: {color: '#e5323e'}
+        },
+        {
+            type: 'value',
+            name: '偏差',
+            min: 0,
+            max: 36,
+            position: 'left',
+            offset: 140,
+            axisLine: {
+                lineStyle: {
+                    color: '#e5324e'
+                }
+            },
+            axisLabel: {
+                formatter: '{value}',
+				color: '#e5324e'
+            },
+			nameTextStyle: {color: '#e5324e'}
+        }
+    ],
+    series: [
+        {
+            name: '原配方',
+            type: 'bar',
+            barGap: 0,
+            label: labelOption,
+        data: [ 0.005, 0.005, 0.6, 0.3, 35.27, 0.06, 0.9, 0.7, 0.015, 0.4, 0.2, 1, 0.015, 2, 1.6, 1.1, 0.02, 0.01, 0.5, 2, 0.05, 0.8, 0.3, 0.03, 0.2, 0.22, 0.07, 0.05, 0.1, 2.1, 0.06, 0.01, 0.06, 0.12, 0.05, 0.4, 0.2,0.5, 0.15, 0.5, 1.1, 0.45, 0.9, 0.1, 0.4, 13, 0.8, 1.8,5, 0.25, 1, 1, 0.1, 0.4, 0.200, 0.100, 10, 1, 0.03, 1.5, 8, 0.2],
+
+        },
+			{
+            name: 'CH2Cl2饱和食盐水',
+            type: 'bar',
+            label: labelOption,
+            yAxisIndex: 1,
+            data: [0.041, 0.0001, 0, 1.132, 0, 0.096, 1.305, 1.636, 0.028, 1.682, 0.273,0.017, 0.042, 2.821, 1.243, 0.99, 0.031, 0.017, 0.806, 0.207, 0.026, 0.432, 0.15, 0.045, 0.094, 0.259, 0.242, 0.048, 0.434, 0, 0.118, 0.021, 0, 0.134, 0.021, 0.817, 0.024, 1.415, 0.331, 0.766, 2.61, 0.076, 1.055, 0.104, 0.843, 14.112, 0.349, 2.391, 8.079, 0.604, 1.313, 1.715, 0.082, 0.335, 0.276, 0.0001, 23.379, 0.022, 0.017, 1.852, 4.856, 0.16
+			]        },
+        {
+            name: 'C5H12饱和食盐水',
+            type: 'bar',
+            label: labelOption,
+            yAxisIndex: 2,
+            data: [
+                0.001, 0, 0, 0.556, 0, 0.016, 0.289, 1.135, 0.009, 0.294, 0.172, 0, 0.012, 1.98, 0.816, 0.554, 0.014, 0.008, 0.273, 0.174, 0.022, 0.018, 0, 0.024, 0.591, 0.294, 0.012, 0.041, 0.265, 0, 0.05, 0.009, 0, 0.081, 0, 0.367, 0, 1.15, 0.17, 0.792, 1.855, 0, 0, 0.087, 0.626, 12.297, 0.258, 3.004, 5.301, 0.404, 1.147, 1.951, 0.074, 0.319, 0.192, 0, 1.658, 0, 0, 2.034, 5.121, 0.133
+			]        },
+        {
+            name: '正戊烷萃取',
+            type: 'bar',
+            label: labelOption,
+            yAxisIndex: 3,
+            data: [
+            0.02, 0.002, 0, 3.15, 0, 0.24, 0.13, 7.69, 0.11, 2, 1.13, 0, 0.1, 9.65, 0.19, 5.31, 0.08, 0.08, 1.29, 0.93, 0.04, 0.24, 0.07, 0.11, 0, 0, 1.31, 0.05, 0.15, 0.41, 0, 0.14, 0.02, 0, 0.19, 0.21, 0.91, 0.21, 0.12, 2, 0.56, 1.68, 1.3, 0.02, 0.72, 0.1, 0.38, 14.7, 0.40, 3.43, 4.64, 0.11, 0.6, 0.75, 0.03, 0.08, 0.15, 0, 6.57, 0.0001, 0, 0.49, 1.46, 0.03
+		]        },
+        {
+            name:'CH2Cl2偏差',
+            type: 'line',
+            label:labelOption,
+            yAxisIndex: 4,
+            data: [
+                0.2592, 0.004802, 0.6, 2.374133,35.27, 0.0216, 0.18225, 1.251565714, 0.01126667, 4.10881, 0.026645, 0.966289, 0.0486, 0.3370205, 0.079655625, 0.011, 0.00605, 0.0049, 0.187272, 1.6074245, 0.01152, 0.16928, 0.075, 0.0075, 0.05618, 0.006913636, 0.422628571, 0.0000800000000000001, 1.11556, 2.1, 0.056066667, 0.0121, 0.06, 0.00163333, 0.01682, 0.4347225, 0.15488, 1.67445, 0.18406667, 0.141512, 2.072818182, 0.310835556, 0.02669444, 0.00016, 0.4906225, 0.095118769, 0.25425125, 0.194045, 1.8960482, 0.501264, 0.097969, 0.511225, 0.00324, 0.0105625, 0.02888, 0.0998001, 17.899764, 0.956484, 0.00563333, 0.082602667, 1.235592, 0.008
+            ]
+
+        },
+        {
+            name:'C5H12偏差',
+            type: 'line',
+            label:labelOption,
+            yAxisIndex: 4,
+            data: [
+                0.0032, 0.005, 0.6, 0.21845333, 35.27, 0.03226667, 0.41480111, 0.27032143, 0.00240000, 0.02809000, 0.00392000, 1.00000, 0.000600, 0.0002, 0.38416, 0.27101455, 0.0018, 0.0004, 0.103058, 1.66713800, 0.01568, 0.764405, 0.30000, 0.0012, 0.76440500, 0.02489091, 0.04805714, 0.00162000, 0.2722500, 2.100, 0.00166667,0.000100, 0.06000, 0.01267500, 0.05000, 0.0027225, 0.20000, 0.845, 0.00266667, 0.17052800, 0.51820455, 0.45000, 0.90000, 0.00169000, 0.12769, 0.03801608, 0.36720500, 0.80534222, 0.01812020, 0.09486400, 0.02160900, 0.90440100, 0.0067600, 0.01640250, 0.00032000, 0.1000, 6.95889640, 1.0000, 0.030, 0.190104, 1.0360813
+            ]
+
+        }
+    ]
+};;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>
