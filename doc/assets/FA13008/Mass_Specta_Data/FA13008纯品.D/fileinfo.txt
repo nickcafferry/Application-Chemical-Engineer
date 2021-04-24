@@ -1,0 +1,22 @@
+
+           Data File Information
+
+     Data File     : C:\msdchem\1\data\FA13008´¿Æ·.D\data.ms
+     Operator:     :   
+     Acquired On   :  21 Dec 2020  17:17    
+     Instrument    :  6890+5373
+     Method File   :  602280.M
+     Sample Name   :  FA13008´¿Æ·
+     Misc Info     :   
+     Vial Number   :  1
+     Sample Mult.  :  1.00
+     Sample Amount :  0.00
+     Exp. Barcode  :   
+     Act.  Barcode :   
+
+
+
+     Files in Data Directory
+
+
+     * = File time stamp is before latest quant update

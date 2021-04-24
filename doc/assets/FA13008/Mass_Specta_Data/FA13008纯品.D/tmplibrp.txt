@@ -1,0 +1,435 @@
+                                        Æ×¿â¼ìË÷±¨¸æ
+
+  Êý¾ÝÂ·¾¶  : Z:\data\
+  Êý¾ÝÎÄ¼þ  : FA13008´¿Æ·.D                                       
+  ²É¼¯      : 21 Dec 2020  17:17
+  ²Ù×÷Õß    :  
+  ÑùÆ·      : FA13008´¿Æ·
+  ÆäËû      :  
+  ALS ÑùÆ·Æ¿: 1   ÑùÆ·³Ë»ýÒò×Ó: 1
+
+  ¼ìË÷¿â£º  \\T40\Database\USER.L             ×îÐ¡Æ¥Åä¶È£º 70
+                      \\T40\Database\newD.l\newD.l      ×îÐ¡Æ¥Åä¶È£º 60
+                      \\T40\Database\W9N11.L          
+
+  Î´ÖªÆ×Í¼£º   ¶¥µã
+  »ý·ÖÊÂ¼þ£º »¯Ñ§¹¤×÷Õ¾»ý·ÖÆ÷ - autoint1.e
+
+·å#    R.T.  Ãæ»ý%          Æ×¿â/ID                 ²Î±È#    CAS#      Æ¥Åä¶È
+_____________________________________________________________________________
+  1  16.572  4.30 \\T40\Database\USER.L
+                 DPG                                  1169 000110-98-5 91
+                 DPG<peak1>                           2797 000110-98-5 91
+                 DPG                                  1170 000110-98-5 91
+ 
+  2  16.635  0.72 \\T40\Database\USER.L
+                 DPG                                  1170 000110-98-5 91
+                 DPG                                  1169 000110-98-5 91
+                 DPG<peak1>                           2797 000110-98-5 91
+ 
+  3  16.708  1.02 \\T40\Database\USER.L
+                 DPG                                  1169 000110-98-5 91
+                 DPG<peak1>                           2797 000110-98-5 91
+                 DPG                                  1170 000110-98-5 91
+ 
+  4  16.740  0.32 \\T40\Database\USER.L
+                 DPG<peak1>                           2797 000110-98-5 91
+                 DPG                                  1170 000110-98-5 91
+                 DPG                                  1169 000110-98-5 91
+ 
+  5  16.765  0.52 \\T40\Database\USER.L
+                 DPG<peak1>                           2797 000110-98-5 91
+                 DPG                                  1169 000110-98-5 91
+                 DPG                                  1170 000110-98-5 38
+ 
+  6  16.810  0.26 \\T40\Database\USER.L
+                 DPG                                  1169 000110-98-5 91
+                 DPG<peak1>                           2797 000110-98-5 91
+                 DPG                                  1170 000110-98-5 91
+ 
+  7  17.533  2.76 \\T40\Database\USER.L
+                 Limonene                             2600 000138-86-3 98
+                 Limonene                             3209 000138-86-3 97
+                 Epoxylinalool<peak1>                 2868 014049-11-7 32
+ 
+  8  17.879  4.09 \\T40\Database\USER.L
+                 DPG<peak2>                           2798 000110-98-5 90
+                 DPG<peak3>                           2799 000110-98-5 90
+                 DPG<peak4>                           1929 000110-98-5 83
+ 
+  9  18.301  3.85 \\T40\Database\USER.L
+                 DPG<peak2>                           2798 000110-98-5 90
+                 DPG<peak4>                           2800 000110-98-5 78
+                 DPG<peak4>                           1929 000110-98-5 78
+ 
+ 10  19.735  1.22 \\T40\Database\USER.L
+                 DPG<peak4>                           1929 000110-98-5 90
+                 DPG<peak4>                           2800 000110-98-5 83
+                 DPG<peak2>                           2798 000110-98-5 78
+ 
+ 11  21.629  2.06 \\T40\Database\newD.l\newD.l
+                 ±½ÒÒ´¼PHENYLETHYL ALCOHOL            5343 000060-12-8 90
+                 ±½ÒÒ´¼PHENYLETHYL ALCOHOL             155 000060-12-8 90
+                 ±½ÒÒ´¼Benzeneethanol (CAS) $$ Phen    150 000060-12-8 58
+                 ethyl alcohol $$ Phenet
+ 
+ 12  24.637  0.22 \\T40\Database\USER.L
+                 Acetic acid, phenylmethyl ester       701 000140-11-4 97
+                 Benzyl acetate                       2830 000140-11-4 97
+                 Acetic acid, phenylmethyl ester       700 000140-11-4 97
+ 
+ 13  26.683  0.68 \\T40\Database\USER.L
+                 Ethyl maltol                         1557 004940-11-8 91
+                 Ethyl maltol                         1339 004940-11-8 87
+                 Ethyl maltol                         1338 004940-11-8 72
+ 
+ 14  27.022  0.85 \\T40\Database\USER.L
+                 Ethyl linalool<peak1>                1639 010339-55-6 91
+                 Ethyl linalool<peak2>                1640 010339-55-6 91
+                 Ethyl linalool<peak1>                3204 010339-55-6 87
+ 
+ 15  27.517  0.30 \\T40\Database\USER.L
+                 Florol<Peak1>                        1787 063500-71-0 91
+                 Florol<Peak1>                        3205 063500-71-0 90
+                 Florol<peak2>                        1788 063500-71-0 50
+ 
+ 16  27.863  1.24 \\T40\Database\USER.L
+                 Ethyl linalool<peak2>                1640 010339-55-6 87
+                 Ethyl linalool<peak1>                1639 010339-55-6 83
+                 Ethyl linalool<peak2>                3206 010339-55-6 80
+ 
+ 17  28.628  1.27 \\T40\Database\USER.L
+                 Florol<peak2>                        1788 063500-71-0 91
+                 Florol<peak2>                        3207 063500-71-0 90
+                 Florol<Peak1>                        1787 063500-71-0 56
+ 
+ 18  28.729  0.61 \\T40\Database\USER.L
+                 Phenylacetaldehyde  dimethylacetal   1741 000101-48-4 86
+                  (Rosal)
+                 Rosal                                1263 000101-48-4 83
+                 Rosal                                1262 000101-48-4 47
+ 
+ 19  29.884  0.24 \\T40\Database\newD.l\newD.l
+                 ÏãÃ©´¼ Citronellol $$ Rodino          553 000106-22-9 60
+                 ÏãÒ¶´¼GERANIOL                        582 000106-24-1 55
+                 ÏãÒ¶´¼trans-Geraniol $$ Guaniol $$    568 000106-24-1 50
+                  Lem
+ 
+ 20  31.512  0.18 \\T40\Database\USER.L
+                 Geraniol                             1797 000106-24-1 97
+                 Geraniol                              137 000106-24-1 91
+                 Geraniol                              136 000106-24-1 83
+ 
+ 21  31.876  2.06 \\T40\Database\USER.L
+                 Linalyl acetate                      1726 000115-95-7 91
+                 Linalyl formate                      2850 000115-99-1 90
+                 Isobutytate Linalyl                  1656 000078-36-4 86
+ 
+ 22  32.787  0.67 \\T40\Database\USER.L
+                 Hydroxycitronellal                   1810 000107-75-5 91
+                 Hydroxycitronellal                    360 000107-75-5 90
+                 Hydroxycitronellal                    363 000107-75-5 52
+ 
+ 23  32.854  0.05 \\T40\Database\USER.L
+                 Indole                               1830 000120-72-9 94
+                 Indole                               1428 000120-72-9 90
+                 Ethyl 3-Hydroxy hexanoate            2635 002305-25-1  9
+ 
+ 24  33.872  0.34 \\T40\Database\USER.L
+                 Cinnamyl alcohol                      105 000104-54-1 98
+                 Cinnamic alcohol                     2712 000104-54-1 98
+                 Cinnamic alcohol                       15 000104-54-1 97
+ 
+ 25  34.840  0.10 \\T40\Database\USER.L
+                 Piperonal                            1836 000120-57-0 97
+                 Piperonal                             346 000120-57-0 96
+                 Piperonal                             344 000120-57-0 94
+ 
+ 26  35.382  0.35 \\T40\Database\USER.L
+                 Dimethyl benzyl carbinyl acetate     2781 000151-05-3 81
+                 Dimethyl benzyl carbinyl acetate     1610 000151-05-3 74
+                 Dimethyl benzyl carbinyl butyrate    1903 010094-34-5 62
+ 
+ 27  39.043  2.00 \\T40\Database\USER.L
+                 Vanillin                             1882 000121-33-5 96
+                 Vanillin                              331 000121-33-5 96
+                 Vanillin                              330 000121-33-5 93
+ 
+ 28  39.627  0.07 \\T40\Database\USER.L
+                 Lavandulyl acetate                   2917 025905-14-0 90
+                 Neryl acetate                         800 000141-12-8 86
+                 Geranyl acetate (peak2)              1920 000105-87-3 86
+ 
+ 29  41.873  0.07 \\T40\Database\USER.L
+                 Florhydral                            693 000000-00-0 98
+                 Florhydral                            694 000000-00-0 96
+                 Cocal<impurity peak>                 2525 000000-00-0 37
+ 
+ 30  43.422  0.13 \\T40\Database\USER.L
+                 gama-Decalactone                     1315 000706-14-9 86
+                 gama-Decalactone                     1312 000706-14-9 86
+                 gama-Decalactone                     1311 000706-14-9 86
+ 
+ 31  44.031  0.26 \\T40\Database\USER.L
+                 Guaiene<alpha>                       2482 000000-00-0 99
+                 Selinene<beta->                      3198 000473-13-2 50
+                 Silvial                              2095 006658-48-6 35
+ 
+ 32  45.043  0.56 \\T40\Database\USER.L
+                 Bourgeonal                           1550 018127-01-0 98
+                 Bourgeonal                           1549 018127-01-0 98
+                 Bourgeonal                           2678 008127-01-0 97
+ 
+ 33  45.830  0.22 \\T40\Database\USER.L
+                 Isomethyl ionone                     1962 000127-51-5 93
+                 .alpha. Isomethyl ionone             1086 000127-51-5 70
+                 Thymol                               1154 000089-83-8 64
+ 
+ 34  46.229  1.10 \\T40\Database\USER.L
+                 Dimethyl benzyl carbinyl butyrate    2785 010094-34-5 91
+                 Dimethyl benzyl carbinyl butyrate    1980 010094-34-5 87
+                 Dimethyl benzyl carbinyl butyrate     765 010094-34-5 83
+ 
+ 35  46.588  0.17 \\T40\Database\USER.L
+                 Cashmeran                            1968 000000-00-0 98
+                 Cashmeran                            2696 033704-61-9 97
+                 beta-Isomethyl ionone                2285 000127-43-5 32
+ 
+ 36  47.137  0.76 \\T40\Database\USER.L
+                 Phenoxy ethyl isobutyrate            1897 000103-60-6 90
+                 Phenoxy ethyl isobutyrate             769 000103-60-6 87
+                 Phenoxy ethyl isobutyrate             770 000103-60-6 42
+ 
+ 37  47.311  0.18 \\T40\Database\USER.L
+                 Sandalore<peak1>                     1563 065113-99-7 99
+                 Sandalore<peak3>                     3232 065113-99-7 99
+                 Sandalore<peak2>                     3231 065113-99-7 97
+ 
+ 38  47.673  1.86 \\T40\Database\USER.L
+                 BHT                                  1893 000128-37-0 98
+                 BHT                                  2669 000128-37-0 96
+ 
+ 39  47.901  0.27 \\T40\Database\USER.L
+                 BULNESENE <ALPHA-> (= DELTA-GUAIEN   3346 036911-11-0 99
+                 E)
+                 .alpha.-Patchoulene                  2373 000560-32-7 53
+                 Guaiene<alpha>                       2482 000000-00-0 50
+ 
+ 40  48.936  0.08 \\T40\Database\newD.l\newD.l
+                 Ì´Ïã210 ; Sandalore $ 5-(2,2,3-Tri   2702 065113-99-7 70
+                 methylcyclopent-3-en-1-yl)-3-methy
+                 lpentan-2-ol
+                 ·´-¦Â-×ÏÂÞÀ¼Íª.BETA. IONONE          6009 000079-77-6 22
+                 ·´-¦Â-×ÏÂÞÀ¼Íª.BETA. IONONE          9518 000079-77-6 22
+ 
+ 41  49.101  1.12 \\T40\Database\USER.L
+                 Tropional/Helional                   1651 001205-17-0 96
+                 Helional                             3215 001205-17-0 95
+                 Heliotropyl acetone                  1046 055418-52-5 64
+ 
+ 42  49.802  0.10 \\T40\Database\USER.L
+                 Aldehyde C14(gamma-Undecalactone)    2465 000104-67-6 91
+                 gama-Undecalactone                   1308 000104-67-6 90
+                 gama-Undecalactone                   1305 000104-67-6 90
+ 
+ 43  54.358  0.61 \\T40\Database\USER.L
+                 Cedryl methyl ether                  2697 019870-74-7 99
+                 Cedryl methyl ether                  1833 019870-74-7 96
+                 Cedrol                                226 000077-53-2 12
+ 
+ 44  54.472  0.13 \\T40\Database\W9N11.L
+                 Cyclopentanone, 2-(2-octenyl)- $$  166891 998166-89-1 45
+                 2-[(2E)-2-Octenyl]cyclopentanone #
+                 Ethyl 7-(2-oxocyclopentyl)heptanoa 295798 040687-10-3 38
+                 te
+                 Pyrrolidin-2-one, 1,5-dihydro-3,4- 165788 998165-78-8 30
+                 dimethyl-5-(1-piperidyl)-
+ 
+ 45  54.637  0.18 \\T40\Database\W9N11.L
+                 2-(2-cyanoethylsulfanyl)benzaldehy 157144 998157-14-4 53
+                 de
+                 Pyrrolidin-2-one, 1,5-dihydro-3,4- 165788 998165-78-8 25
+                 dimethyl-5-(1-piperidyl)-
+                 OCTENYL CYCLOPENTANONE $$ Cyclopen 166892 112033-09-7 22
+                 tanone, 2-(2-octenyl)-
+ 
+ 46  55.167 12.95 \\T40\Database\USER.L
+                 Kharismal (cis-MDJ peak1)            1840 000000-00-0 98
+                 MDJ super (Methyl  dihydrojasmonat   1704 024851-98-7 98
+                 e)
+                 Methyl dihydrojasmonate              1621 024851-98-7 98
+ 
+ 47  55.427  0.38 \\T40\Database\USER.L
+                 Lyral                                 406 031906-04-4 95
+                 Lyral                                1809 031906-04-4 95
+                 Lyral                                1808 031906-04-4 95
+ 
+ 48  55.906  0.28 \\T40\Database\USER.L
+                 Iso E super                          1281 054464-57-2 96
+                 Iso E super                          1283 054464-57-2 95
+                 Iso E super                          1282 054464-57-2 72
+ 
+ 49  55.969  0.39 \\T40\Database\USER.L
+                 Patchouli alcohol                    2668 005986-55-0 99
+                 Cosmone((e/z)-3-methyl-cyclotetrad   3030 259857-70-1 27
+                 ec-5-en-1-one)<peak1>
+                 Orcinyl 3                            1983 003209-13-0 18
+ 
+ 50  56.322  2.91 \\T40\Database\USER.L
+                 Cis-3-hexenyl salicylate             1606 000000-00-0 87
+                 Cyclohexyl  salicylate               1881 000000-00-0 50
+                 n-Hexyl salicylate                    926 006259-76-3 27
+ 
+ 51  56.407  2.28 \\T40\Database\USER.L
+                 Iso E super                          1283 054464-57-2 95
+                 Kharismal (cis-MDJ .peak2)           1841 000000-00-0 95
+                 Methyl dihydrojasmonate              1622 024851-98-7 95
+ 
+ 52  56.487  2.84 \\T40\Database\USER.L
+                 Iso E super                          1283 054464-57-2 98
+                 Iso E super                          1281 054464-57-2 95
+                 Iso E super                          1282 054464-57-2 83
+ 
+ 53  56.785  1.29 \\T40\Database\USER.L
+                 Iso E super                          1282 054464-57-2 99
+                 Iso E super                          1281 054464-57-2 53
+                 beta-Methyl ionone                   2347 000127-43-5  9
+ 
+ 54  57.461  0.32 \\T40\Database\newD.l\newD.l
+                 ÁúÏÑÏãÍª Isocyclemone E(III) Aceto   9452 054464-57-2 70
+                 naphthone-1,2,3,4,5,6,7,8-octahydr
+                 o-2,3,8,8-te
+                 .beta.-iso-methyl ionone             3539 000000-00-0 38
+                 ÁúÏÑÏãÍª(II) Isocyclemone E(II)      9453 054464-57-2 35
+ 
+ 55  58.060  0.95 \\T40\Database\newD.l\newD.l
+                 ÁúÏÑÏãÍª Isocyclemone E(III)         9454 054464-57-2 94
+                 ÁúÏÑÏãÍª Isocyclemone E(III) Aceto   9451 054464-57-2 94
+                 naphthone-1,2,3,4,5,6,7,8-octahydr
+                 o-2,3,8,8-te
+                 ÏãÇÛ·Ó$ Carvacrol $$ 2-HYDROXY-4-I   7187 000499-75-2 38
+                 SOPROPYL-
+ 
+ 56  58.190  0.12 \\T40\Database\W9N11.L
+                 ISOCYCLOCITRAL 3                    71871 000000-00-0 50
+                 Cyclopentan-1-al, 4-isopropylidene  71906 998071-90-6 38
+                 -2-methyl-
+                 3-Methoxybenzyl alcohol, trifluoro 275950 998275-95-0 35
+                 acetate
+ 
+ 57  60.075  1.21 \\T40\Database\USER.L
+                 Boisambrene forte                    1970 058567-11-6 99
+                 Amberwood(Boisambrebe forte)         2508 058567-11-6 98
+                 Amberwood F(Boisambrebe forte)       2329 058567-11-6 91
+ 
+ 58  60.253  1.41 \\T40\Database\USER.L
+                 HCA                                     5 000101-86-0 99
+                 HCA                                   327 000101-86-0 99
+                 HCA                                   326 000101-86-0 99
+ 
+ 59  60.471  0.16 \\T40\Database\USER.L
+                 Benzyl benzoate                      1884 000120-51-4 97
+                 Benzyl Benzoate                       844 000120-51-4 96
+                 Benzyl benzoate                      2659 000120-51-4 96
+ 
+ 60  61.344  0.20 \\T40\Database\USER.L
+                 Synambram(6)                         2129 000000-00-0 91
+                 Cetalox                              2702 003738-00-9 91
+                 Ambrox DL<Peak3>                     2498 003738-00-9 91
+ 
+ 61  61.582  0.08 \\T40\Database\USER.L
+                 HCA                                   326 000101-86-0 99
+                 HCA                                     5 000101-86-0 99
+                 HCA                                   327 000101-86-0 98
+ 
+ 62  61.788  0.07 \\T40\Database\USER.L
+                 Cedryl acetate                       2701 000077-54-3 91
+                 Cedryl acetate                        682 000077-54-3 91
+                 Cedryl acetate                        681 000077-54-3 83
+ 
+ 63  64.022  0.78 \\T40\Database\newD.l\newD.l
+                 ¼ÑÀÖ÷êÏãGalaxolide (IV) ; ¼ÑÀÖ÷êÏã  14420 001222-05-5 99
+                 ÖÐÒì¹¹Ìå·å 30.98min
+                 ¼ÑÀÖ÷êÏãGalaxolide (III) ; ¼ÑÀÖ÷êÏ  14419 001222-05-5 99
+                 ãÖÐÒì¹¹Ìå·?30.89min
+                 ÈøÀû÷êÏã Celestolide I (IFF)         1869 013171-00-1 42
+                   4-Acetyl-6tert-butyl-1,1-dimethy
+                 lindane
+ 
+ 64  64.206  0.79 \\T40\Database\newD.l\newD.l
+                 ¼ÑÀÖ÷êÏãGalaxolide (IV) ; ¼ÑÀÖ÷êÏã  14420 001222-05-5 99
+                 ÖÐÒì¹¹Ìå·å 30.98min
+                 ¼ÑÀÖ÷êÏãGalaxolide (III) ; ¼ÑÀÖ÷êÏ  14419 001222-05-5 99
+                 ãÖÐÒì¹¹Ìå·?30.89min
+                 ÈøÀû÷êÏã Celestolide I (IFF)         1869 013171-00-1 53
+                   4-Acetyl-6tert-butyl-1,1-dimethy
+                 lindane
+ 
+ 65  65.338  0.10 \\T40\Database\USER.L
+                 Muscenone(3-Methylcyclopentadeceno   3133 082356-51-2 99
+                 ne)<Peak3>
+                 Muscenone(3-Methylcyclopentadeceno   3132 082356-51-2 96
+                 ne)<Peak2>
+                 Globanone<Peak3>symrise              3500 003100-36-5 62
+ 
+ 66  66.049 15.74 \\T40\Database\USER.L
+                 Abbalide                             1362 001222-05-5 99
+                 Abbalide                             3216 001222-05-5 98
+                 Tonalide                             1820 001506-02-1 70
+ 
+ 67  66.449  0.39 \\T40\Database\newD.l\newD.l
+                 PHANTOLIDE $$ 1-(1,1,2,3,3,6-HEXAM  14777 015323-35-0 99
+                 ETHYL-INDAN-5-YL)-ETHANONE
+                 ¼ÑÀÖ÷êÏãGalaxolide (V-Ö÷·å) ; ¼ÑÀÖ  14421 001222-05-5 80
+                 ÷êÏãÖÐÖ÷·å 31.70min
+                 ¼ÑÀÖ÷êÏãGalaxolide (VI) ; ¼ÑÀÖ÷êÏã  14422 001222-05-5 38
+                 ÖÐÒì¹¹Ìå·å 32.26min
+ 
+ 68  67.156  0.45 \\T40\Database\USER.L
+                 Abbalide                             3216 001222-05-5 97
+                 Abbalide                             1362 001222-05-5 97
+                 Tonalide                             1820 001506-02-1 25
+ 
+ 69  67.410  0.42 \\T40\Database\USER.L
+                 Abbalide                             1362 001222-05-5 97
+                 Abbalide                             3216 001222-05-5 96
+                 Tonalide                             1820 001506-02-1 80
+ 
+ 70  67.873  0.65 \\T40\Database\USER.L
+                 Abbalide                             3216 001222-05-5 97
+                 Abbalide                             1362 001222-05-5 97
+                 Tonalide                             1820 001506-02-1 74
+ 
+ 71  68.425  0.59 \\T40\Database\USER.L
+                 Abbalide                             3216 001222-05-5 98
+                 Abbalide                             1362 001222-05-5 97
+                 Tonalide                             1820 001506-02-1 17
+ 
+ 72  69.504  0.15 \\T40\Database\W9N11.L
+                 2-Fluoro-5,11-N-dimethylbenzo[b]di 344384 998344-38-4 74
+                 azocino[6,7-b]pyridine
+                 1-(2,6-Diisopropylphenylimino)-4-m 344811 998344-81-1 74
+                 ethoxybut-2-yne
+                 1-phenyl-3-methyl-2-azafluorene    344884 998344-88-4 72
+ 
+ 73  69.691  1.92 \\T40\Database\USER.L
+                 Ambrettolide                         1646 000123-69-3 99
+                 Ambrettolide                         1647 028645-51-4 99
+                 Ambrettolide                         2495 028645-51-4 99
+ 
+ 74  73.292  9.97 \\T40\Database\USER.L
+                 Musk T                               1835 000105-95-3 99
+                 Musk T                               1380 000105-95-3 93
+                 BIcycliohexanone                     1016 000090-42-6  7
+ 
+ 75  85.900  0.08 \\T40\Database\W9N11.L
+                 Glutaric acid, 2-(4-bromophenoxy)e 726843 998726-84-3 47
+                 thyl octyl ester
+                 3-(6H-6-oxo-1,2,4-triazino[4,3-b]( 383591 107263-12-7 38
+                 1,2,4-triazolo)[3,4-f]pyridazinyl-
+                 7)-2-methyla
+                 7-AMINO-2-ETHYL-1-PROPYL-5-(TRIFLU 383908 069145-21-7 38
+                 OROMETHYL)BENZIMADAZOLE
+ 
+
+default1.m Wed Mar 10 09:32:19 2021   
