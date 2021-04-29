@@ -1,0 +1,34 @@
+name: nr
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: nr
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+         git config --global user.email "ucecwme@ucl.ac.uk"
+         git config --global user.name "nickcafferry"
+         git init
+
+         ls
+         cd data/
+         
+         wget -O wholeoil.pdf https://projects.battelle.org/og-updates/2013Q2/wholeoil.pdf
+
+         
+         git add wholeoil.pdf
+         git commit -m "add wholeoil.pdf"
+         
+         git push origin master
+         ls -lh
+         pwd
