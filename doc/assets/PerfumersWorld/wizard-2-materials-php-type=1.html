@@ -1,0 +1,269 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="apple-touch-icon" sizes="128x128" href="logo.png">
+		<link rel="icon" sizes="192x192" href="logo.png">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<title>wizard 2 materials</title>
+			<style>
+			.btn-block {
+				height: 8vh;
+			}
+				.login-logo{ font-family: times; font-style: italic; font-size: 20px;}
+	
+				body {
+	
+						background-size: 400% 100% !important;
+						animation: move 10s ease infinite;
+						transform: translate3d(0, 0, 0);
+						background: linear-gradient(180deg, #94ecf7 10%, #94ecf7 40%,#fed6e3 60%, #ffb8f9 80% );
+						height: 100%;
+				}
+				@keyframes NO {
+					from, to {
+						-webkit-transform: translate3d(0, 0, 0);
+						transform: translate3d(0, 0, 0);
+					}
+	
+					10%, 30%, 50%, 70%, 90% {
+						-webkit-transform: translate3d(-10px, 0, 0);
+						transform: translate3d(-10px, 0, 0);
+					}
+	
+					20%, 40%, 60%, 80% {
+						-webkit-transform: translate3d(10px, 0, 0);
+						transform: translate3d(10px, 0, 0);
+					}
+				}
+	
+				@keyframes arrive {
+					0% {
+						opacity: 0;
+						transform: translate3d(0, 50px, 0);
+					}
+	
+					100% {
+						opacity: 1;
+						transform: translate3d(0, 0, 0);
+					}
+				}
+	
+				@keyframes move {
+					0% {
+						background-position: 0 0
+					}
+	
+					50% {
+						background-position: 100% 0
+					}
+	
+					100% {
+						background-position: 0 0
+					}
+				}
+				@keyframes zoominoutsinglefeatured {
+						0% {
+								transform: scale(1,1);
+						}
+						50% {
+								transform: scale(1.2,1.2);
+						}
+						100% {
+								transform: scale(1,1);
+						}
+				}
+				@keyframes topFadeOut {
+		0% {
+			position: absolute;
+			top: -3rem;
+			opacity: 0;
+		}
+	
+		75% {
+			position: absolute;
+			top: 30%;
+			opacity: 1;
+		}
+	
+		100% {
+			opacity: 0;
+		}
+		}
+	
+			.blink_me {
+				animation:blinker  1.2s infinite;
+				}
+	
+				@keyframes blinker {
+				50% {
+					opacity: 0;
+				}
+				}
+				#expireFeature {
+			color: #BA00FF !important;
+			font-size:14px !important;
+			}
+			.buttonMetal {
+		background-image:url("Metal-button.jpg"); // TIR(ok)
+	}
+			</style>
+			
+			<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="headpage" style="margin:10px;">
+		<div class="row">
+			<div class="col-sm-6">
+	<div style="float:left; margin:10px;">
+	<a href="index.html" 	style="color:#5c5c5c !important; text-decoration: none !important;"><img src="logo.png" height="50">
+		<span class="login-logo"><b>Perfumers</b>World</span></a>
+	</div>
+	</div>
+	<div class="col-sm-6">
+		<nav class="navbar" style="float:right;">
+		<div class="nav navbar-nav" style="float:right;margin-top:12px;">
+	 
+<!--	<div class="nav-item dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" style="font-size:18px;color:black"></i> Cafferry <span class="caret"></span></a>
+			  <div class="dropdown-menu">
+			  <a class="dropdown-item"  href="index.html"> TPW-Online</a>
+				<a class="dropdown-item"  href="http://perfumersworld.com"> Homepage</a>
+				<a class="dropdown-item" href="../auth/dashboard.php"> Dashboard</a>
+				<a class="dropdown-item"  href="../auth/logout.php?q=logout"> Logout</a>
+			  </div>
+			</div>
+		  </div>
+-->		
+		</nav>
+		</div>
+		</div>
+	</div>	
+	<div class="container">
+	
+		<p class="text-center"><b>选择要使用的材料</b></p>
+	  <div class="row">
+			<div class="col-sm-12">
+				<a href="wizard-4-description-phptype=1&m=kit&w=1000.html" class="btn buttonMetal btn-lg btn-block">香水培训包</a>
+	
+			</div>
+			<div class="col-sm-12">
+				<a href="wizard-3-complexity.php?type=1&m=fle" class="btn buttonMetal btn-lg btn-block">自定义创建工具包</a>
+	
+			</div>
+		<div class="col-sm-12">
+				<a href="wizard-3-complexity.php?type=1&m=all"  class="btn buttonMetal btn-lg btn-block">所有PW材料</a>
+	
+		</div>
+	
+		<div class="col-sm-12">
+				<button id="checkbutton" class="btn buttonMetal btn-lg btn-block">自然材料*</button>
+	
+		</div>
+	
+			<div class="col-sm-12">
+				<button id="checkbutton2"  class="btn buttonMetal btn-lg btn-block">PW材料无香基*</button>
+	
+			</div>
+			<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+		<div id="expireFeature" class"text-center">
+	
+		</div>
+		</div>
+		<div class="col-sm-4"></div>
+	
+		<!--		<div class="col-sm-12">
+				<button href="wizard-3-complexity.php?type=1&m=1" disabled class="btn btn-6 btn-lg btn-block">My Database <span style="font-size:10px; color:#310299;">Pro Feature</span></button>
+	
+		</div>
+			<div class="col-sm-12">
+				<button href="wizard-3-complexity.php?type=1&m=aroma" disabled class="btn btn-6 btn-lg btn-block">PROFESSIONAL DB <span style="font-size:10px; color:#310299;">Pro Feature</span></button>
+	
+			</div>
+			<div class="col-sm-12">
+				<button href="wizard-3-complexity.php?type=1$m=flav" disabled class="btn btn-6 btn-lg btn-block">Flavour Materials <span style="font-size:10px; color:#310299;">Pro Feature</span></button>
+	
+			</div>-->
+			<br>
+	  </div>
+	<br>
+	<div class="main">
+	<ul class="progressbar_step">
+			  <a href="index.html"><button type="submit" class="btn btn-default btn-circle" style="margin-left: 10px;margin-right: 10px;margin-top: -1px;  background-color:#7d7d7d !important;"><i class="fa fa-angle-left"></i></button></a>		
+			  <li class="active"></li>
+			  <li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			<button type="submit" class="btn btn-default btn-circle active" style="margin-left: 10px;margin-right: 10px;margin-top: -1px;"><i class="fa fa-angle-right"></i></button>	
+		</ul>
+	</div>    
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		var tpwPro = '0';
+		var checkExpire = '0';
+		if (checkExpire == 1){
+			var tpwDate = 'May 11, 2021 15:37:38';
+	
+	
+			var countDownTpwDate =  new Date("May 11, 2021 15:37:38").getTime();
+	
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+	
+		  // Get today's date and time
+		  var now = new Date().getTime();
+	
+	  // Find the distance between now and the count down date
+	
+		var distanceTpwDate = countDownTpwDate - now;
+	
+	  // Time calculations for days, hours, minutes and seconds
+	
+		var daysTpw = Math.floor(distanceTpwDate / (1000 * 60 * 60 * 24));
+	
+		var hoursTpw = Math.floor((distanceTpwDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutesTpw = Math.floor((distanceTpwDate % (1000 * 60 * 60)) / (1000 * 60));
+		var secondsTpw = Math.floor((distanceTpwDate % (1000 * 60)) / 1000);
+	
+	  // Output the result in an element with id="demo"
+		document.getElementById("tpwDate").innerHTML = "<strong>*</strong>"+daysTpw + "d " + hoursTpw + "h "+ minutesTpw + "m " + secondsTpw + "s ";
+	
+	   }, 1000);
+	
+	
+		$("#expireFeature").html("<span style='font-size:15px !important; color:#310299 !important';> <i><div class='text-center' id='tpwDate'></div></i></span>");
+		}
+		else{
+	
+		$("#expireFeature").html("<div style='background-color:FFFB0F !important;' class='alert alert-warning alert-dismissible text-center'><a href='https://www.perfumersworld.com/software.php' target='_blank'> <strong>*<img src='img/preload.PNG' height='40'></strong> </span><i>Get Premium Feature</i></a></div>");
+		}
+	
+	$("#checkbutton").click(function() {
+		if (checkExpire == 1){
+	
+		window.location.replace("https://www.perfumersworld.com/tpw-online/wizard-3-complexity.php?type=1&m=nature");
+		}
+	
+	});
+	$("#checkbutton2").click(function() {
+		if (checkExpire == 1){
+	
+		window.location.replace("https://www.perfumersworld.com/tpw-online/wizard-3-complexity.php?type=1&m=allout");
+		}
+	
+	});
+	
+	
+	</script>
+	</body>
+	</html>
+	

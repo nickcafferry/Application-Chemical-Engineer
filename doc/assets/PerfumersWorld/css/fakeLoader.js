@@ -1,0 +1,69 @@
+/********************************************************************
+ jquery-fake-loader
+ *Version:    2.0.0 - 2019
+ *author:     João Pereira
+ *website:    http://www.joaopereira.pt
+ *Licensed MIT
+********************************************************************/
+(function ($) {
+    $.fakeLoader = function(options) {
+
+        var settings = $.extend({
+            targetClass:'fakeLoader',
+            timeToHide:1200,
+           // bgColor: '#2ecc71',
+            spinner:'spinner2',
+
+        }, options);
+
+        var spinner01 = '<div class="fl fl-spinner spinner1"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>';
+      //  var spinner02 = '<div class="fl fl-spinner spinner2"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
+			 	var spinner02 = '<div class="fl fl-spinner spinner2"><img src="img/preload.PNG" height="150" style="margin-top: 200px; margin-left:-20px;"/></div>';
+        var spinner03 = '<div class="fl fl-spinner spinner3"><p style="margin-top: 170px; font-family: times; margin-left:-55px !important; font-style: italic; font-size: 20px;">The Perfumers`s Wizard</p><img src="img/preload.PNG" height="150" style="margin-top: 20px; margin-left:-20px;"/></div>';
+        var spinner04 = '<div class="fl fl-spinner spinner4"></div>';
+        var spinner05 = '<div class="fl fl-spinner spinner5"><div class="cube1"></div><div class="cube2"></div></div>';
+        var spinner06 = '<div class="fl fl-spinner spinner6"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>';
+        var spinner07 = '<div class="fl fl-spinner spinner7"><div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>';
+
+        var el = $('body').find('.' + settings.targetClass);
+
+        el.each(function() {
+            var a = settings.spinner;
+
+                switch (a) {
+                    case 'spinner1':
+                            el.html(spinner01);
+                        break;
+                    case 'spinner2':
+                            el.html(spinner02);
+                        break;
+                    case 'spinner3':
+                            el.html(spinner03);
+                        break;
+                    case 'spinner4':
+                            el.html(spinner04);
+                        break;
+                    case 'spinner5':
+                            el.html(spinner05);
+                        break;
+                    case 'spinner6':
+                            el.html(spinner06);
+                        break;
+                    case 'spinner7':
+                            el.html(spinner07);
+                        break;
+                    default:
+                        el.html(spinner01);
+                    }
+        });
+
+        el.css({
+            'background-image':settings.bgColor
+
+        });
+
+        setTimeout(function () {
+            $(el).fadeOut();
+        }, settings.timeToHide);
+    };
+}(jQuery));

@@ -1,0 +1,1543 @@
+
+<html>
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="apple-touch-icon" sizes="128x128" href="logo.png">
+        <link rel="icon" sizes="192x192" href="logo.png">
+        <!-- Bootstrap<link rel="stylesheet" href="css/bootstrap-tagsinput.css"> CSS -->
+            <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    
+            <link rel="stylesheet" type="text/css" href="css/bootstrap-twitter.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme-twitter.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/fakeLoader.css">
+        <link rel="stylesheet" href="css/jquery.tag-editor.css">
+    
+            <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    
+        <title>wizard 4 description</title>
+    
+        <style>
+    
+        .login-logo{ font-family: times; font-style: italic; font-size: 20px;}
+    
+        body {
+    
+                background-size: 400% 100% !important;
+                /*animation: move 10s ease infinite;
+                transform: translate3d(0, 0, 0);*/
+                background: linear-gradient(180deg, #94ecf7 10%, #94ecf7 40%,#fed6e3 60%, #ffb8f9 80% );
+                height: 100%;
+                font-family: "Comic Sans MS" !important;
+        }
+        
+    
+    
+        select.selectpicker {
+            display: none !important;
+            width: auto;
+        }
+        .selectpicker{
+            padding: 10px !important;
+            color: #595555;
+        
+        overflow-y: scroll !important;
+        }
+    
+        textarea {
+                padding: .3em .5em;
+                border: 1px solid #ddd;
+                font-size: .9em;
+                box-sizing: border-box;
+                margin: 0 0 20px;
+        }
+        .demo4{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        ul.tag-editor {
+            height:200px !important;
+        }
+        @keyframes zoominoutsinglefeatured {
+                0% {
+                        transform: scale(1,1);
+                }
+                50% {
+                        transform: scale(1.2,1.2);
+                }
+                100% {
+                        transform: scale(1,1);
+                }
+        }
+    
+        .imgfakeload img {
+            animation: zoominoutsinglefeatured 5s infinite;
+        }
+        
+    .searchTerm {
+      width: 90%;
+      border: 1px solid #ccc;
+      border-right: none;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+      padding: 10px;
+      height: 38px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 20px #eee;
+      color: #595555;
+    }
+    
+    .searchTerm:focus{
+      color: #595555;
+    }
+    .search {
+      width: 100%;
+      position: relative;
+      display: flex;
+      margin-top:10px;
+    }
+    .searchButton {
+      width: 40px;
+      height: 38px;
+      border: 1px solid #ccc;
+      background: #eee;
+      text-align: center;
+      color: #595555;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .tag-editor{
+        font-family: "Comic Sans MS" !important;
+    }
+    .custom-button{
+      border: 1px solid #ccc;
+      background-color: #e7e7e7; 
+      display: inline-block;
+      padding: 4px 8px;
+      cursor: pointer;
+      color:#333;
+      font-size:13px;
+    border-radius: 10px;
+    margin-top:10px;
+    width:100%;
+    text-align:center;
+    height:40px;
+    }
+    /*Resize the wrap to see the search bar change!*/
+    
+            </style>
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    </head>
+    <!--<div class="fakeLoader"></div>-->
+    <body>
+        <div class="fakeLoader" style="background-image: linear-gradient(180deg, #94ecf7 10%, #94ecf7 40%,#fed6e3 60%, #ffb8f9 80% ) !important;">
+            <div class="fl fl-spinner spinner2" ><img src="logo.PNG" height="150" style="margin-top: 200px; margin-left:-20px;"/></div>
+        </div>
+        
+    <div class="headpage" style="margin:10px;">
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="float:left; margin:10px;">
+                <a href="index.html" 	style="color:#5c5c5c !important; text-decoration: none !important;"><img src="logo.PNG" height="50">
+                    <span class="login-logo"><b>Perfumers</b>World</span></a>
+                </div>
+            </div>
+    <div class="col-sm-6">
+        <nav class="navbar" style="float:right;">
+        <ul class="nav navbar-nav navbar-right" style="float:right; margin:12px;">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" style="font-size:18px;color:black"></i> Login as Cafferry <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="index.html">TPW-Online</a></li>
+                <li><a href="http://perfumersworld.com">Homepage</a></li>
+                <li><a href="../auth/dashboard.php">Dashboard</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="../auth/logout.php?q=logout">Logout</a></li>
+              </ul>
+            </li>
+          </ul>			
+        </nav>
+        </div>
+        </div>
+    </div>	
+          
+                <div class="col-12">
+                    <form id="from4" method="POST" action="wizard-3-complexity.php">
+                    <input type="hidden" name="type" value="1" class="form-control">
+                    <input type="hidden" name="m" value="kit" class="form-control">
+                    <input type="hidden" name="describe" value="">
+                    <input type="hidden" name="key" value="">
+            <input type="hidden" name="changesave" value="">
+                </form>
+    
+                <form id="from3" method="POST" action="wizard-2-materials.php">
+                <input type="hidden" name="type" value="1" class="form-control">
+                <input type="hidden" name="describe" value="">
+                    <input type="hidden" name="key" value="">
+            <input type="hidden" name="changesave" value="">
+            </form>
+            <form id="from2" method="POST" action="wizard-1-applications.php">
+            <input type="hidden" name="type" value="1" class="form-control">
+            <input type="hidden" name="describe" value="">
+                    <input type="hidden" name="key" value="">
+            <input type="hidden" name="changesave" value="">
+            </form>
+    
+                
+                </div>
+    
+            </div>
+        </div>
+    <div class="container">
+    <div class="row">
+        
+        <div class="col-sm-3" id="showdropdownList2">
+            
+    <form method="post" action="#" style="margin-bottom:0px;">
+                    <div class="search">
+                        <input type="text" class="searchTerm"  name="loadDropdown" placeholder="Find Accords for Inspiration">
+                        <button type="submit" class="searchButton" data-toggle="tooltip"  title="e.g Masculine Geranium Patchouli Lavender">
+                        <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    </form>
+        
+        </div>
+        
+    
+        <div class="col-sm-6" id="mainDropdown" style="font-size:12px !important;">
+        
+        <form method="post" class="defaultForm" action="wizard-5-abcprofile.html">
+       <div class="form-group">
+                        <select class="selectpicker  form-group"  style="padding: 10px !important;" id="dropdownList" data-width="100%" data-live-search="true" name="describe" data-header="Choose a perfume style or describe below">
+                            <option value="None">Choose a perfume style or describe below
+                            </option>
+                                                <option data-value="NonSpecific, Masculine
+    Feminine
+    Lemon
+    Lime
+    Bergamot
+    Neroli
+    Orange
+    Lavender
+    Rosemary
+    Musk
+    Moss
+    Menthol" changesave="0"  idvalue="1"  value="Citrus">1998 PW NonSpecific Masculine
+    Feminine
+    Lemon
+    Lime
+    Bergamot
+    Neroli
+    Orange
+    ...	            </option>
+                                            <option data-value="Feminine, Peach
+    Fruit
+    Gourmand
+    Sweet
+    Green" changesave="0"  idvalue="2"  value="Dairy">1998 PW Feminine Peach
+    Fruit
+    Gourmand
+    Sweet
+    Green...	            </option>
+                                            <option data-value="Feminine, Rose
+    Muguet
+    Woody
+    Aldehyde
+    Green
+    Sandal
+    Bergamot
+    Geranium
+    Jasmin
+    Iris
+    Vetiver
+    Oakmoss
+    Musk
+    Amber" changesave="0"  idvalue="3"  value="Aldehydic Rose">1998 PW Feminine Rose
+    Muguet
+    Woody
+    Aldehyde
+    Green
+    Sandal
+    Bergamot
+    Gera...	            </option>
+                                            <option data-value="Masculine, Menthol
+    Eucalyptus
+    Rosemary
+    Dihydro Myrcenol
+    Rose
+    Sweet
+    Basil
+    Clove" changesave="0"  idvalue="4"  value="Cool">1998 PW Masculine Menthol
+    Eucalyptus
+    Rosemary
+    Dihydro Myrcenol
+    Rose
+    Sweet...	            </option>
+                                            <option data-value="Feminine, Green
+    Muguet
+    Fresh
+    Herb
+    Iris
+    Spice
+    Musk
+    Moss Galbanum Armoise Vert Fougere" changesave="0"  idvalue="5"  value="Green">1998 PW Feminine Green
+    Muguet
+    Fresh
+    Herb
+    Iris
+    Spice
+    Musk
+    Moss Galbanum...	            </option>
+                                            <option data-value="Feminine, Gourmand
+    Popcorn
+    Corn
+    Roasted
+    Vanilla
+    Maltol" changesave="0"  idvalue="6"  value="Edible">1998 PW Feminine Gourmand
+    Popcorn
+    Corn
+    Roasted
+    Vanilla
+    Maltol...	            </option>
+                                            <option data-value="Feminine, Prune
+    Tuberose
+    White-Flower
+    Fruit
+    Jasmin
+    Lactone
+    Coumarin" changesave="0"  idvalue="7"  value="Fruity">1998 PW Feminine Prune
+    Tuberose
+    White-Flower
+    Fruit
+    Jasmin
+    Lactone
+    Couma...	            </option>
+                                            <option data-value="Masculine, Masculine * Feminine 
+    Lavender
+    Green
+    Armoise
+    Hedione
+    Wood
+    Moss
+    Coumarin
+    Calone" changesave="0"  idvalue="8"  value="Herb">1998 PW Masculine Masculine * Feminine 
+    Lavender
+    Green
+    Armoise
+    Hedione
+    Wo...	            </option>
+                                            <option data-value="Nonspecific, Pine
+    Pineneedle
+    Aldehyde
+    Green
+    Muguet
+    Herb
+    Linalool
+    Cyclamen
+    Citrus
+    Camphor" changesave="0"  idvalue="9"  value="Konifer">1998 PW Nonspecific Pine
+    Pineneedle
+    Aldehyde
+    Green
+    Muguet
+    Herb
+    Linalool
+    C...	            </option>
+                                            <option data-value="Feminine, Violet
+    Iris
+    Ionone
+    Green
+    Floral
+    Fruit
+    Wood
+    Spice
+    Narcotic
+    Rose" changesave="0"  idvalue="10"  value="Iris">1998 PW Feminine Violet
+    Iris
+    Ionone
+    Green
+    Floral
+    Fruit
+    Wood
+    Spice
+    Nar...	            </option>
+                                            <option data-value="Feminine, Jasmin
+    Rose
+    Aldehyde
+    Muguet
+    Bergamot
+    Lemon
+    Orris 
+    Ylang-Ylang
+    Neroli
+    Vetiver
+    Sandal
+    Cedar
+    Vanilla
+    Amber
+    Civet
+    Musk
+    Elegant
+    Flower
+    Sensual
+    Feminine" changesave="0"  idvalue="11"  value="Aldehydic Classic">1998 PW Feminine Jasmin
+    Rose
+    Aldehyde
+    Muguet
+    Bergamot
+    Lemon
+    Orris 
+    Yla...	            </option>
+                                            <option data-value="Feminine, Cool
+    Citrus
+    Linalool
+    Linalyl-Acetate
+    Bergamot
+    Lime
+    Dihydro-myrcenol
+    Green
+    Wood
+    Pine" changesave="0"  idvalue="12"  value="Linalool Chemical">1998 PW Feminine Cool
+    Citrus
+    Linalool
+    Linalyl-Acetate
+    Bergamot
+    Lime
+    Dih...	            </option>
+                                            <option data-value="Feminine, Phenol 
+    Narcissus
+    Narcotic
+    White-flower
+    Jasmin" changesave="0"  idvalue="13"  value="Phenol">1998 PW Feminine Phenol 
+    Narcissus
+    Narcotic
+    White-flower
+    Jasmin...	            </option>
+                                            <option data-value="Feminine, Muguet
+    Lily-of-the-valley
+    Jasmin
+    Green
+    Narcotic
+    Citrus
+    Rose
+    Civet
+    Ylang-Ylang
+    Bergamot" changesave="0"  idvalue="14"  value="Muguet">1998 PW Feminine Muguet
+    Lily-of-the-valley
+    Jasmin
+    Green
+    Narcotic
+    Citrus
+    ...	            </option>
+                                            <option data-value="Feminine, Oriental
+    Balsam
+    Wood
+    Civet
+    Vanilla
+    Spice
+    Citrus
+    Green" changesave="0"  idvalue="15"  value="Q-Balsamic">1998 PW Feminine Oriental
+    Balsam
+    Wood
+    Civet
+    Vanilla
+    Spice
+    Citrus
+    Green...	            </option>
+                                            <option data-value="Feminine, Tuberose
+    White-flower
+    Orchid
+    Bergamot
+    Narcotic
+    Muguet
+    Wood" changesave="0"  idvalue="16"  value="Narcotic">1998 PW Feminine Tuberose
+    White-flower
+    Orchid
+    Bergamot
+    Narcotic
+    Muguet
+    ...	            </option>
+                                            <option data-value="Feminine, Clove
+    Orchid
+    Musk
+    Ylang-Ylang
+    Jasmin
+    Iris
+    Rose
+    Wood" changesave="0"  idvalue="17"  value="Spice">1998 PW Feminine Clove
+    Orchid
+    Musk
+    Ylang-Ylang
+    Jasmin
+    Iris
+    Rose
+    Wood...	            </option>
+                                            <option data-value="Feminine, Orchid
+    Salicylate
+    Spice
+    Bergamot
+    Musk" changesave="0"  idvalue="18"  value="Orchid">1998 PW Feminine Orchid
+    Salicylate
+    Spice
+    Bergamot
+    Musk...	            </option>
+                                            <option data-value="Feminine, Rose
+    Green
+    Spice
+    Aldehyde
+    Cool
+    Menthol
+    Raspberry" changesave="0"  idvalue="19"  value="Rose">1998 PW Feminine Rose
+    Green
+    Spice
+    Aldehyde
+    Cool
+    Menthol
+    Raspberry...	            </option>
+                                            <option data-value="Feminine, Vanilla
+    Spice
+    Citrus
+    Dairy
+    Cool
+    Conifer
+    Cinnamon" changesave="0"  idvalue="20"  value="Vanilla">1998 PW Feminine Vanilla
+    Spice
+    Citrus
+    Dairy
+    Cool
+    Conifer
+    Cinnamon...	            </option>
+                                            <option data-value="Feminine Masculine, Chypre
+    Animal
+    Wood
+    Balsam
+    Citrus
+    Moss
+    Smoke undecalactone" changesave="0"  idvalue="21"  value="Animallic">1998 PW Feminine Masculine Chypre
+    Animal
+    Wood
+    Balsam
+    Citrus
+    Moss
+    Smoke undecalact...	            </option>
+                                            <option data-value="Feminine, Jasmin
+    Rose
+    Green
+    Aldehyde
+    Musk
+    Oakmoss
+    White-Flower" changesave="0"  idvalue="22"  value="Jasmin">1998 PW Feminine Jasmin
+    Rose
+    Green
+    Aldehyde
+    Musk
+    Oakmoss
+    White-Flower...	            </option>
+                                            <option data-value="Masculine, Wood
+    Herb
+    Citrus
+    Bergamot
+    Lavender
+    Sandalwood
+    Vetiver
+    Cedryl
+    Balsam
+    Cool
+    Musk" changesave="0"  idvalue="23"  value="Woody">1998 PW Masculine Wood
+    Herb
+    Citrus
+    Bergamot
+    Lavender
+    Sandalwood
+    Vetiver
+    ...	            </option>
+                                            <option data-value="Masculine, Tar
+    Smoke
+    Phenol
+    Rose
+    Jasmin
+    Balsam
+    Moss
+    Wood
+    Animal
+    Musk
+    Narcotic" changesave="0"  idvalue="24"  value="Tar N Smoke">1998 PW Masculine Tar
+    Smoke
+    Phenol
+    Rose
+    Jasmin
+    Balsam
+    Moss
+    Wood
+    Animal...	            </option>
+                                            <option data-value="Feminine Masculine, Musk
+    Muguet
+    Animal
+    Lactone
+    Vanill" changesave="0"  idvalue="25"  value="Musk">1998 PW Feminine Masculine Musk
+    Muguet
+    Animal
+    Lactone
+    Vanill...	            </option>
+                                            <option data-value="Feminine Masculine, Masculine * Feminine 
+    Oriental
+    Benzoin
+    Sensual
+    Vanilla
+    Musk
+    Coumarin
+    Sandalwood Oil
+    Bergamot
+    Hedione
+    Orange
+    Rosewood
+    Labdanum
+    Cedarwood
+    Patchouli
+    Spice
+    Wardia
+    Ethylene brassylate
+    Lavender
+    Galbanum
+    Armoise
+    Peru
+    Tolu
+    Chamomile
+    Rose
+    Thyme
+    Tagete" changesave="0"  idvalue="26"  value="Oriental">1998 PW Feminine Masculine Masculine * Feminine 
+    Oriental
+    Benzoin
+    Sensual
+    Vanilla
+    ...	            </option>
+                                            <option data-value="Feminine Masculine, Chypre, Jasmin
+    Rose
+    Orchid
+    Bergamot
+    Cistus
+    Animal
+    Cedarwood
+    Balsam
+    Muguet
+    Cinnamic
+    Geranium
+    Guaiacwood
+    Honey
+    Labdanum
+    Sandalwood
+    Ylang-Ylang
+    Evernyl
+    Moss
+    Peach
+    Vanill" changesave="0"  idvalue="27"  value="Chypre">1998 PW Feminine Masculine Chypre, Jasmin
+    Rose
+    Orchid
+    Bergamot
+    Cistus
+    Animal
+    Ceda...	            </option>
+                                            <option data-value="Masculine Feminine, Marine
+    Fougere
+    Herb
+    Citrus
+    Bergamot
+    Orchid
+    Green
+    Musk
+    Seaweed
+    Oakmoss
+    Calone
+    Melon
+    Water" changesave="0"  idvalue="28"  value="Moss">1998 PW Masculine Feminine Marine
+    Fougere
+    Herb
+    Citrus
+    Bergamot
+    Orchid
+    Green
+    Musk...	            </option>
+                                            <option data-value="Feminine, Orchid
+    Rose
+    Jasmin
+    Ylang-Ylang
+    Bergamot
+    Citrus
+    Hedione
+    Vertenex
+    Cinnamic
+    Coumarin
+    Clove
+    Methyl-ionone
+    Sandalwood
+    Muguet
+    Hawthorn
+    Benzoin
+    Balsam
+    Cedarwood
+    Herb
+    Patchouli
+    Evernyl
+    Moss
+    C-10
+    Raspberry
+    Mna" changesave="0"  idvalue="29"  value="Powdery">1998 PW Feminine Orchid
+    Rose
+    Jasmin
+    Ylang-Ylang
+    Bergamot
+    Citrus
+    Hedione...	            </option>
+                                            <option data-value="Feminine, Jasmin
+    Hedione
+    Vertenex
+    Linalool
+    Rose
+    Coumarin
+    Muguet
+    Lilial
+    Heliotrop
+    Hawthorn
+    Ylang-Ylang
+    Cinnamic
+    Honey
+    Balsam
+    Sandalwood
+    Patchouli
+    Vanilla
+    Vanillin
+    C-11
+    Anis
+    Civet" changesave="0"  idvalue="30"  value="Baby">1998 PW Feminine Jasmin
+    Hedione
+    Vertenex
+    Linalool
+    Rose
+    Coumarin
+    Muguet
+    ...	            </option>
+                                            <option data-value="Masculine, Masculine
+    Tobacco
+    Cedryl
+    Cedarwood
+    Muguet
+    Iso-e-super
+    Citrus
+    Bergamot
+    Dihydro-myrcenol
+    Patchouli
+    Sandalwood
+    Vetiver
+    Elemi
+    Musk
+    Cyclamen
+    Ambergris
+    Lavender
+    Rose
+    Iris
+    Coumarin
+    Basil
+    Orris
+    Jasmin
+    Green
+    Marigold
+    Labdanum" changesave="0"  idvalue="31"  value="Tobacco">1998 PW Masculine Masculine
+    Tobacco
+    Cedryl
+    Cedarwood
+    Muguet
+    Iso-e-super
+    ...	            </option>
+                                            <option data-value="Masculine, Orchid
+    Dihydro-myrcenol
+    Iso-E-Super
+    Lavender
+    Castoreum
+    Animal
+    Patchouli
+    Pine-needle
+    Bergamot
+    Bornyl
+    Lilial
+    Cedryl
+    Musk
+    Muguet
+    Clove
+    Cassis
+    Herb
+    Armoise
+    Iris
+    Jasmin
+    Vertenex
+    Geranium
+    Neroli
+    Ambergris
+    Ambrox
+    Oakmoss
+    Evernyl
+    Clary-sage
+    Raspberry
+    Lime
+    Apple
+    Thyme
+    Galbanum
+    Coriander
+    Cumin
+    Labdanum
+    Quinolene
+    Civet" changesave="0"  idvalue="32"  value="Masculine">1998 PW Masculine Orchid
+    Dihydro-myrcenol
+    Iso-E-Super
+    Lavender
+    Castoreum
+    ...	            </option>
+                                            <option data-value="Feminine, Jasmin
+    Hedione
+    Rose
+    Musk
+    Linalool
+    Muguet
+    Wood
+    Iso-e-super
+    Cedryl
+    Coumarin
+    Bergamot
+    Orchid
+    Methyl-ionone
+    Balsam
+    Sandalwood
+    Undecylenic
+    Tolu
+    Green
+    Gardenia
+    Galbanum
+    Grass
+    Ylang-Ylang
+    Mna
+    Coconut
+    Lactone
+    Peach" changesave="0"  idvalue="33"  value="Feminine">1998 PW Feminine Jasmin
+    Hedione
+    Rose
+    Musk
+    Linalool
+    Muguet
+    Wood
+    Iso-e-s...	            </option>
+                                            <option data-value="Masculine, Cistus
+    iso-E-super
+    Sandalwood
+    Musk
+    Patchouli
+    Wood
+    Olibanum
+    Quinolene
+    Phenol
+    Animal
+    Hedione
+    Undecylenic
+    Cardamon
+    Oakmoss
+    Moss
+    Evernyl
+    Bergamot
+    Citrus
+    Green
+    Jasmin
+    calone
+    Clary-sage
+    Muguet
+    Armoise
+    Cumin
+    Clove
+    Heliotrop
+    Vetiver
+    Iris
+    Ambergris
+    Ambrox
+    Fir
+    Cinnamic
+    Civet
+    Honey
+    Ambret
+    Powder" changesave="0"  idvalue="34"  value="Leather">1998 PW Masculine Cistus
+    iso-E-super
+    Sandalwood
+    Musk
+    Patchouli
+    Wood
+    Olib...	            </option>
+                                            <option data-value="Masculine Feminine, Fougere, Bergamot
+    Coumarin
+    Geranium
+    Lavender
+    Rose
+    Citrus
+    Linalyl-acetate
+    Musk
+    Moss
+    Hyacinth
+    Heliotrope
+    Methyl-salicylate
+    Ylang-Ylang
+    Balsam
+    Labdanum
+    Patchouli
+    Hawthorn
+    Vetiver" changesave="0"  idvalue="35"  value="Fougere">1998 PW Masculine Feminine Fougere, Bergamot
+    Coumarin
+    Geranium
+    Lavender
+    Rose
+    Citru...	            </option>
+                                            <option data-value="Feminine, Tuberose
+    Ylang-Ylang
+    Narcotic
+    Jasmin
+    Orchid
+    Muguet
+    Linalool
+    Lactone
+    Dairy
+    Methyl-benzoate
+    Clove
+    Cinnamic
+    Phenol" changesave="0"  idvalue="36"  value="Tuberose">1998 PW Feminine Tuberose
+    Ylang-Ylang
+    Narcotic
+    Jasmin
+    Orchid
+    Muguet
+    Lin...	            </option>
+                                            <option data-value="Feminine, Frangipani
+    Narcotic
+    Orchid
+    Champaca
+    Benzoate
+    Ylang-Ylang
+    Salicylate
+    Cyclamen
+    Bergamot
+    Peach
+    Green
+    Jasmin
+    Iso-eugenol
+    Fruit" changesave="0"  idvalue="37"  value="Frangipani">1998 PW Feminine Frangipani
+    Narcotic
+    Orchid
+    Champaca
+    Benzoate
+    Ylang-Ylan...	            </option>
+                                            <option data-value="Feminine, Gardenia
+    Tuberose
+    Ylang-Ylang
+    Narcotic
+    Jasmin
+    Orchid
+    Muguet
+    Linalool
+    Lactone
+    Dairy
+    Methyl-benzoate
+    Clove
+    Cinnamic
+    Phenol" changesave="0"  idvalue="38"  value="Gardenia">1998 PW Feminine Gardenia
+    Tuberose
+    Ylang-Ylang
+    Narcotic
+    Jasmin
+    Orchid
+    M...	            </option>
+                                            <option data-value="Feminine, Ylang-Ylang
+    Ylang-Ylang
+    Fresh
+    Narcotic
+    Phenol
+    Jasmin
+    Rose
+    Peru
+    Balsam
+    Clove
+    Spice
+    Anise" changesave="0"  idvalue="39"  value="Ylang Ylang">1998 PW Feminine Ylang-Ylang
+    Ylang-Ylang
+    Fresh
+    Narcotic
+    Phenol
+    Jasmin
+    R...	            </option>
+                                            <option data-value="Feminine, Violet
+    Iris
+    Ionone
+    Nonadien
+    Rose
+    Linalool
+    Heliotrop
+    Geranium
+    Vanillin
+    Clove
+    Bergamot
+    Ylang-Ylang
+    Narcotic
+    Cassia
+    Irone
+    Damascone
+    C-10
+    Aldehyde
+    Sweet" changesave="0"  idvalue="40"  value="Violet">1998 PW Feminine Violet
+    Iris
+    Ionone
+    Nonadien
+    Rose
+    Linalool
+    Heliotrop
+    G...	            </option>
+                                            <option data-value="Feminine, Sweet-pea
+    Jasmin
+    Rose
+    Heliotrop
+    Muguet
+    Orange
+    Cinnamic
+    Iris
+    Ionone
+    Aurantiol
+    Honey
+    Neroli
+    Orange-flower" changesave="0"  idvalue="41"  value="Sweet Pea">1998 PW Feminine Sweet-pea
+    Jasmin
+    Rose
+    Heliotrop
+    Muguet
+    Orange
+    Cinnamic...	            </option>
+                                            <option data-value="Feminine, Strawberry
+    Green
+    Vanilla
+    Dairy
+    Edible
+    Vegetable
+    Cool
+    Herb" changesave="0"  idvalue="42"  value="Strawberry">1998 PW Feminine Strawberry
+    Green
+    Vanilla
+    Dairy
+    Edible
+    Vegetable
+    Cool
+    ...	            </option>
+                                            <option data-value="Feminine Masculine, Pineapple
+    Green
+    Edible
+    Dairy" changesave="0"  idvalue="43"  value="Pineapple">1998 PW Feminine Masculine Pineapple
+    Green
+    Edible
+    Dairy...	            </option>
+                                            <option data-value="Feminine Masculine, Apple
+    Green
+    Leaf
+    Fruit
+    Verdox
+    Musk
+    Jasmin
+    Wood
+    Peach
+    Iris
+    Rose
+    Clove" changesave="0"  idvalue="44"  value="Apple">1998 PW Feminine Masculine Apple
+    Green
+    Leaf
+    Fruit
+    Verdox
+    Musk
+    Jasmin
+    Wood
+    Peach...	            </option>
+                                            <option data-value="Feminine, Aromatic
+    Floral
+    Fougere
+    Herb
+    Coumarin
+    Vanilla
+    Jasmin
+    Bergamot
+    Lemon
+    Musk
+    Muguet
+    Geranium
+    Patchouli
+    Petitgrain
+    Neroli
+    Hawthorn
+    Heliotrop" changesave="0"  idvalue="45"  value="Aromatic">1998 PW Feminine Aromatic
+    Floral
+    Fougere
+    Herb
+    Coumarin
+    Vanilla
+    Jasmin
+    ...	            </option>
+                                            <option data-value="Feminine, Musk
+    Methyl-ionone
+    Iris
+    Jasmin
+    Heliotrope
+    Muguet
+    Hyacinth
+    Apple
+    Sandalwood
+    Fruit
+    Clove
+    Tolu
+    Vanilla
+    Gourmande
+    Dairy
+    Green
+    White-flower
+    Peach
+    Evernyl" changesave="0"  idvalue="46"  value="Floral Oriental">1998 PW Feminine Musk
+    Methyl-ionone
+    Iris
+    Jasmin
+    Heliotrope
+    Muguet
+    Hyaci...	            </option>
+                                            <option data-value="Feminine, Muguet
+    Musk
+    Linalool
+    Jasmine
+    Hedione
+    Terpineol" changesave="0"  idvalue="47"  value="Floral Soft">1998 PW Feminine Muguet
+    Musk
+    Linalool
+    Jasmine
+    Hedione
+    Terpineol...	            </option>
+                                            <option data-value="Feminine, White-flower
+    Tuberose
+    Dairy
+    Jasmine" changesave="0"  idvalue="48"  value="Floral White">1998 PW Feminine White-flower
+    Tuberose
+    Dairy
+    Jasmine...	            </option>
+                                            <option data-value="Feminine, Musk
+    Marine
+    Seaweed
+    Calone
+    Ozone
+    Muguet
+    Iris
+    Wood
+    Green
+    Water
+    Clove
+    Melon
+    Apple
+    Cyclamen" changesave="0"  idvalue="49"  value="Marine">1998 PW Feminine Musk
+    Marine
+    Seaweed
+    Calone
+    Ozone
+    Muguet
+    Iris
+    Wood
+    Gr...	            </option>
+                                            <option data-value="Nonspecific, Lavender
+    Clary-sage
+    Spearmint
+    Ylang-Ylang
+    Chamomile
+    Thyme
+    Jasmin
+    Cedarwood" changesave="0"  idvalue="50"  value="Aroma-Blend Relaxing">1998 PW Nonspecific Lavender
+    Clary-sage
+    Spearmint
+    Ylang-Ylang
+    Chamomile
+    Thy...	            </option>
+                                            <option data-value="Masculine Feminine, Orange
+    Bergamot
+    Lemon
+    Tangerine
+    Rosemary
+    Elemi
+    Menthol
+    Litsea-cubeba
+    Lime
+    Sandalwood
+    Eucalyptus
+    Clary-sage
+    Geranium
+    Ambrette-seed" changesave="0"  idvalue="51"  value="Aroma-Blend Fresh">1998 PW Masculine Feminine Orange
+    Bergamot
+    Lemon
+    Tangerine
+    Rosemary
+    Elemi
+    Menthol...	            </option>
+                                            <option data-value="Feminine Masculine, Geranium
+    Patchouli
+    Ylang-Ylang
+    Lavender
+    Champaca
+    Guaiacwood" changesave="0"  idvalue="52"  value="Aroma-Blend Sensual">1998 PW Feminine Masculine Geranium
+    Patchouli
+    Ylang-Ylang
+    Lavender
+    Champaca
+    Guaiac...	            </option>
+                                            <option data-value="Feminine Masculine, Orange
+    Bergamot
+    Lemon
+    Tangerine
+    Litsea-cubeba
+    Ho-leaf
+    Clove
+    Cinnamon
+    Ginger
+    Menthol
+    Lavender
+    Rosemary
+    Basil
+    Clary-sage
+    Geranium
+    Vetiver" changesave="0"  idvalue="53"  value="Aroma-Blend Warm">1998 PW Feminine Masculine Orange
+    Bergamot
+    Lemon
+    Tangerine
+    Litsea-cubeba
+    Ho-leaf
+    ...	            </option>
+                                            <option data-value="Masculine Feminine, Camphor
+    Tangerine
+    Peppermint
+    Rosemary
+    Menthol
+    Marjoram
+    Clary-sage
+    Thyme
+    Cinnamon
+    Clove" changesave="0"  idvalue="54"  value="Aroma-Blend Cool">1998 PW Masculine Feminine Camphor
+    Tangerine
+    Peppermint
+    Rosemary
+    Menthol
+    Marjoram
+    ...	            </option>
+                                            <option data-value="NonSpecific, Petrichor
+    Masculine
+    Feminine
+    Geosmin
+    Ozone
+    Earth
+    Soil
+    Wet
+    Muguet
+    Orchid
+    Steam
+    Humid
+    Spice
+    Vetiver
+    Patchouli
+    Floralozone
+    Salicylate" changesave="0"  idvalue="41592"  value="Petrichor">1998 PW NonSpecific Petrichor
+    Masculine
+    Feminine
+    Geosmin
+    Ozone
+    Earth
+    Soil
+    ...	            </option>
+                                        </select>
+            
+        </div>
+    
+        
+        </div>
+        <div class="col-sm-3">
+        <a href="wizard-4-description-image-n.php?type=1&m=kit&w=1000"><button type="button" class="custom-button">  <i class="fa fa-picture-o"></i> IMAGE MIND MAP</button></a>
+        </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-12">
+    
+              </div>
+    
+                      </div>
+    
+            <div style="text-align:center;" class="row">
+                <div class="col-sm-4 col-md-8 col-lg-4 text-center" style="width: 100%; min-width: 12em;">
+                       <div class="form-group">
+                             <textarea id="demo4" rows="1" width="100%" wrap="hard"></textarea>
+                    <p id="response">You can add or remove words</p>
+                </div>
+    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                   <div class="form-group">
+                <input type="hidden" value="1" name="type">
+                <input type="hidden" value="kit" name="m">
+                <input type="hidden" value="1000" name="w">
+                <input type="text" id="key" name="key" hidden>
+                <input type="text" id="changesave" name="changesave" hidden>
+                <input type="text" id="idvalue" name="idvalue" hidden>
+                <button type="submit" class="btn btn-confirm btn-sm btn-block">Confirm your description</button>
+            </div>
+            </div>
+        </div>
+    </form>
+    <div class="main">
+    <ul class="progressbar_step">
+      <a href="index.html"><button type="submit" class="btn btn-default btn-circle" style="margin-left: 10px;margin-right: 10px;margin-top: -1px; background-color:#7d7d7d !important; background-image: none !important"><i class="fa fa-angle-left"></i></button></a>
+          <li class="active"></li>
+        <li onclick="from2.submit();" class="active"></li>
+        <li onclick="from3.submit();" class="active"></li>
+        <li onclick="from4.submit();" class="active"></li>
+        <li></li>
+        <button type="submit" class="btn btn-default btn-circle" style="margin-left: 10px;margin-right: 10px;margin-top: -1px; background-image: none !important"><i class="fa fa-angle-right"></i></button>	
+    </ul>
+    </div>
+    </div>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/fakeLoader.js"></script>
+     <script src="js/jquery-ui.min.js"></script>
+     <script src="js/bootstrap3.3.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.caret.min.js"></script>
+    <script src="js/jquery.tag-editor.js"></script>
+    <script type="text/javascript" src="js/typeahead.js"></script>
+    <script>
+             $(document).ready(function(){
+    
+                     $.fakeLoader({
+                             timeToHide:1200,
+                             spinner:"spinner2",
+                             bgColor:"background-image: linear-gradient(180deg, #94ecf7 10%, #94ecf7 40%,#fed6e3 60%, #ffb8f9 80% )",
+    
+                     });
+        /*	$("#showdropdownList2").hide();
+            $(".clickmore").on('click', function(event) {
+            $("#showdropdownList2").show();
+            
+            $("#mainDropdown").removeClass("col-sm-12");
+            $("#mainDropdown").addClass("col-sm-8");
+            });*/
+    
+    
+             });
+     </script>
+     <div class="fakeLoader"></div>
+    
+    <!-- Latest compiled and <script src="js/bootstrap-tagsinput.min.js"></script>minified JavaScript -->
+    
+    <script>
+    /*$.fakeLoader({
+            bgColor: '#f3f3f3',
+            spinner:"spinner1"
+    });*/
+    
+    
+    var searchDef = ["ABSOLUTE","ACACIA","AGRUMEN","ALDEHYDE","ALDEHYDIC","ALLSPICE","ALMOND","ALMOND SWEET","ALPINE","AMBER","AMBERGRIS","AMBREINE","ANGEL","ANIMAL","ANIMALIC","ANISE","APPLE","APRICOT","ARCTIC","ARTEMISIA","ARVENSIS","ASH","ASPARAGUS","AUTUMN","AZALEA","BABY","BABY'S HEAD","BACON","BAKED APPLE","BAKED","BAKED CHEESE","BALM","BALSAM","BANANA","BARK","BAY","BAYBERRY","BEAN","BEEF","BEER","BEESWAX","BEET","BELLODGIA","BERGAMOT","BERRIES","BERRY","BITTER","BLACK","BLACKBERRY","BLACKCURRANT","BLONDE","BLOSSOM","BLUE","BLUEBERRY","BOIS","BORONIA","BOUQUE","BOX","BOXWOOD","BRAMBLE","BRANDY","BREAD","BREEZE","BRIAR","BROOM","BUBBLEGUM","BURNT TOAST","BUTTER","BUTTERMILK","BUTTERSCOTCH","CABBAGE","CAMOMILE","CALYX","CAMPHOR","CANANGA","CARAMEL","CANTALOUPE","CARAWAY","CARDAMOM","CARNATION","CARROT","CASSIA","CASSIE","CASTOR","CASTOREUM","CEDAR","CEDARWOOD","CEDRAT","CHAMOMILE","CHANEL 5","CHEDDAR","CHEESE","CHEMICAL","CHERRY","CHEVREFEUILLE","CHICKEN","CHEWING GUM","CHOCOLATE","CHIPS","CHRISTMAS","CHYPRE","CHRYSANTHEMUM","CIGAR","CINNAMON","CITRONELLA","CISTUS","CILANTRO","CLARY","CLASSIC","CLOTH","CLOUDBERRY","CLOVE","CIVET","CLOVER","COCOA","CITRUS","COCONUT","CLEAN","COFFEE SWEET","COFFEE","COOKED","COLOGNE","CORIANDER","COOL","CRABAPPLE","CORN","CRANBERRY","CUBEBA","CUCUMBER","COTTON","COOKIES","CONE","CUMIN","D'ORANGER","DAISY","DEERTONGUE","DEWBERRY","DIANTHUS","CURRANT","DAIRY","COLA","CUT GRASS","DRY","EBONY","CREAM","EGG","EMERALD","ELDERBERRY","EVENING","DAFFODIL","EARTH","D'ORIENT","EVERGREEN","EUCALYPTUS","FERN","FENNEL","FIG","FAT","FIELDS","DURIAN","FIXATIVE","FLEUR","FLOWER","FLORAL","FAECES","FIR","FOLIAGE","FISH","DIRT","FLEURS","FOIN","FRANGIPANEE","FREESIA","FLOUVE","FRANGIPANNI","FRENCH","FOREST","FOUGERE","FRANKINCENSE","FRANGIPANI","FRESH","FLOWERS","FRUTTI","GALBANUM","FRUIT","FRIES","FANTASY","GENTLEMAN","GODSynonyms","GINGER","GENET","GRAPE","GARDENIA","GIROFLEE","FRUITY","GERANIUM","GREASE","FRUITS","DOG","GARLIC","FLOWERY","FRAGRANT","GREEN","GRASS","GREENHOUSE","GREEN APPLE","GREY","HAWTHORN","GREENGAGE","HAIR","GALANGA","GUAIACWOOD","HOLLYBERRY","GRAPEFRUIT","GRAY","HERB","HELIOTROPE","HONEYDEW","HAY","HIBISCUS","HAZEL","HORSE","HAZELNUT","INCARNAT","HYACINTH","GOOSEBERRY","IRIS","INCENSE","HOT","JAM","JAPAN","HERBAL","HONEY","JACINTHE","JUICE","JUICY","JASMINE","JONQUILLA","HONEYSUCKLE","KIWI","HEATHER","KUMQUAT","LABDANUM","JONQUIL","JASMIN","LADY","HYDRANGEA","JUNIPER","JUNIPERBERRY","HORSERADISH","LAGOON","LAVENDER","LIGHT","LILAC","LILY","LAVANDIN","LIME","LEMONGRASS","LINDEN","LINEN","LEMONADE","LEAF","LOBSTER","LILAS","LACTONE","LOVAGE","LEATHER","LOGANBERRY","LOTUS","LEMON","LITSEA","LIMEFLOWER","LOVELY","MALLOW","MANGO","MANDARIN","MAIZE","MAGNOLIA","MARINE","MAUVE","MATE","MEADOW","MARIGOLD","MELON","MENTHA","MARASCHINO","MARJORAM","MELLOW","MEAT","MILK","MELISSA","MINT","MOSS","MILLE","MOWN","MIMOSA","MUGUET","MUSK","MULBERRY","MIEL","MYRRH","MUSKMELON","MUSTARD","MOUNTAIN","NARCOTIC","NARCISSE","METHYL IONONE","MIDNIGHT","NEEDLE","NUT","NARCISSUS","NATURAL","MUD","OCEAN","NEROLI","OLIBANUM","ONION","OEILLET","OPOPONAX","ORANGEFLOWER","OAK","ORCHID","ORANGE","ORIENTAL","ORIGANUM","ORIENT","ORRIS","OZONE","PAPAYA","PANSY","PAPRIKA","PARIS","PASSION","PATCHOULI","PEA","PEACH","PEANUT","PEAR","PEAS","PECAN","PEEL","PENNYROYAL","PEONY","PEPPERMINT","PEPPER","PETAL","PETITGRAIN","PHLOX","PIE","PINA","PIMENTO","PINACOLADA","PINE","PINEAPPLE","PINENEEDLE","PINK","PISTACHIO","PLANT","PLUM","PLUMERIA","POMEGRANATE","POPPY","POTATO","POWDER","POWDERY","PRIVET","PRUNE","PUMPKIN","PUNCH","PURPLE","PYRAZINE","QUINCE","RAIN","RASPBERRY","RED","RED APPLE","RICE","ROASTED","ROMANTIC","ROOT","ROSE","ROSEMARY","ROSY","RUE","RUM","SAFFRON","SAGE","SAKE","SAKI","SALMON","SALTY","SAMBAC","SAMBUCUS","SANDALWOOD","SASSAFRAS","SCENT","SCENTED","SCENTS","SEA","SEAFOOD","SEASHORE","SEXY","SHARP","SHERRY","SICKLY","SKIN","SMOKE","SMOKED","SMOKY","SOAPY","SORBET","SOUR","SPICE","SPICY","SPIKENARD","SPORTS","SPRING","STARFRUIT","STEM","STEPHANOTIS","STOCK","STRAW","STRAWBERRY","STYRAX","SUGAR","SULFIDE","SULPHIDE","SULTRY","SWEDE","SWEET","SWISS","SYRINGA","TABAC","TOBACCO LEAF","TABACCO","TAGETE","TALLOW","TAR","TANGERINE","TEA","THIAZOLE","THYME","TINCTURE","TOBACCO","TOAST","TOMATO","TONKA","TOPNOTES","TREE","TROPICAL","TREFLE","TUBEREUSE","TRUFFLE","TUBEROSE","TULIP","TWEED","URINE","VALERIAN","VALENTINE","VALLEY","VANILLA","VEGETABLE","VEGETABLES","VERBENA","VERVEINE","VETIVER","VIOLET","WALLFLOWER","WALNUT","WATERMELON","WAXY","WET","WHITE","WHITE COTTON","WINE","WOODY","WOOL","YLANG-YLANG","YOGURT","ZDRAVETZ","LILY OF THE VALLEY","PAMPLEMOUSSE","FUNERAL","DEATH","RELAX","SNOW","AIRY","YLANG","FEMININE","MASCULINE","UNISEX","AGE-BABY","AGE-CHILD","AGE-TEENAGER","AGE-YOUNG_ADULT","AGE-ADULT","AGE-MATURE","FROZEN","COLD","LILY-OF-THE-VALLEY","ALDEHYDES","GOURMAND","CUPCAKE","PETRICHOR","OAKMOSS","MOSSY","TREEMOSS","BIRCH-TAR","SWEET-BIRCH"];
+    var changesave = '0';
+    var typeId = '';
+    
+    
+    
+    if (typeId != '') {
+    var typeId = '';
+    
+    var describe = '';
+    $('#changesave').val(changesave);
+    $('#key').val(typeId);
+    
+    
+    var optionText = $("#dropdownList option:selected").text(describe);
+    console.log(optionText);
+    } else {
+    var describe = '';
+    changesave = 0;
+    }
+    console.log(changesave);
+    var testlog1 = $('#changesave').val();
+    var testlog2 = $('#key').val();
+    var testlog3 = $("#dropdownList option:selected").text();
+    console.log(testlog1);
+    console.log(testlog2);
+    console.log(testlog3);
+    
+    
+    $('#demo4').tagEditor({
+        delimiter: ',;." ', /* space and comma */
+        placeholder: 'Describe here',
+        removeDuplicates: false,
+        forceUppercase: 'false',
+        sortable: true,
+        autocomplete: {
+         delay: 0, // show suggestions immediately
+         position: { collision: 'flip' }, // automatic menu position up/down
+         source: searchDef,
+    },
+    
+    onChange: function(field, editor, tags) {
+        /*  $('#response').prepend(
+                    'Tags changed to: ' + (tags.length ? tags.join(', ') : '----') + '<hr>'
+            );*/
+            $('#key').val(tags.length ? tags.join(', ') : '----');
+                //var x = document.getElementById("response");
+                //document.getElementById("key").innerHTML = x.innerHTML;
+        //		$('#key').val(x);
+    
+            //	$('#key').get(response);
+        $('#changesave').val("1");
+    },
+    beforeTagSave: function(field, editor, tags, tag, val) {
+        //	$('#response').html('Tag ' + val + ' saved' + (tag ? ' over ' + tag : '') + '. You can add your own words');
+        $('#changesave').val("1");
+    
+        //	console.log(val);
+    },
+    beforeTagDelete: function(field, editor, tags, val) {
+        //	var q = confirm('Remove tag "' + val + '"?');
+            //if (q) $('#response').html('Tag ' + val + ' deleted.\nYou can add your own words');
+            //else $('#response').html('Removal of ' + val + ' discarded.\nYou can add your own words');
+        //	return q;
+            $('#changesave').val("1");
+    
+        //	console.log(val);
+    
+    }
+    
+    });
+    //$('#key').val(key);
+    //console.log(key);
+    /*$(document).ready(function () {
+    
+        $('.selectpicker').selectpicker();
+    
+    
+    });*/
+    var valuechange = document.getElementById("response").innerHTML;
+    
+    $(document).ready(function () {
+    
+      //  $('#dropdownList').on('change',function(){
+    var tagsave;
+    
+        $('#dropdownList').change(function() {
+            //var optionValue = $(this).val();
+            //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
+        //	$('#changesave').val("0");
+        $('ul').remove('.tag-editor');
+            var optionText = $("#dropdownList option:selected").text();
+    
+            changesave = $(this).find('option:selected').attr('changesave');
+                //$(this).find(':selected').attr('data-id')
+                idvalue = $(this).find('option:selected').attr('idvalue');
+                //$(this).find(':selected').attr('data-id')
+                console.log(idvalue);
+                $('#changesave').val(changesave);
+                $('#idvalue').val(idvalue);
+            //	$('#userSelector').val($(this.options[this.selectedIndex]).attr('data-value'));
+            //		var test = optionText.data('foo');
+            var typeId = $(this).find('option:selected').data('value');
+            typeId = typeId.replace(/\n/ig, ' ');
+            typeId = typeId.replace(/,/ig, ' ');
+    
+    
+            var res = typeId.split(" ");
+            //res = typeId.split(",");
+        //	typeId =  typeId.match(/[^ ]+/g).join(' "');
+    
+            typeId = typeId.toUpperCase();
+            typeId = typeId.toString();
+    
+            $('#demo4').tagEditor({
+                initialTags: res,
+                delimiter: ',;." ', /* space and comma */
+                placeholder: 'Enter tags ...',
+                removeDuplicates: false,
+                forceUppercase: 'false',
+                sortable: true,
+                autocomplete: {
+                 delay: 0, // show suggestions immediately
+                 position: { collision: 'flip' }, // automatic menu position up/down
+                 source: searchDef,
+         },
+         onChange: function(field, editor, tags) {
+          /*  $('#response').prepend(
+                'Tags changed to: ' + (tags.length ? tags.join(', ') : '----') + '<hr>'
+            );*/
+    
+                    $('#key').val(tags.length ? tags.join(', ') : '----');
+                      //var x = document.getElementById("response");
+                        //document.getElementById("key").innerHTML = x.innerHTML;
+                //		$('#key').val(x);
+    
+                    //	$('#key').get(response);
+                            $('#changesave').val("1");
+    
+        },
+        beforeTagSave: function(field, editor, tags, tag, val) {
+        //    $('#response').html('Tag ' + val + ' saved' + (tag ? ' over ' + tag : '') + '. You can add your own words');
+                //	console.log(val);
+    
+                    $('#changesave').val("1");
+    
+        },
+        beforeTagDelete: function(field, editor, tags, val) {
+          //  var q = confirm('Remove tag "' + val + '"?');
+          //  if (q) $('#response').html('Tag ' + val + ' deleted.\nYou can add your own words');
+          //  else $('#response').html('Removal of ' + val + ' discarded.\nYou can add your own words');
+          //  return q;
+            //		console.log(val);
+                    $('#changesave').val("1");
+    
+    
+        }
+    
+            });
+    
+            //	var getdemo = $('#demo4').tagEditor('getTags')[0].tags;
+                $('#response').html("Add or remove words (eg. masculine, feminine)");
+                 $('#key').val(typeId);
+                console.log(typeId);
+    //$('#changesave').val(changesave);
+    
+    
+    
+    });
+    
+    /*
+    
+    
+    if (checkKey != '') {
+    
+    
+    }*/
+    
+    
+    });
+    
+    </script>
+    
+    
+    </body>
+    </html>
+    
