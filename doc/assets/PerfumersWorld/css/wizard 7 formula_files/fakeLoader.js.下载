@@ -18,7 +18,7 @@
 
         var spinner01 = '<div class="fl fl-spinner spinner1"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>';
       //  var spinner02 = '<div class="fl fl-spinner spinner2"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
-			 	var spinner02 = '<div class="fl fl-spinner spinner2"><img src="logo.png height="150" style="margin-top: 200px; margin-left:-20px;"/></div>';
+			 	var spinner02 = '<div class="fl fl-spinner spinner2"><img src="logo.png" height="150" style="margin-top: 200px; margin-left:-20px;"/></div>';
         var spinner03 = '<div class="fl fl-spinner spinner3"><p style="margin-top: 170px; font-family: times; margin-left:-55px !important; font-style: italic; font-size: 20px;">The Perfumers`s Wizard</p><img src="img/preload.PNG" height="150" style="margin-top: 20px; margin-left:-20px;"/></div>';
         var spinner04 = '<div class="fl fl-spinner spinner4"></div>';
         var spinner05 = '<div class="fl fl-spinner spinner5"><div class="cube1"></div><div class="cube2"></div></div>';
