@@ -4,7 +4,7 @@ import os
 import xlrd
 from collections import defaultdict
 
-fechii_content_cas = xlrd.open_workbook("原料总表FECHII.xlsx")
+fechii_content_cas = xlrd.open_workbook("原料总表FECHII.xls")
 sheets_object = fechii_content_cas.sheets()
 sheet_object = fechii_content_cas.sheet_by_index(0)
 col_values_0 = sheet_object.col_values(colx=0)
@@ -19,7 +19,7 @@ for english, k3, chinese, cas, price, state in list(zip(col_values_0, col_values
 #print(Data[-1])
 
 Data1 = []
-fechii_content_price = xlrd.open_workbook("原料总表FECHII.xlsx")
+fechii_content_price = xlrd.open_workbook("原料总表FECHII.xls")
 sheets_object = fechii_content_price.sheets()
 sheet_object = fechii_content_price.sheet_by_index(1)
 col_values_0 = sheet_object.col_values(colx=0)
