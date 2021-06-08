@@ -35,7 +35,7 @@ jobs:
       run: |
          echo "---------------------------------------------"
          cd data/
-         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/data/"
+         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Application-Chemical-Engineer/Application-Chemical-Engineer/data/"
          pip3 install --upgrade pip
          pip3 install wheel
          python3.8 -m pip install -U pymupdf
