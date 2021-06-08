@@ -49,18 +49,18 @@ jobs:
          echo "---------------------------------------------"
          
          echo "transporting new outputs to artifacts..."
-         cp output.csv /home/runner/work/Fechii-Application-Chemical-Engineer/output/
+         cp output.csv /home/runner/work/Application-Chemical-Engineer/output/
                 
-         cd /home/runner/work/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/
+         cd /home/runner/work/Application-Chemical-Engineer/Application-Chemical-Engineer/
          git push origin master
         
          echo "checking the artifacts..."
-         cd /home/runner/work/Fechii-Application-Chemical-Engineer/output/
+         cd /home/runner/work/Application-Chemical-Engineer/output/
          ls
          pwd
          
     - uses: actions/upload-artifact@v2
       with:
         name: output results
-        path: /home/runner/work/Fechii-Application-Chemical-Engineer/output/ 
+        path: /home/runner/work/Application-Chemical-Engineer/output/ 
 
