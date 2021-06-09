@@ -1,4 +1,4 @@
-﻿#!/usr/local/bin/python
+#!/usr/local/bin/python
 
 import urllib.request as ur
 import os
@@ -7,7 +7,7 @@ from urllib import request, parse
 import information
 
 datacollection = []
-for item in information.Data:
+for item in information.Data2:
     cas_index = []
     for everything in item['CAS'].split("/"):
         for k in range(len(everything)):
@@ -16,12 +16,26 @@ for item in information.Data:
         cas_index.append(everything)
     datacollection.append((item["English"], cas_index))
 
-print(datacollection)
+#print(datacollection)
 
 CAS_List = []
 for item in datacollection:
-    if item != '['', '']':
-        CAS_List.append(item[1])
+    for i in range(6):
+        if item[1][0].startswith('0'):
+            item[1][0].lstrip('0')
+        else:
+            pass
+    if len(item[1][0].split("-")[-1]) != 1:
+        item[1][0]=item[1][0].strip("\xa0\u3000")
+        #print(item[1]) 
+    if "," in item[1][0]:
+        item[1][0]= item[1][0].split(",")[0]
+    if len(item[1]) > 1 and item[1][0] != '':
+        item[1].pop(0)
+        if len(item[1]) > 1:
+            item[1].pop(0)
+        print(item[1])
+    CAS_List.append(item[1])
 print(CAS_List)	
 headers = {
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
@@ -62,6 +76,6 @@ for everyhtml in html_list:
 		opfile.write("HTTP Error!\n")
 	i += 1
 	print('%s html is done, continuing......'%str(i))
-#	if i == 3:
-#		break
+	#if i == 10:
+		#break
 opfile.close()
