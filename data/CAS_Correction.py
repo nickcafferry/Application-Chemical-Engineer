@@ -70,7 +70,10 @@ for everyhtml in html_list:
 		else:
 			response.readline().decode('utf-8')
 			content=response.readline().decode('utf-8')
-			opfile.write(content)
+			if len(content) == 0:
+				opfile.write("Cannot find it!")
+			else:
+				opfile.write(content)
 			time.sleep(10)
 	except:
 		opfile.write("HTTP Error!\n")
