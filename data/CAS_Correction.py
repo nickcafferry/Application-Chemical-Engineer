@@ -75,7 +75,7 @@ for everyhtml in html_list:
             content_test = response_test.readline()
             print(len(content_test), content_test)
             if content_test == b'  ' and len(content_test) ==2:
-                opfile.write("Cannot find it!")
+                opfile.write("Cannot find it!\n")
             else:
                 opfile.write(content)
             time.sleep(10)
