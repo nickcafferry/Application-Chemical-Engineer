@@ -7,7 +7,7 @@ from urllib import request, parse
 import information
 
 datacollection = []
-for item in information.Data2:
+for item in information.Data:
     cas_index = []
     for everything in item['CAS'].split("/"):
         for k in range(len(everything)):
