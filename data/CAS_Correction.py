@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+﻿#!/usr/local/bin/python
 
 import urllib.request as ur
 import os
@@ -62,23 +62,27 @@ print('.........',end='\n')
 
 i=0
 for everyhtml in html_list:
-	try:
-		req = ur.Request(url=everyhtml, headers=headers, method='POST')
-		response = ur.urlopen(req)
-		if response.getcode() == "404":
-			opfile.write('html page does not exist!\n')
-		else:
-			response.readline().decode('utf-8')
-			content=response.readline().decode('utf-8')
-			if content.split(",")[0] == '':
-				opfile.write("Cannot find it!")
-			else:
-				opfile.write(content)
-			time.sleep(10)
-	except:
-		opfile.write("HTTP Error!\n")
-	i += 1
-	print('%s html is done, continuing......'%str(i))
+    try:
+        req = ur.Request(url=everyhtml, headers=headers, method='POST')
+        response = ur.urlopen(req)
+        response_test = ur.urlopen(req)
+        if response.getcode() == "404":
+            opfile.write('html page does not exist!\n')
+        else:
+            response.readline().decode('utf-8')
+            content=response.readline().decode('utf-8')
+            response_test.readline()
+            content_test = response_test.readline()
+            print(len(content_test), content_test)
+            if content_test == b'  ' and len(content_test) ==2:
+                opfile.write("Cannot find it!")
+            else:
+                opfile.write(content)
+            time.sleep(10)
+    except:
+        opfile.write("HTTP Error!\n")
+    i += 1
+    print('%s html is done, continuing......'%str(i))
 	#if i == 10:
 		#break
 opfile.close()
