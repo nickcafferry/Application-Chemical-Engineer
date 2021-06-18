@@ -1,0 +1,115 @@
+﻿
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script> 
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+  <style>
+    article {
+      max-width: 960px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      padding: 40px;
+    }
+
+    script.show-script {
+      display: none;
+      max-width: 720px;
+      background-color: floralwhite;
+      font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+      font-size: 12px;
+      margin-left: -40px;
+      white-space: pre;
+    }
+
+    article div {
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      margin-top: 60px;
+    }
+  </style>
+
+     <div id="table-cont1" class="vega-embed"><div class="vega-bindings"></div></div>
+     <script class='show-script'>
+{
+  const headers = ['原料中文名称', '原料英文名称', '质量百分比%', 'CAS'];
+  const values = [['二丙二醇(DPG)', 'Dipropylene glycol(DPG)', '35.27', '110-98-5'],
+  ['二氢茉莉酮酸甲酯(进口)', 'Hedione/Cyclopentaneacetic acid, 3-oxo-2-pentyl-methyl ester', '13', '24851-98-7'],
+  ['佳乐麝香原液(稠液)', 'Galaxolide', '10', '1222-05-5'],
+  ['麝香T', 'Musk-T', '8', '105-95-3'],
+  ['龙涎酮', 'Iso E Super', '5', '54464-57-2'],
+  ['香兰素(粉末)', 'Vanillin', '2.1', '121-33-5'],
+  ['乙基芳樟醇', 'Ethyl linalool', '2', '10339-55-6'],
+  ['乙酸芳樟酯/3,7-二甲基-1,6辛二烯-3-醇乙酸酯', 'Linalyl acetate/Phanteine', '2', '115-95-7'], 
+  ['柳酸叶醇酯/(Z)-2-羟基苯甲酸-3-己烯酯', 'Leaf salicylate /cis-3-Hexenyl salicylate', '1.8', '65405-77-8'],
+  ['白花醇', 'Florol', '1.6', '63500-71-0'],
+  ['黄葵内酯', 'Ambrettolide', '1.5','28645-51-4'],
+  ['苯乙二甲缩醛', 'Phenylacetaldehyde dimethyl acetal', '1.1', '101-48-4'], 
+  ['抗氧化剂', 'BHT','1.1','128-37-0'],
+  ['乙基麦芽酚', 'Ethyl matol ', '1', '4940-11-8'], 
+  ['龙涎木香', 'Amberwood  F','1','58567-11-6'],
+  ['甲位己基桂醛', 'alpha-hexylcinnamaldehyde(HCA)', '1', '101-86-0'], 
+  ['柳酸苄酯/2-羟基苯甲酸苯甲基酯', 'Benzyl salicylate/2-Hydroxybenzoic acid phenylmethyl ester','1','118-58-1'],
+  ['苯乙醇', 'Phenethyl alcohol', '0.9', '60-12-8'], 
+  ['新洋茉莉醛', 'Helional','0.9','1205-17-0'],
+  ['羟基香草醛/羟醛(进口)', 'Hydroxycitronellal', '0.8', '107-75-5'], 
+  ['广藿香油(浅)', 'Citronella oil','0.8','8014-9-3'],
+  ['合成芳樟醇', 'Linalool', '0.7', '78-70-6'], 
+  ['甜橙油萜(无色)', 'Orange terpene','0.6','5989-27-5'],
+  ['香叶醇600', 'Geraniol 600', '0.5', '106-24-1'], 
+  ['丁酸二甲基苄基原酯/二甲基苄基原醇丁酯', 'Benzyldimethylcarbinyl butyrate','0.5','10094-34-5'],
+  ['异丁酸苯氧乙酯/2-甲基丙酸苯氧乙酯', 'Phenoxy ethyl  iso butyrate /2-Phenoxyethyl isobutyrate', '0.5', '103-60-6'], 
+  ['新铃兰醛', 'Lyral','0.45','31906-04-4'],
+  ['丁酸二甲基苄基原酯/二甲基苄基原醇丁酯', 'Benzyldimethylcarbinyl butyrate', '0.4', '10094-34-5'], 
+  ['波洁红醛', 'Bourgeonal','0.4','18127-01-0'],
+  ['甲基柏木醚', 'Cedryl methyl ether', '0.4', '19870-74-7'], 
+  ['檀香210', 'Sanderol 210','0.4','65113-99-7'],
+  ['阿根廷柠檬油', 'Lemon oil Argentina', '0.3', '8008-56-8'], 
+  ['桂醇', 'Cinnamyl alcohol','0.3','104-54-1'],
+  ['柳酸己酯/水杨酸己酯', 'Azalate(hexyl salicylate)/hexyl 2-hydroxybenzoate', '0.25', '6259-76-3'], 
+  ['乙酸二甲基苄基原酯/α,α-二甲基苯乙醇乙酸酯', 'Benzyl dimethyl carbinyl acetate','0.22','151-05-3'],
+  ['乙酸苄酯/醋酸苯甲酯', 'Benzyl acetate/Phenylmethyl acetate', '0.2', '140-11-4'], 
+  ['洋茉莉醛香基(50%BB)', 'Heliotropin 50%BB','0.200','/'],
+  ['异甲基紫罗兰酮', 'Iso-methylionone', '0.200', '127-51-5'], 
+  ['龙涎醚 DL(固体)', 'Ambrox DL','0.200','3738-00-9'],
+  ['麝香烯酮', 'Muscenone', '0.200', '82356-51-2'], 
+  ['开司米酮(固体)', 'Cashmeran','0.15','33704-61-9'],
+  ['丙位癸内酯(食品级)', 'Gama decalactone', '0.12', '706-14-9'], 
+  ['乙酸香叶酯/2,6-二甲基2,6-辛二烯-8醇醋酸酯', 'Geranyl acetate/Meraneine','0.1','105-87-3'],
+  ['丙位十一内酯 C14(桃醛)', 'Gama undecalactone', '0.1', '104-67-6'], 
+  ['乙酸柏木酯/乙酸雪松酯', 'Cedryl Acetate Crystal','0.1','77-54-3'],
+  ['帝王龙涎(10%)', 'Aurelione', '0.100', '211299-54-6/25265-71-8 DPG'], 
+  ['凡路酮', 'Veloutone','0.07','65443-14-3'],
+  ['艾薇醛', 'Vertoliff', '0.06', '27939-60-2'], 
+  ['花青醛', 'Florhydral','0.06','125109-85-5'],
+  ['乙基香兰素(粉末)', 'Ethyl vanillin', '0.06', '121-32-4'], 
+  ['吲哚(进口)(粉末)', 'Indole','0.05','120-72-9'],
+  ['丁香酚/4-烯丙基愈疮木酚', 'Eugenol', '0.05', '97-53-0'], 
+  ['王朝酮原液', 'Dynascone','0.05','56973-85-4'],
+  ['乙酸邻叔丁基环己酯', 'Verdox/2-tert-Butyl cyclohexyl acetate', '0.03', '88-41-5'], 
+  ['卡拉花醛', 'Karanal','0.03','117933-89-8'],
+  ['左旋香芹酮', 'L-Carvone', '0.02', '6485-40-1'], 
+  ['玫瑰醚', 'Rose oxide','0.015','16409-43-1'],
+  ['乙酸苏合香酯', 'Styralyl acetate/Methyl phenyl carbinyl acetate', '0.015', '93-92-5'], 
+  ['乙酸苯乙酯/2-苯基乙酸乙酯', 'Phenylethyl Acetate/Benzyl carbinyl acetate','0.01','103-45-7'],
+  ['大马烯酮', 'Damascenone', '0.01', '23696-85-7'],
+  ['叶醇','Cis-3-Hexen-1-ol', '0.005', '928-96-1'],
+  ['梨醇酯/3-甲基-2-丁烯-1-醇乙酸酯', 'Prenyl acetate/2-Buten-1-ol, 3-methyl-, 1-acetate', '0.005', '1191-16-8']
+                 ]; // Render to visor
+
+  const surface = {
+    name: 'Table',
+    tab: 'Charts'
+  };
+  tfvis.visor().close();
+  tfvis.render.table(surface, {
+    headers,
+    values
+  }); // Render to page
+
+  const container = document.getElementById('table-cont1');
+  tfvis.render.table(container, {
+    headers,
+    values
+  });
+}
+</script>
