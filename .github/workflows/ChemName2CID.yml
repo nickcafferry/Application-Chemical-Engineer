@@ -40,14 +40,14 @@ jobs:
          pip3 install --upgrade pip
          pip3 install wheel
          python3.8 -m pip install -U pymupdf
-         wget https://drive.google.com/drive/folders/1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing
+         wget -O 1 https://drive.google.com/drive/folders/1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing
          ls
 
          echo "recording information already unpacked!"
          echo "Show the path of this file:"
          pwd
          echo "---------------------------------------------"
-         cp 1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing /home/runner/work/Application-Chemical-Engineer/output/
+         cp 1 /home/runner/work/Application-Chemical-Engineer/output/
          echo "transporting new outputs to artifacts..."
                 
          cd /home/runner/work/Application-Chemical-Engineer/Application-Chemical-Engineer/
