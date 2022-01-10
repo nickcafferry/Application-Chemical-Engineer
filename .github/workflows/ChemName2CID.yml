@@ -39,7 +39,7 @@ jobs:
          pip3 install --upgrade pip
          pip3 install wheel
          python3.8 -m pip install -U pymupdf
-         python3.8 ChemName2CID.py
+         wget -O https://drive.google.com/drive/folders/1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing
          ls
 
          echo "recording information already unpacked!"
