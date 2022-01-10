@@ -40,7 +40,7 @@ jobs:
          pip3 install --upgrade pip
          pip3 install wheel
          python3.8 -m pip install -U pymupdf
-         wget -O 1 https://drive.google.com/drive/folders/1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing
+         wget -O 1 https://drive-thirdparty.googleusercontent.com/128/type/application/x-zip-compressed
          ls
 
          echo "recording information already unpacked!"
