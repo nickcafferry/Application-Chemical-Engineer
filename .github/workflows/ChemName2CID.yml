@@ -1,3 +1,4 @@
+#         cp ChemNametoCID.txt /home/runner/work/Fechii-Application-Chemical-Engineer/output/
 name: ChemName2CID
 
 on:
@@ -39,7 +40,7 @@ jobs:
          pip3 install --upgrade pip
          pip3 install wheel
          python3.8 -m pip install -U pymupdf
-         wget -O https://drive.google.com/drive/folders/1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing
+         wget https://drive.google.com/drive/folders/1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing
          ls
 
          echo "recording information already unpacked!"
@@ -48,7 +49,6 @@ jobs:
          echo "---------------------------------------------"
          
          echo "transporting new outputs to artifacts..."
-         cp ChemNametoCID.txt /home/runner/work/Fechii-Application-Chemical-Engineer/output/
                 
          cd /home/runner/work/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/
          git push origin master
