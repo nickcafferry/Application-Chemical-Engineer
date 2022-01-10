@@ -36,7 +36,7 @@ jobs:
       run: |
          echo "---------------------------------------------"
          cd doc/
-         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/doc/"
+         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Application-Chemical-Engineer/Application-Chemical-Engineer/doc/"
          pip3 install --upgrade pip
          pip3 install wheel
          python3.8 -m pip install -U pymupdf
@@ -47,18 +47,18 @@ jobs:
          echo "Show the path of this file:"
          pwd
          echo "---------------------------------------------"
-         
+         cp 1kDyZaZz8-tHraVYfGXSqYK2CuE_5ZE17?usp=sharing /home/runner/work/Application-Chemical-Engineer/output/
          echo "transporting new outputs to artifacts..."
                 
-         cd /home/runner/work/Fechii-Application-Chemical-Engineer/Fechii-Application-Chemical-Engineer/
+         cd /home/runner/work/Application-Chemical-Engineer/Application-Chemical-Engineer/
          git push origin master
         
          echo "checking the artifacts..."
-         cd /home/runner/work/Fechii-Application-Chemical-Engineer/output/
+         cd /home/runner/work/Application-Chemical-Engineer/output/
          ls
          pwd
          
     - uses: actions/upload-artifact@v2
       with:
         name: output results
-        path: /home/runner/work/Fechii-Application-Chemical-Engineer/output/ 
+        path: /home/runner/work/Application-Chemical-Engineer/output/ 
